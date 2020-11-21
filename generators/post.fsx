@@ -17,7 +17,7 @@ let generate' (ctx : SiteContents) (page: string) =
         |> Option.defaultValue ""
 
     Layout.layout ctx post.title [
-        section [Class "hero is-info is-medium is-bold"] [
+        section [Class "hero is-info is-small is-bold"] [
             div [Class "hero-body"] [
                 div [Class "container has-image-centered"] [
                     h1 [Class "title"] [!!desc]

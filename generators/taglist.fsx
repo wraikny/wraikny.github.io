@@ -9,22 +9,13 @@ let generate' title tag (ctx : SiteContents) (_: string) =
     |> Option.defaultValue Seq.empty
     |> Seq.filter (fun p -> p.tags |> List.contains tag)
 
-  let psts =
-    posts
-    |> Seq.sortByDescending Layout.published
-    |> Seq.toList
-    |> List.map (Layout.postLayout true)
-
   Layout.layout ctx title [
-    section [Class "hero is-info is-medium is-bold"] [
+    section [Class "hero is-info is-small is-bold"] [
       div [Class "hero-body"] [
         div [Class "container has-image-centered"] [
           h1 [Class "title"] [!!title]
         ]
       ]
     ]
-    div [Class "container"] [
-      section [Class "articles"] [
-        div [Class "column is-8 is-offset-2"] psts
-      ]
-    ]]
+    Layout.postcardsLayout posts
+  ]

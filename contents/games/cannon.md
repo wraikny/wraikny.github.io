@@ -3,15 +3,14 @@ layout: post
 title: Cannon
 published: 2018-3-1
 tags: game,archived,altseed
+thumbnail: /images/games/cannon/cannon_game.jpg
 ---
 
-<img src="/images/games/cannon/cannon_title.jpg" width="560" class="has-image-centered">
+音がなります。動いたりしてカラフルできれいです。
 
 <!--more-->
 
-<img src="/images/games/cannon/cannon_game.jpg" width="560" class="has-image-centered">
-
-音がなります。きれいです。
+<img src="/images/games/cannon/cannon_title.jpg" width="560" class="has-image-centered">
 
 F# + Altseedの練習に作りました。
 

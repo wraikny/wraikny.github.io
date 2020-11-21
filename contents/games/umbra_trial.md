@@ -3,9 +3,10 @@ layout: post
 title: Umbra Trial
 published: 2018-12-31
 tags: game,archived,altseed
+thumbnail: /images/games/umbra/umbra_trial_title.jpg
 ---
 
-<img src="/images/games/umbra/umbra_trial_title.jpg" width="560" class="has-image-centered">
+光と影をモチーフにした自作2Dアクションゲーム「Umbra」のC95体験版です。
 
 <!--more-->
 
@@ -14,7 +15,6 @@ tags: game,archived,altseed
 <iframe width="560" height="315" src="https://www.youtube.com/embed/s7QKNJtA5jQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-光と影をモチーフにした自作2Dアクションゲーム「Umbra」のC95体験版です。
 個人サークルでコミックマーケット95にて頒布しました。
 
 F#製です。光と影の表現のためにHLSLとGLSLを気合で生成しました。

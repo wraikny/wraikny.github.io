@@ -18,6 +18,7 @@ type Post = {
     tags: string list
     content: string
     summary: string
+    thumbnail: string option
 }
 
 let contentDir = "contents"
@@ -104,6 +105,8 @@ let private loadFile directories n =
                 |> Option.map (trimString >> fun n -> n.Split ',' |> Array.toList)
             defaultArg tagsOpt []
 
+        let thumbnail = config |> Map.tryFind "thumbnail"
+
         { file = file
           link = link
           title = title
@@ -111,7 +114,8 @@ let private loadFile directories n =
           published = published
           tags = tags
           content = content
-          summary = summary }
+          summary = summary
+          thumbnail = thumbnail }
         |> Some
     else
         None

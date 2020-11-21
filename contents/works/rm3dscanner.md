@@ -1,17 +1,17 @@
 ---
 layout: post
-title: レイマーチング3Dスキャナ
+title: Ray marching 3D Scanner
 published: 2018-10-25
 tags: work,vrchat,shader
+thumbnail: /images/works/rm3dscanner/rm3dscanner_1.jpg
 ---
 
-<img src="/images/works/rm3dscanner/rm3dscanner_1.jpg" width="560" class="has-image-centered">
+レイマーチングを用いた3Dスキャナーです。
 
 <!--more-->
 
 <img src="/images/works/rm3dscanner/rm3dscanner_2.jpg" width="560" class="has-image-centered">
 
-レイマーチングを用いた3Dスキャナーです。
 VRChatに使用することを想定しています。
 
 カメラコンポーネントで取得した深度値から復元する仕組みです。

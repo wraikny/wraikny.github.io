@@ -3,9 +3,11 @@ layout: post
 title: RouteTiles
 published: 2020-10-1
 tags: game,altseed2
+thumbnail: /images/games/routetiles/RouteTiles-ss-play0.jpg
 ---
 
-<img src="/images/games/routetiles/RouteTiles-ss-play0.jpg" width="560" class="has-image-centered">
+オリジナルパズルゲームRouteTilesです。
+AmusementCreators 2020年夏休み企画として作成しました。
 
 <!--more-->
 
@@ -14,9 +16,6 @@ tags: game,altseed2
 <img src="/images/games/routetiles/RouteTiles-ss-title.jpg" width="560" class="has-image-centered">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Psh8t3xrhy0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-オリジナルパズルゲームRouteTilesです。
-AmusementCreators 2020年夏休み企画として作成しました。
 
 タイルをつなげて消す1人用パズルゲームです。是非、オンラインランキング1位を目指してみてください。
 

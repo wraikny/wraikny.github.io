@@ -93,17 +93,44 @@ let published (post: Postloader.Post) =
 
 let postLayout (useSummary: bool) (post: Postloader.Post) =
     div [Class "card article"] [
-        div [Class "card-content"] [
+        match post.thumbnail with
+        | Some path ->
+            yield div [Class "card-image"] [
+                let thumbnail = image [Src path] []
+
+                if useSummary then a [Href post.link] [thumbnail] else thumbnail
+            ]
+        | None -> ()
+
+        yield div [Class "card-content"] [
             div [Class "media-content has-image-centered"] [
                 p [Class "title article-title"; ] [ a [Href post.link] [!! post.title]]
                 p [Class "subtitle is-6 article-subtitle"] [
-                // a [Href "#"] [!! (defaultArg post.author "")]
-                !! (sprintf "on %s" (published post))
+                    // a [Href "#"] [!! (defaultArg post.author "")]
+                    !! (sprintf "on %s" (published post))
                 ]
             ]
             div [Class "content article-body"] [
                 !! (if useSummary then post.summary else post.content)
 
+            ]
+        ]
+    ]
+
+let postcardsLayout (posts: #seq<Postloader.Post>) =
+    let psts =
+        posts
+        |> Seq.sortByDescending published
+        |> Seq.toList
+        |> List.map (postLayout true)
+    
+    div [Class "container"] [
+        section [Class "articles"] [
+            div [Class "column is-8 is-offset-2"] [
+                div [Class "tile is-parent is-vertical"] (
+                    psts
+                    |> List.map(fun e -> div [Class "tile is-child"] [e])
+                )
             ]
         ]
     ]

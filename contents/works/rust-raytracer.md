@@ -3,18 +3,18 @@ layout: post
 title: Rust Ray Tracer
 published: 2018-6-23
 tags: work
+thumbnail: /images/works/rust-ray-tracer/result1-3000-20.png
 ---
 
-<img src="/images/works/rust-ray-tracer/result1-3000-20.png" width="560" class="has-image-centered">
+サムネイル: サンプリング 3000, 反射回数 20
 
-サンプリング 3000, 反射回数 20
+Rustでレイトレーシングを実装しました。
 
 <!--more-->
 
 <img src="/images/works/rust-ray-tracer/result1-5000-50.png" width="560" class="has-image-centered">
 
 サンプリング 5000, 反射回数 50
-
 
 三葉レイちゃんのこちらの動画
 

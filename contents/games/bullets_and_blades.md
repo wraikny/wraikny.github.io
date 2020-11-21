@@ -3,13 +3,12 @@ layout: post
 title: Bullets&Blades
 published: 2017-5-11
 tags: game,archived,altseed
+thumbnail: /images/games/bullets_and_blades.jpg
 ---
 
-<img src="/images/games/bullets_and_blades.jpg" width="560" class="has-image-centered">
+銃と剣で戦う，シューティング＋αなゲーム。
 
 <!--more-->
-
-銃と剣で戦う，シューティング＋αなゲーム。
 
 プレイヤーは銃と剣を装備して敵を撃破します。
 プレイヤーは銃と剣を切り替えられます。

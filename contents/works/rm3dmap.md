@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Raymarching 3DMap
+title: Raymarching 3DMap for VRChat
 published: 2019-3-24
 tags: work,vrchat,shader
+thumbnail: /images/works/rm3dmap/rm3dmap_cnvillageyae.jpg
 ---
 
-<img src="/images/works/rm3dmap/rm3dmap_cnvillageyae.jpg" width="560" class="has-image-centered">
+カメラコンポーネントからの深度値とレイマーチングを組み合わせて、ワールドのリアルタイム3Dマップを描画するためのシェーダとその機構です。
 
 <!--more-->
-<img src="/images/works/rm3dmap/rm3dmap_fantasy.jpg" width="560" class="has-image-centered">
 
-カメラコンポーネントからの深度値とレイマーチングを組み合わせて、ワールドのリアルタイム3Dマップを描画するためのシェーダとその機構です。
+<img src="/images/works/rm3dmap/rm3dmap_fantasy.jpg" width="560" class="has-image-centered">
 
 イメージ画像使用ワールド
 
