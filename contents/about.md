@@ -4,7 +4,7 @@ wraikny ([reini/れいにー]）
 
 <img src="/images/wraikny/wraikny_illustration.jpg" width="256px">
 
-Illustration by <a href="https://twitter.com/higumasyake" target="_blank" rel="noopener">higumasyake</a>
+Illustrated by [黒色熊猫](https://twitter.com/higumasyake)さん.
 
 ゲーム開発、ゲームエンジン開発、シェーダお絵かき、などしてます。
 
