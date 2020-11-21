@@ -76,6 +76,7 @@ let layout (ctx : SiteContents) active bodyCnt =
           yield! bodyCnt
         ]
         script [ Type "text/javascript"; Src "/js/navbar_burger.js" ] []
+        script [ Type "text/javascript"; Src "/js/external_a.js" ] []
     ]
 
 let render (ctx : SiteContents) cnt =

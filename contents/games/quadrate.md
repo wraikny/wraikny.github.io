@@ -25,6 +25,6 @@ F#製です。
 本作は2018年AmusementCreators 48時間GameJamで作成した後、C94のために作り直したものです。
 C96にて個人サークルでの出展も行いました。
 
-以下のURLから購入することができます。
+以下のBOOTHページから購入することができます。
 
-<a href="https://wraikny.booth.pm/items/967902">Quadrate - wraikny's shop</a>
+[Quadrate - wraikny's shop](https://wraikny.booth.pm/items/967902)

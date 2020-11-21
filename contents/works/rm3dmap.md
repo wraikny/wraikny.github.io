@@ -19,5 +19,4 @@ tags: work,vrchat,shader
 
 BOOTHにて販売しています。
 
-<a href="https://wraikny.booth.pm/items/1285300" target="_blank" rel="noopener">Raymarching 3DMap - wraikny's shop</a>
-
+[Raymarching 3DMap - wraikny's shop](https://wraikny.booth.pm/items/1285300)

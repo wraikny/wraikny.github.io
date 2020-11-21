@@ -24,8 +24,8 @@ AmusementCreators 雙峰祭2019、AmusementCreators C97 の作品集に出した
 
 BOOTHにて無料で公開しています。
 
-<a href="https://wraikny.booth.pm/items/1724085" target="_blank" rel="noopener">Cat Bacuum Cat Flying - wraikny's shop</a>
+[Cat Bacuum Cat Flying - wraikny's shop](https://wraikny.booth.pm/items/1724085)
 
 ソースコード
 
-<a href="https://github.com/wraikny/CatBacuumCatFlying" target="_blank" rel="noopener">CatBacuumCatFlying - GitHub</a>
+[CatBacuumCatFlying - GitHub](https://github.com/wraikny/CatBacuumCatFlying)

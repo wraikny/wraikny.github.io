@@ -22,4 +22,4 @@ F# + Altseed製です。
 
 ソースコード
 
-<a href="https://github.com/wraikny/WhiteDungeon" target="_blank" rel="noopener">CatBacuumCatFlying - GitHub</a>
+[WhiteDungeon - GitHub](https://github.com/wraikny/WhiteDungeon)

@@ -17,4 +17,4 @@ F# + Altseedの練習に作りました。
 
 ソースコード
 
-<a href="https://github.com/wraikny/Cannon" target="_blank" rel="noopener">Cannon - GitHub</a>
+[Cannon - GitHub](https://github.com/wraikny/Cannon)

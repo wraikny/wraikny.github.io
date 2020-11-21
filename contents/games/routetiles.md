@@ -23,14 +23,13 @@ AmusementCreators 2020年夏休み企画として作成しました。
 この商品ページは開発を支援してくださる方向けです。
 以下のリンク先から無料でダウンロードできます。
 
-<a href="https://www.amusement-creators.info/articles/event_2020/20201001/" target="_blank" rel="noopener">夏休みゲームジャム成果発表！！新作大公開SP - AmusementCreators</a>
+[夏休みゲームジャム成果発表！！新作大公開SP - AmusementCreators](https://www.amusement-creators.info/articles/event_2020/20201001)
 
 フリーゲーム夢現さんにも掲載しています。
 
-<a href="https://freegame-mugen.jp/puzzle/game_9137.html" target="_blank" rel="noopener">RouteTiles - フリーゲーム夢現</a>
-
+[RouteTiles - フリーゲーム夢現](https://freegame-mugen.jp/puzzle/game_9137.html)
 
 
 ソースコード
 
-<a href="https://github.com/wraikny/RouteTiles" target="_blank" rel="noopener">RouteTiles - GitHub</a>
+[RouteTiles - GitHub](https://github.com/wraikny/RouteTiles)

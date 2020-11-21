@@ -13,8 +13,8 @@ tags: work,vrchat,shader
 
 BOOTHにて販売しています。
 
-<a href="https://wraikny.booth.pm/items/1222332" target="_blank" rel="noopener">VertexTransformShader - wraikny's shop</a>
+[VertexTransformShader - wraikny's shop](https://wraikny.booth.pm/items/1222332)
 
 ソースコード
 
-<a href="https://github.com/wraikny/VertexTransformShader" target="_blank" rel="noopener">VertexTransformShader - GitHub</a>
+[VertexTransformShader - GitHub](https://github.com/wraikny/VertexTransformShader)

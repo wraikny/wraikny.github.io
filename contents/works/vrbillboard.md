@@ -18,4 +18,4 @@ Fix Yにチェックを入れることでY軸方向の動きを制限でき、�
 
 BOOTHにて販売しています。
 
-<a href="https://wraikny.booth.pm/items/1091055" target="_blank" rel="noopener">Raymarching Cube Shader - wraikny's shop</a>
+[Raymarching Cube Shader - wraikny's shop](https://wraikny.booth.pm/items/1091055)

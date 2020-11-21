@@ -20,5 +20,4 @@ tags: work,vrchat,shader
 
 BOOTHにて販売しています。
 
-<a href="https://wraikny.booth.pm/items/2432301" target="_blank" rel="noopener">Moonlit City Night Shader - wraikny's shop</a>
-
+[Moonlit City Night Shader - wraikny's shop](https://wraikny.booth.pm/items/2432301)

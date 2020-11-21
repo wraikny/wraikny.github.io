@@ -18,4 +18,4 @@ VRChatに使用することを想定しています。
 
 BOOTHにて販売しています。
 
-<a href="https://wraikny.booth.pm/items/1066842" target="_blank" rel="noopener">VRChat向けレイマーチング3Dスキャナー - wraikny's shop</a>
+[VRChat向けレイマーチング3Dスキャナー - wraikny's shop](https://wraikny.booth.pm/items/1066842)

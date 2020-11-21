@@ -19,4 +19,4 @@ Example
 
 リポジトリ
 
-<a href="https://github.com/wraikny/Affogato" target="_blank" rel="noopener">Affogato - GitHub</a>
+[Affogato - GitHub](https://github.com/wraikny/Affogato)

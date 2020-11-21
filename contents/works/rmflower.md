@@ -18,5 +18,4 @@ tags: work,vrchat,shader
 
 BOOTHにて販売しています。
 
-<a href="https://wraikny.booth.pm/items/1289241" target="_blank" rel="noopener">Raymarching Flower Shader - wraikny's shop</a>
-
+[Raymarching Flower Shader - wraikny's shop](https://wraikny.booth.pm/items/1289241)

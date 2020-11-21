@@ -17,5 +17,4 @@ VRChat/Unityで使用可能です。
 
 BOOTHにて販売しています。
 
-<a href="https://wraikny.booth.pm/items/1282470" target="_blank" rel="noopener">GPUP Rose Circle - wraikny's shop</a>
-
+[GPUP Rose Circle - wraikny's shop](https://wraikny.booth.pm/items/1282470)

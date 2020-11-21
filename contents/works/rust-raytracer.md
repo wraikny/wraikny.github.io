@@ -18,11 +18,12 @@ tags: work
 
 三葉レイちゃんのこちらの動画
 
-- <a href="https://www.youtube.com/watch?v=4XeJEDuhyPs&t=379s" target="_blank" rel="noopenner">【レイトレ】CG技術系バーチャルYoutuber、レイトレーシングしてみた</a>
-- <a href="https://www.youtube.com/watch?v=hzeT48zUx1M" target="_blank" rel="noopenner">【レイトレ】レイトレーシングで鏡面反射と屈折</a>
+- [【レイトレ】CG技術系バーチャルYoutuber、レイトレーシングしてみた](https://www.youtube.com/watch?v=4XeJEDuhyPs)
+- [【レイトレ】レイトレーシングで鏡面反射と屈折](https://www.youtube.com/watch?v=hzeT48zUx1M)
 
 を受講して、Rustでレイトレーシングを実装しました。
 
 ソースコード
 
-<a href="https://github.com/wraikny/ray-trace-rust/" target="_blank" rel="noopener">ray-trace-rust - GitHub</a>
+<a href="/" target="_blank" rel="noopener"></a>
+[ray-trace-rust - GitHub](https://github.com/wraikny/ray-trace-rust)
