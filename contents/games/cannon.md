@@ -10,7 +10,9 @@ thumbnail: /images/games/cannon/cannon_game.jpg
 
 <!--more-->
 
-<img src="/images/games/cannon/cannon_title.jpg" width="560" class="has-image-centered">
+<p>
+    <img src="/images/games/cannon/cannon_title.jpg" width="560" class="has-image-centered">
+</p>
 
 F# + Altseedの練習に作りました。
 

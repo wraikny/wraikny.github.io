@@ -10,9 +10,13 @@ thumbnail: /images/works/moonlitcitynight/moonlitcitynight-1.jpg
 
 <!--more-->
 
-<img src="/images/works/moonlitcitynight/moonlitcitynight-2.jpg" width="560" class="has-image-centered">
+<p>
+    <img src="/images/works/moonlitcitynight/moonlitcitynight-2.jpg" width="560" class="has-image-centered">
+</p>
 
-<img src="/images/works/moonlitcitynight/moonlitcitynight-3.jpg" width="560" class="has-image-centered">
+<p>
+    <img src="/images/works/moonlitcitynight/moonlitcitynight-3.jpg" width="560" class="has-image-centered">
+</p>
 
 レイマーチングで描画しているので、3Dに見えます。
 

@@ -10,9 +10,13 @@ thumbnail: /images/games/umbra/umbra_trial_title.jpg
 
 <!--more-->
 
-<img src="/images/games/umbra/umbra_trial_game1.jpg" width="560" class="has-image-centered">
+<p>
+    <img src="/images/games/umbra/umbra_trial_game1.jpg" width="560" class="has-image-centered">
+</p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/s7QKNJtA5jQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/s7QKNJtA5jQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
 
 個人サークルでコミックマーケット95にて頒布しました。

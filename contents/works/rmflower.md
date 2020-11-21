@@ -9,9 +9,13 @@ thumbnail: /images/works/rmflower/rmflower-1.jpg
 レイマーチングを用いて花をレンダリングするシェーダです。
 
 <!--more-->
-<img src="/images/works/rmflower/rmflower-2.jpg" width="560" class="has-image-centered">
+<p>
+    <img src="/images/works/rmflower/rmflower-2.jpg" width="560" class="has-image-centered">
+</p>
 
-<img src="/images/works/rmflower/rmflower-3.jpg" width="560" class="has-image-centered">
+<p>
+    <img src="/images/works/rmflower/rmflower-3.jpg" width="560" class="has-image-centered">
+</p>
 
 パラメータで形状を変えられます。
 

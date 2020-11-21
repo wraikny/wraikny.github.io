@@ -11,6 +11,8 @@ thumbnail: /images/games/shadow_world/shadow_world_game.jpg
 
 <!--more-->
 
-<img src="/images/games/shadow_world/shadow_world_title.jpg" width="560" class="has-image-centered">
+<p>
+    <img src="/images/games/shadow_world/shadow_world_title.jpg" width="560" class="has-image-centered">
+</p>
 
 本作はゲーム製作サークルAmusement Creators(Twitter: @ac_is_not_am )のC93の作品としてミニゲーム集に収録したものです。

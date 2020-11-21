@@ -10,7 +10,9 @@ thumbnail: /images/works/rm3dmap/rm3dmap_cnvillageyae.jpg
 
 <!--more-->
 
-<img src="/images/works/rm3dmap/rm3dmap_fantasy.jpg" width="560" class="has-image-centered">
+<p>
+    <img src="/images/works/rm3dmap/rm3dmap_fantasy.jpg" width="560" class="has-image-centered">
+</p>
 
 イメージ画像使用ワールド
 

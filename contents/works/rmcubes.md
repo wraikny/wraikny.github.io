@@ -10,9 +10,13 @@ thumbnail: /images/works/rmcubes/rmcubes-1.jpg
 
 <!--more-->
 
-<img src="/images/works/rmcubes/rmcubes-2.jpg" width="560" class="has-image-centered">
+<p>
+    <img src="/images/works/rmcubes/rmcubes-2.jpg" width="560" class="has-image-centered">
+</p>
 
-<img src="/images/works/rmcubes/rmcubes-3.jpg" width="560" class="has-image-centered">
+<p>
+    <img src="/images/works/rmcubes/rmcubes-3.jpg" width="560" class="has-image-centered">
+</p>
 
 BOOTHにて販売しています。
 

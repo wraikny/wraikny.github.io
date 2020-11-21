@@ -10,7 +10,9 @@ thumbnail: /images/works/rm3dscanner/rm3dscanner_1.jpg
 
 <!--more-->
 
-<img src="/images/works/rm3dscanner/rm3dscanner_2.jpg" width="560" class="has-image-centered">
+<p>
+    <img src="/images/works/rm3dscanner/rm3dscanner_2.jpg" width="560" class="has-image-centered">
+</p>
 
 VRChatに使用することを想定しています。
 

@@ -11,7 +11,9 @@ thumbnail: /images/games/drops/drops_title.jpg
 
 <!--more-->
 
-<img src="/images/games/drops/drops_game.jpg" width="560" class="has-image-centered">
+<p>
+    <img src="/images/games/drops/drops_game.jpg" width="560" class="has-image-centered">
+</p>
 
 C# + Altseed製です。習作も兼ねていました。
 

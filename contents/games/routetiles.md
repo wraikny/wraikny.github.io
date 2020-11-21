@@ -11,11 +11,18 @@ AmusementCreators 2020年夏休み企画として作成しました。
 
 <!--more-->
 
-<img src="/images/games/routetiles/RouteTiles-ss-play1.jpg" width="560" class="has-image-centered">
+<p>
+    <img src="/images/games/routetiles/RouteTiles-ss-play1.jpg" width="560" class="has-image-centered">
+</p>
 
-<img src="/images/games/routetiles/RouteTiles-ss-title.jpg" width="560" class="has-image-centered">
+<p>
+    <img src="/images/games/routetiles/RouteTiles-ss-title.jpg" width="560" class="has-image-centered">
+</p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Psh8t3xrhy0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Psh8t3xrhy0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+</p>
 
 タイルをつなげて消す1人用パズルゲームです。是非、オンラインランキング1位を目指してみてください。
 

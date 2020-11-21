@@ -11,9 +11,13 @@ thumbnail: /images/games/quadrate/quadrate_game2.jpg
 
 <!--more-->
 
-<img src="/images/games/quadrate/quadrate_game1.jpg" width="560" class="has-image-centered">
+<p>
+    <img src="/images/games/quadrate/quadrate_game1.jpg" width="560" class="has-image-centered">
+</p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/B1kmPqXCSNs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/B1kmPqXCSNs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
 スキルには、ダメージを与えるもの、回復するもの、ステータスを変化させるものなど、様々な種類があります。
 

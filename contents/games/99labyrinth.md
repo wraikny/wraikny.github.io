@@ -10,7 +10,9 @@ thumbnail: /images/games/99labyrinth/99labyrinth_2019summer_game.jpg
 
 <!--more-->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-SMUDiT-xSw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-SMUDiT-xSw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
 2019年前半に開発中で止まっています。
 開発していたシステムやリソースは活かしつつ、別の形でまたつくりたいという気持ちがあります。

@@ -12,7 +12,9 @@ Rustでレイトレーシングを実装しました。
 
 <!--more-->
 
-<img src="/images/works/rust-ray-tracer/result1-5000-50.png" width="560" class="has-image-centered">
+<p>
+    <img src="/images/works/rust-ray-tracer/result1-5000-50.png" width="560" class="has-image-centered">
+</p>
 
 サンプリング 5000, 反射回数 50
 
