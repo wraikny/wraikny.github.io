@@ -56,7 +56,6 @@ let layout (ctx : SiteContents) active bodyCnt =
             link [Rel "stylesheet"; Href "https://fonts.googleapis.com/css?family=Open+Sans"]
             link [Rel "stylesheet"; Href "https://unpkg.com/bulma@0.8.0/css/bulma.min.css"]
             link [Rel "stylesheet"; Type "text/css"; Href "/style/style.css"]
-
         ]
         body [] [
           nav [Class "navbar"] [
@@ -76,6 +75,7 @@ let layout (ctx : SiteContents) active bodyCnt =
           ]
           yield! bodyCnt
         ]
+        script [ Type "text/javascript"; Src "/js/navbar_burger.js" ] []
     ]
 
 let render (ctx : SiteContents) cnt =
