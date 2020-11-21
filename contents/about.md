@@ -4,7 +4,11 @@ wraikny ([reini/れいにー]）
 
 <img src="/images/wraikny/wraikny_illustration.jpg" width="256px">
 
-Illustrated by [黒色熊猫](https://twitter.com/higumasyake)さん.
+（イラスト:[黒色熊猫](https://twitter.com/higumasyake)さん.）
+
+<img src="/images/wraikny/wraikny_vrcphoto.jpg" width="512px">
+
+（アバター:[シリウス](https://booth.pm/ja/items/1723127) by [ひゅうがなつ](https://twitter.com/hyuuuuganatu)）
 
 ゲーム開発、ゲームエンジン開発、シェーダお絵かき、などしてます。
 
@@ -23,7 +27,6 @@ Illustrated by [黒色熊猫](https://twitter.com/higumasyake)さん.
 - GameDev, Game AI, Automatic Creation
 - Game Engine
 - Functional Programming
-
 
 ## Links
 - [wraikny - フリーゲーム夢現](https://freegame-mugen.jp/cms/mt-cp.fcgi?__mode=view&blog_id=1&id=4393)
