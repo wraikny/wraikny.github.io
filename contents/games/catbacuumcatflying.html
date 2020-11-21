@@ -1,0 +1,105 @@
+<html>
+  <head>
+
+        <script type="text/javascript">
+          var wsUri = "ws://localhost:8080/websocket";
+      function init()
+      {
+        websocket = new WebSocket(wsUri);
+        websocket.onclose = function(evt) { onClose(evt) };
+      }
+      function onClose(evt)
+      {
+        console.log('closing');
+        websocket.close();
+        document.location.reload();
+      }
+      window.addEventListener("load", init, false);
+      </script>
+            <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      wraikny's
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/about.html">
+            About
+          </a>
+          <a class="navbar-item" href="/contents/games/index.html">
+            Games
+          </a>
+          <a class="navbar-item" href="/contents/works/index.html">
+            Works
+          </a>
+          <a class="navbar-item" href="/contents/articles/index.html">
+            Articles
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info is-medium is-bold">
+      <div class="hero-body">
+        <div class="container has-image-centered">
+          <h1 class="title">
+            wraikny's
+          </h1>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="articles">
+        <div class="column is-8 is-offset-2">
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-image-centered">
+                <p class="title article-title">
+                  <a href="/contents/games/catbacuumcatflying.html">
+                    Cat Bacuum Cat Flying
+                  </a>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  on 2019-11-04
+                </p>
+              </div>
+              <div class="content article-body">
+                <img src="/images/games/cbcf.jpg" width="560" class="has-image-centered">
+<!--more-->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CclVTeZg8_k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>掃除機で猫を吸って、飛んでくる猫を避けよう！！！<br />
+猫に当たると走馬灯が現れます。猫に想いを馳せる。<br />
+クッキーを取ると回復！！　コインを取ると得点！！<br />
+高ステージ・ハイスコアを目指してね！！</p>
+<p>F# + Altseed製です。</p>
+<p>AmusementCreators 雙峰祭2019、AmusementCreators C97 の作品集に出した作品です。クソゲーです、たまにはこういうのもいいですね。</p>
+<p>プレイのたびにThe Cat APIを叩いて画像を取得します。</p>
+<p>BOOTHにて無料で公開しています。</p>
+<p><a href="https://wraikny.booth.pm/items/1724085" target="_blank" rel="noopener">Cat Bacuum Cat Flying - wraikny's shop</a></p>
+<p>ソースコード</p>
+<p><a href="https://github.com/wraikny/CatBacuumCatFlying" target="_blank" rel="noopener">CatBacuumCatFlying - GitHub</a></p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

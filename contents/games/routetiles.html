@@ -1,0 +1,106 @@
+<html>
+  <head>
+
+        <script type="text/javascript">
+          var wsUri = "ws://localhost:8080/websocket";
+      function init()
+      {
+        websocket = new WebSocket(wsUri);
+        websocket.onclose = function(evt) { onClose(evt) };
+      }
+      function onClose(evt)
+      {
+        console.log('closing');
+        websocket.close();
+        document.location.reload();
+      }
+      window.addEventListener("load", init, false);
+      </script>
+            <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      wraikny's
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/about.html">
+            About
+          </a>
+          <a class="navbar-item" href="/contents/games/index.html">
+            Games
+          </a>
+          <a class="navbar-item" href="/contents/works/index.html">
+            Works
+          </a>
+          <a class="navbar-item" href="/contents/articles/index.html">
+            Articles
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info is-medium is-bold">
+      <div class="hero-body">
+        <div class="container has-image-centered">
+          <h1 class="title">
+            wraikny's
+          </h1>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="articles">
+        <div class="column is-8 is-offset-2">
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-image-centered">
+                <p class="title article-title">
+                  <a href="/contents/games/routetiles.html">
+                    RouteTiles
+                  </a>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  on 2020-10-01
+                </p>
+              </div>
+              <div class="content article-body">
+                <img src="/images/games/routetiles/RouteTiles-ss-play0.jpg" width="560" class="has-image-centered">
+<!--more-->
+<img src="/images/games/routetiles/RouteTiles-ss-play1.jpg" width="560" class="has-image-centered">
+<img src="/images/games/routetiles/RouteTiles-ss-title.jpg" width="560" class="has-image-centered">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Psh8t3xrhy0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>オリジナルパズルゲームRouteTilesです。
+AmusementCreators 2020年夏休み企画として作成しました。</p>
+<p>タイルをつなげて消す1人用パズルゲームです。是非、オンラインランキング1位を目指してみてください。</p>
+<p>この商品ページは開発を支援してくださる方向けです。
+以下のリンク先から無料でダウンロードできます。</p>
+<p><a href="https://www.amusement-creators.info/articles/event_2020/20201001/" target="_blank" rel="noopener">夏休みゲームジャム成果発表！！新作大公開SP - AmusementCreators</a></p>
+<p>フリーゲーム夢現さんにも掲載しています。</p>
+<p><a href="https://freegame-mugen.jp/puzzle/game_9137.html" target="_blank" rel="noopener">RouteTiles - フリーゲーム夢現</a></p>
+<p>ソースコード</p>
+<p><a href="https://github.com/wraikny/RouteTiles" target="_blank" rel="noopener">RouteTiles - GitHub</a></p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

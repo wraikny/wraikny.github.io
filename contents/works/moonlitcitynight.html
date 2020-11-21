@@ -1,0 +1,100 @@
+<html>
+  <head>
+
+        <script type="text/javascript">
+          var wsUri = "ws://localhost:8080/websocket";
+      function init()
+      {
+        websocket = new WebSocket(wsUri);
+        websocket.onclose = function(evt) { onClose(evt) };
+      }
+      function onClose(evt)
+      {
+        console.log('closing');
+        websocket.close();
+        document.location.reload();
+      }
+      window.addEventListener("load", init, false);
+      </script>
+            <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      wraikny's
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/about.html">
+            About
+          </a>
+          <a class="navbar-item" href="/contents/games/index.html">
+            Games
+          </a>
+          <a class="navbar-item" href="/contents/works/index.html">
+            Works
+          </a>
+          <a class="navbar-item" href="/contents/articles/index.html">
+            Articles
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info is-medium is-bold">
+      <div class="hero-body">
+        <div class="container has-image-centered">
+          <h1 class="title">
+            wraikny's
+          </h1>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="articles">
+        <div class="column is-8 is-offset-2">
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-image-centered">
+                <p class="title article-title">
+                  <a href="/contents/works/moonlitcitynight.html">
+                    Moonlit City Night Shader
+                  </a>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  on 2020-10-07
+                </p>
+              </div>
+              <div class="content article-body">
+                <img src="/images/works/moonlitcitynight/moonlitcitynight-1.jpg" width="560" class="has-image-centered">
+<!--more-->
+<img src="/images/works/moonlitcitynight/moonlitcitynight-2.jpg" width="560" class="has-image-centered">
+<img src="/images/works/moonlitcitynight/moonlitcitynight-3.jpg" width="560" class="has-image-centered">
+<p>月に照らされた夜のビル群を観る夜景のシェーダです。レイマーチングで描画しているので、3Dに見えます。</p>
+<p>アクセサリや服やワールドオブジェクト・背景として使うことを想定していますが、発想次第でお好きにお使いください。</p>
+<p>多分GPU Instancing対応してる気がします。</p>
+<p>BOOTHにて販売しています。</p>
+<p><a href="https://wraikny.booth.pm/items/2432301" target="_blank" rel="noopener">Moonlit City Night Shader - wraikny's shop</a></p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

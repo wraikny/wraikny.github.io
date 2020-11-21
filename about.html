@@ -1,0 +1,110 @@
+<html>
+  <head>
+
+        <script type="text/javascript">
+          var wsUri = "ws://localhost:8080/websocket";
+      function init()
+      {
+        websocket = new WebSocket(wsUri);
+        websocket.onclose = function(evt) { onClose(evt) };
+      }
+      function onClose(evt)
+      {
+        console.log('closing');
+        websocket.close();
+        document.location.reload();
+      }
+      window.addEventListener("load", init, false);
+      </script>
+            <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      wraikny's
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <a class="navbar-item is-active" href="/about.html">
+            About
+          </a>
+          <a class="navbar-item" href="/contents/games/index.html">
+            Games
+          </a>
+          <a class="navbar-item" href="/contents/works/index.html">
+            Works
+          </a>
+          <a class="navbar-item" href="/contents/articles/index.html">
+            Articles
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info is-medium is-bold">
+      <div class="hero-body">
+        <div class="container has-image-centered">
+          <h1 class="title">
+            About
+          </h1>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="articles">
+        <div class="column is-8 is-offset-2">
+          <div class="card article">
+            <div class="card-content">
+              <div class="content article-body">
+                <h2>Profile</h2>
+<p>wraikny ([reini/れいにー]）</p>
+<img src="/images/wraikny/wraikny_illustration.jpg" width="256px">
+<p>Illustration by <a href="https://twitter.com/higumasyake" target="_blank" rel="noopener">higumasyake</a></p>
+<p>ゲーム開発、ゲームエンジン開発、シェーダお絵かき、などしてます。</p>
+<ul>
+<li><a href="https://github.com/wraikny" target="_blank" rel="noopener">wraikny - GitHub</a></li>
+<li><a href="https://twitter.com/wraikny" target="_blank" rel="noopener">wraikny - Twitter</a></li>
+<li>writtenknown(at)gmail.com</li>
+</ul>
+<h2>Group</h2>
+<ul>
+<li><a href="https://www.amusement-creators.info" target="_blank" rel="noopener">AmusementCreators</a> from 2017-5.</li>
+<li><a href="https://www.mast.tsukuba.ac.jp/" target="_blank" rel="noopener">Media Arts, Science and Technology</a> in <a href="https://www.tsukuba.ac.jp/" target="_blank" rel="noopener">University of Tsukuba</a> from 2017-4.</li>
+</ul>
+<h2>Interests</h2>
+<ul>
+<li>F#, C#, Rust, Shader</li>
+<li>Computer Graphics</li>
+<li>GameDev, Game AI, Automatic Creation</li>
+<li>Game Engine</li>
+<li>Functional Programming</li>
+</ul>
+<h2>Links</h2>
+<ul>
+<li><a href="https://freegame-mugen.jp/cms/mt-cp.fcgi?__mode=view&blog_id=1&id=4393" target="_blank" rel="noopener">wraikny - フリーゲーム夢現</a></li>
+<li><a href="https://wraikny.booth.pm" target="_blank" rel="noopener">wraikny's - BOOTH</a></li>
+<li><a href="https://www.youtube.com/channel/UCZ9gPqMn0Vtd0NTIAQtrt2Q" target="_blank" rel="noopener">wraikny - YouTube</a></li>
+</ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

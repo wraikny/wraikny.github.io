@@ -1,0 +1,102 @@
+<html>
+  <head>
+
+        <script type="text/javascript">
+          var wsUri = "ws://localhost:8080/websocket";
+      function init()
+      {
+        websocket = new WebSocket(wsUri);
+        websocket.onclose = function(evt) { onClose(evt) };
+      }
+      function onClose(evt)
+      {
+        console.log('closing');
+        websocket.close();
+        document.location.reload();
+      }
+      window.addEventListener("load", init, false);
+      </script>
+            <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      wraikny's
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/about.html">
+            About
+          </a>
+          <a class="navbar-item" href="/contents/games/index.html">
+            Games
+          </a>
+          <a class="navbar-item" href="/contents/works/index.html">
+            Works
+          </a>
+          <a class="navbar-item" href="/contents/articles/index.html">
+            Articles
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info is-medium is-bold">
+      <div class="hero-body">
+        <div class="container has-image-centered">
+          <h1 class="title">
+            wraikny's
+          </h1>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="articles">
+        <div class="column is-8 is-offset-2">
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-image-centered">
+                <p class="title article-title">
+                  <a href="/contents/works/affogato.html">
+                    Affogato
+                  </a>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  on 2019-10-14
+                </p>
+              </div>
+              <div class="content article-body">
+                <p>Affgato is a library of F# SRTP based linear algebra and algorithms for game programming.</p>
+<p>Example</p>
+<div style='margin: 0px; padding: 0px; border: 1px solid #ececec; font-family: Monaco, Menlo, Consolas, monospace;'><style type='text/css'>.fs-str {color: #d14;} .fs-key {color: blue;} .fs-com {color: green; font-style: italic;}</style><table><tr><td style='padding: 5px; vertical-align: top; background-color: #ececec; color: rgb(160, 160, 160); font-size: 15px;'><span>1</span><br /><span>2</span><br /><span>3</span><br /><span>4</span><br /><span>5</span><br /><span>6</span><br /><span>7</span></td><td style='font-size: 15px; vertical-align: top; padding: 5px;'><pre style='margin: 0px; border: none; padding: 0; white-space: pre; font-size: 15px; background-color: white; font-family: Monaco, Menlo, Consolas, monospace;'><span class='fs-key'>open </span>Affogato
+<span class='fs-key'>let </span>v1 = Vector2.init 1 0 <span class='fs-com'>// int Vector2</span>
+<span class='fs-key'>let </span>v2 = Vector2.init 2.1f 3.4f <span class='fs-com'>// float32 Vector2</span>
+<span class='fs-key'>let </span>v3 = v1 |&gt; Vector.map float32 <span class='fs-com'>// float32 Vector2</span>
+<span class='fs-key'>let </span>v4 = v2 / v3 .* 2.0f * v2.yy + v3.xx <span class='fs-com'>// float32 Vector2</span>
+<span class='fs-key'>let </span>r1 = Rectangle.init v3 v4 <span class='fs-com'>// float32 Vector2 Rectangle</span>
+<span class='fs-key'>let </span>k = Vector.dot v2 v3 <span class='fs-com'>// float32</span></pre></td></tr></table><div style='font-weight: bold; padding: 10px;'>Created with <a href='http://fslight.apphb.com/' target='_blank'>FsLight</a></div></div>
+<p>リポジトリ</p>
+<p><a href="https://github.com/wraikny/Affogato" target="_blank" rel="noopener">Affogato - GitHub</a></p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
