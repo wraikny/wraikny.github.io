@@ -35,7 +35,8 @@ AmusementCreators 2020年夏休み企画として作成しました。
 
 [RouteTiles - フリーゲーム夢現](https://freegame-mugen.jp/puzzle/game_9137.html)
 
-
 ソースコード
 
 [RouteTiles - GitHub](https://github.com/wraikny/RouteTiles)
+
+<blockquote class="twitter-tweet" data-theme="light"><p lang="ja" dir="ltr">改めまして、オリジナルゲームRouteTilesがリリースされました！　タイルをつなげて消すパズルゲームです。是非、オンラインランキング1位を目指してみてください！　リンク先から無料でダウンロードできます。<br><br>OS: Windows, OSX<br>ゲームパッド対応<a href="https://t.co/0CIzymzgnC">https://t.co/0CIzymzgnC</a> <a href="https://t.co/zaqPcJyNtq">pic.twitter.com/zaqPcJyNtq</a></p>&mdash; wraikny (@wraikny) <a href="https://twitter.com/wraikny/status/1311631251632136192?ref_src=twsrc%5Etfw">October 1, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 

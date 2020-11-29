@@ -46,7 +46,7 @@ let layout (ctx : SiteContents) active bodyCnt =
     let ttl =
         siteInfo
         |> Option.map (fun si ->
-            if active <> null && active <> ""
+            if active <> null && active <> "" && active <> "Home"
             then sprintf "%s - %s" active si.title
             else si.title
         )
