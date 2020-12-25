@@ -20,3 +20,9 @@ thumbnail: /images/games/drops/drops_title.jpg
 C# + Altseed製です。習作も兼ねていました。
 
 本作はAmusementCreatorsのC93の作品としてミニゲーム集に収録したものです．
+
+Windows/Macで動作します。
+
+以下のページからダウンロードできます。
+
+[DROPS - フリーゲーム夢現](https://freegame-mugen.jp/puzzle/game_6795.html)

@@ -16,3 +16,9 @@ thumbnail: /images/games/shadow_world/shadow_world_game.jpg
 </p>
 
 本作はゲーム製作サークルAmusement Creators(Twitter: @ac_is_not_am )のC93の作品としてミニゲーム集に収録したものです。
+
+Windows/Macで動作します。
+
+以下のページからダウンロードできます。
+
+[Shadow World フリーゲーム夢現](https://freegame-mugen.jp/action/game_6794.html)
