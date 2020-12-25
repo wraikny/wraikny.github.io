@@ -14,6 +14,8 @@ thumbnail: /images/games/cannon/cannon_game.jpg
     <img src="/images/games/cannon/cannon_title.jpg" width="560" class="has-image-centered">
 </p>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hO5Z9nGnnN8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 F# + Altseedの練習に作りました。
 
 ソースコード
