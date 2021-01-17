@@ -45,7 +45,7 @@ AmusementCreators中心に開発中のゲームエンジン[Altseed2](https://gi
 
 - F#, C#, Rust, Shader
 - Computer Graphics
-- GameDev, Game AI, Automatic Creation
+- GameDev, Game AI, Procedural Generation
 - Game Engine
 - Functional Programming
 - Functional Reactive Programming
