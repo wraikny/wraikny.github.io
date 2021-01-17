@@ -49,7 +49,7 @@ AmusementCreators中心に開発中のゲームエンジン[Altseed2](https://gi
 - Game Engine
 - Functional Programming
 - Functional Reactive Programming
-- Computatinal Effect
+- Computational Effect
 
 ## Links
 
