@@ -59,3 +59,4 @@ AmusementCreators中心に開発中のゲームエンジン[Altseed2](https://gi
 - [wraikny's - BOOTH](https://wraikny.booth.pm)
 - [wraikny - YouTube](https://www.youtube.com/channel/UCZ9gPqMn0Vtd0NTIAQtrt2Q)
 - [wraikny - AmusementCreators](https://www.amusement-creators.info/authors/wraikny/)
+- [wraikny - Scrapbox](https://scrapbox.io/wraikny/)
