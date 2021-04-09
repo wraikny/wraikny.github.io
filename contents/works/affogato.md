@@ -5,7 +5,10 @@ published: 2019-10-14
 tags: work,library
 ---
 
-AffogatoはF#でのゲームプログラミングを目的とした、SRTPによるベクトル型と、いくつかのアルゴリズムのためのライブラリです。
+Affogato は F# でのゲームプログラミングを目的とした、SRTP によるベクトル型と、いくつかのアルゴリズムのためのライブラリです。
+
+- [Affogato - GitHub](https://github.com/wraikny/Affogato)
+- [Affogato - NuGet Gallery](https://www.nuget.org/packages/Affogato/)
 
 Example
 
@@ -16,7 +19,3 @@ Example
 <span class='fs-key'>let </span>v4 = v2 / v3 .* 2.0f * v2.yy + v3.xx <span class='fs-com'>// float32 Vector2</span>
 <span class='fs-key'>let </span>r1 = Rectangle.init v3 v4 <span class='fs-com'>// float32 Vector2 Rectangle</span>
 <span class='fs-key'>let </span>k = Vector.dot v2 v3 <span class='fs-com'>// float32</span></pre></td></tr></table><div style='font-weight: bold; padding: 10px;'>Created with <a href='http://fslight.apphb.com/' target='_blank'>FsLight</a></div></div>
-
-リポジトリはこちらです。
-
-[Affogato - GitHub](https://github.com/wraikny/Affogato)
