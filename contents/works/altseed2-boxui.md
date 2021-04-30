@@ -9,6 +9,7 @@ Altseed2.BoxUI は、[ゲームエンジンAltseed2](https://altseed.github.io/)
 Element による再帰的な矩形領域の計算と、オブジェクトプーリングによるキャッシュがポイントです。
 
 - [wraikny/Altseed2.BoxUI - GitHub](https://github.com/wraikny/Altseed2.BoxUI)
+- [Altseed2.BoxUI - NuGet Gallery](https://www.nuget.org/packages/Altseed2.BoxUI/)
 
 
 解説記事を書きました。
