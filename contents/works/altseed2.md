@@ -7,6 +7,9 @@ tags: work,library
 
 Altseed2 は画面描画・音・入力・衝突判定などの機能をまとめたゲームエンジンです。
 
+- [Altseed2](http://altseed.github.io)
+- [Altseed2 - NuGet Gallery](https://www.nuget.org/packages/Altseed2/)
+
 Core(C++), Engine(C#) 共にメインコミッターの一人として、主に以下の機能の開発に関わりました。
 
 * フォント・文字描画
@@ -16,5 +19,3 @@ Core(C++), Engine(C#) 共にメインコミッターの一人として、主に�
 * .NETツールの作成
 * 一部のCI設定
 * 全体的なバグ修正・リファクタリング
-
-- [Altseed2](http://altseed.github.io)
