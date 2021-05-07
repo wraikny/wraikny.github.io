@@ -2,7 +2,7 @@
 layout: post
 title: Altseed2 (OSS, 複数人開発)
 published: 2021-4-30
-tags: work,library
+tags: library,altseed2,cpp,csharp
 ---
 
 Altseed2 は画面描画・音・入力・衝突判定などの機能をまとめたゲームエンジンです。

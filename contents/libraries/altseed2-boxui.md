@@ -2,7 +2,7 @@
 layout: post
 title: Altseed2.BoxUI
 published: 2020-12-25
-tags: work,library
+tags: library,altseed2,csharp
 ---
 
 Altseed2.BoxUI は、ゲームエンジン [Altseed2](https://altseed.github.io/) を使って宣言的UIを軽量に作成することを支援するライブラリです。

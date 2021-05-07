@@ -2,7 +2,7 @@
 layout: post
 title: Affogato
 published: 2019-10-14
-tags: work,library
+tags: library,fsharp
 ---
 
 Affogato は F# でのゲームプログラミングを目的とした、SRTP によるベクトル型と、いくつかのアルゴリズムのためのライブラリです。

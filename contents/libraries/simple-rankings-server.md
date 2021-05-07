@@ -2,7 +2,7 @@
 layout: post
 title: Simple Rankings Server
 published: 2020-4-25
-tags: work,server,application
+tags: library,server
 ---
 
 Simple Rankings Serverは、複数のゲームのオンラインランキングを単一のサーバーで手軽に管理することを目的としたREST-APIサーバーです。

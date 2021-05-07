@@ -2,14 +2,14 @@
 layout: post
 title: EffFs
 published: 2021-4-9
-tags: work,library
+tags: library,fsharp
 ---
 
 EffFsは、SRTP を用いた F# の Effect System ライブラリです。
 
 SideEffect や Dependency を静的に解決することができます。
 
-- [EffFs - GitHub](https://github.com/wraikny/EffFs)
+- [wraikny/EffFs - GitHub](https://github.com/wraikny/EffFs)
 - [EffFs - NuGet Gallery](https://www.nuget.org/packages/EffFs/)
 
 <!--more-->

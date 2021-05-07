@@ -47,8 +47,9 @@ let config = {
         {Script = "staticfile.fsx"; Trigger = OnFilePredicate staticPredicate; OutputFile = SameFileName }
         {Script = "index.fsx"; Trigger = Once; OutputFile = NewFileName "index.html" }
         {Script = "about.fsx"; Trigger = Once; OutputFile = NewFileName "about.html" }
-        {Script = "gamesindex.fsx"; Trigger = Once; OutputFile = NewFileName "contents/games/index.html" }
-        {Script = "worksindex.fsx"; Trigger = Once; OutputFile = NewFileName "contents/works/index.html" }
-        {Script = "articlesindex.fsx"; Trigger = Once; OutputFile = NewFileName "contents/articles/index.html" }
+        {Script = "indexgames.fsx"; Trigger = Once; OutputFile = NewFileName "contents/games/index.html" }
+        {Script = "indexworks.fsx"; Trigger = Once; OutputFile = NewFileName "contents/works/index.html" }
+        {Script = "indexlibraries.fsx"; Trigger = Once; OutputFile = NewFileName "contents/libraries/index.html" }
+        // {Script = "indexarticles.fsx"; Trigger = Once; OutputFile = NewFileName "contents/articles/index.html" }
     ]
 }
