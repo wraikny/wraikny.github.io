@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap"/>
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css"/>
     <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/vs.min.css"/>
   </head>
   <body>
     <nav class="navbar">
@@ -32,6 +33,9 @@
           <a class="navbar-item" href="/contents/works/index.html">
             Works
           </a>
+          <a class="navbar-item" href="/contents/libraries/index.html">
+            Libraries
+          </a>
         </div>
       </div>
     </nav>
@@ -39,19 +43,19 @@
       <div class="hero-body">
         <div class="container has-image-centered">
           <h1 class="title">
-            wraikny's
+            Affogato
           </h1>
         </div>
       </div>
     </section>
     <div class="container">
       <section class="articles">
-        <div class="column is-8 is-offset-2">
+        <div class="column is-10 is-offset-1">
           <div class="card article">
             <div class="card-content">
               <div class="media-content has-image-centered">
                 <p class="title article-title">
-                  <a href="/contents/works/affogato.html">
+                  <a href="/contents/libraries/affogato.html">
                     Affogato
                   </a>
                 </p>
@@ -65,14 +69,15 @@
 <li><a href="https://github.com/wraikny/Affogato">Affogato - GitHub</a></li>
 <li><a href="https://www.nuget.org/packages/Affogato/">Affogato - NuGet Gallery</a></li>
 </ul>
-<p>Example</p>
-<div style='margin: 0px; padding: 0px; border: 1px solid #ececec; font-family: Monaco, Menlo, Consolas, monospace;'><style type='text/css'>.fs-str {color: #d14;} .fs-key {color: blue;} .fs-com {color: green; font-style: italic;}</style><table><tr><td style='padding: 5px; vertical-align: top; background-color: #ececec; color: rgb(160, 160, 160); font-size: 15px;'><span>1</span><br /><span>2</span><br /><span>3</span><br /><span>4</span><br /><span>5</span><br /><span>6</span><br /><span>7</span></td><td style='font-size: 15px; vertical-align: top; padding: 5px;'><pre style='margin: 0px; border: none; padding: 0; white-space: pre; font-size: 15px; background-color: white; font-family: Monaco, Menlo, Consolas, monospace;'><span class='fs-key'>open </span>Affogato
-<span class='fs-key'>let </span>v1 = Vector2.init 1 0 <span class='fs-com'>// int Vector2</span>
-<span class='fs-key'>let </span>v2 = Vector2.init 2.1f 3.4f <span class='fs-com'>// float32 Vector2</span>
-<span class='fs-key'>let </span>v3 = v1 |&gt; Vector.map float32 <span class='fs-com'>// float32 Vector2</span>
-<span class='fs-key'>let </span>v4 = v2 / v3 .* 2.0f * v2.yy + v3.xx <span class='fs-com'>// float32 Vector2</span>
-<span class='fs-key'>let </span>r1 = Rectangle.init v3 v4 <span class='fs-com'>// float32 Vector2 Rectangle</span>
-<span class='fs-key'>let </span>k = Vector.dot v2 v3 <span class='fs-com'>// float32</span></pre></td></tr></table><div style='font-weight: bold; padding: 10px;'>Created with <a href='http://fslight.apphb.com/' target='_blank'>FsLight</a></div></div>
+<h3>Example</h3>
+<pre><code class="language-fsharp">open Affogato
+let v1 = Vector2.init 1 0 // int Vector2
+let v2 = Vector2.init 2.1f 3.4f // float32 Vector2
+let v3 = v1 |&gt; Vector.map float32 // float32 Vector2
+let v4 = v2 / v3 .* 2.0f * v2.yy + v3.xx // float32 Vector2
+let r1 = Rectangle.init v3 v4 // float32 Vector2 Rectangle
+let k = Vector.dot v2 v3 // float32
+</code></pre>
 
               </div>
               <div class="content article-footer">
@@ -89,6 +94,13 @@
       </section>
     </div>
   </body>
-  <script type="text/javascript" src="/js/navbar_burger.js"></script>
-  <script type="text/javascript" src="/js/external_a.js"></script>
+  <footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/fsharp.min.js"></script>
+    <script>
+      hljs.highlightAll()
+    </script>
+    <script type="text/javascript" src="/js/navbar_burger.js"></script>
+    <script type="text/javascript" src="/js/external_a.js"></script>
+  </footer>
 </html>

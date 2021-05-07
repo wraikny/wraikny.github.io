@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap"/>
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css"/>
     <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/vs.min.css"/>
   </head>
   <body>
     <nav class="navbar">
@@ -32,6 +33,9 @@
           <a class="navbar-item" href="/contents/works/index.html">
             Works
           </a>
+          <a class="navbar-item" href="/contents/libraries/index.html">
+            Libraries
+          </a>
         </div>
       </div>
     </nav>
@@ -39,14 +43,14 @@
       <div class="hero-body">
         <div class="container has-image-centered">
           <h1 class="title">
-            wraikny's
+            TerritoryBattle(1 week game jam)
           </h1>
         </div>
       </div>
     </section>
     <div class="container">
       <section class="articles">
-        <div class="column is-8 is-offset-2">
+        <div class="column is-10 is-offset-1">
           <div class="card article">
             <div class="card-image">
               <image src="/images/games/territorybattle/territorybattle.jpg"></image>
@@ -85,6 +89,13 @@
       </section>
     </div>
   </body>
-  <script type="text/javascript" src="/js/navbar_burger.js"></script>
-  <script type="text/javascript" src="/js/external_a.js"></script>
+  <footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/fsharp.min.js"></script>
+    <script>
+      hljs.highlightAll()
+    </script>
+    <script type="text/javascript" src="/js/navbar_burger.js"></script>
+    <script type="text/javascript" src="/js/external_a.js"></script>
+  </footer>
 </html>

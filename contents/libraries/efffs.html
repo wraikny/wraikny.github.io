@@ -3,7 +3,7 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      Quadrate - wraikny's
+      EffFs - wraikny's
     </title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap"/>
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css"/>
@@ -43,7 +43,7 @@
       <div class="hero-body">
         <div class="container has-image-centered">
           <h1 class="title">
-            Quadrate
+            EffFs
           </h1>
         </div>
       </div>
@@ -52,37 +52,67 @@
       <section class="articles">
         <div class="column is-10 is-offset-1">
           <div class="card article">
-            <div class="card-image">
-              <image src="/images/games/quadrate/quadrate_game2.jpg"></image>
-            </div>
             <div class="card-content">
               <div class="media-content has-image-centered">
                 <p class="title article-title">
-                  <a href="/contents/games/quadrate.html">
-                    Quadrate
+                  <a href="/contents/libraries/efffs.html">
+                    EffFs
                   </a>
                 </p>
                 <p class="subtitle is-6 article-subtitle">
-                  on 2018-08-07
+                  on 2021-04-09
                 </p>
               </div>
               <div class="content article-body">
-                <p>オリジナルの盤面対戦ゲームです。
-キャラクターを選択して、毎ターン移動と4種類のスキルを使って戦います。</p>
+                <p>EffFsは、SRTP を用いた F# の Effect System ライブラリです。</p>
+<p>SideEffect や Dependency を静的に解決することができます。</p>
+<ul>
+<li><a href="https://github.com/wraikny/EffFs">wraikny/EffFs - GitHub</a></li>
+<li><a href="https://www.nuget.org/packages/EffFs/">EffFs - NuGet Gallery</a></li>
+</ul>
 <!--more-->
-<p>
-    <img src="/images/games/quadrate/quadrate_game1.jpg" width="560" class="has-image-centered">
-</p>
-<p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/B1kmPqXCSNs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
-<p>スキルには、ダメージを与えるもの、回復するもの、ステータスを変化させるものなど、様々な種類があります。</p>
-<p>プレイヤー同士はもちろん、CPUとの対戦もできます。</p>
-<p>F#製です。</p>
-<p>本作は2018年AmusementCreators 48時間GameJamで作成した後、C94のために作り直したものです。
-C96にて個人サークルでの出展も行いました。</p>
-<p>以下のBOOTHページから購入することができます。</p>
-<p><a href="https://wraikny.booth.pm/items/967902">Quadrate - wraikny's shop</a></p>
+<h3>Example</h3>
+<pre><code class="language-fsharp">open EffFs
+
+[&lt;Struct; NoEquality; NoComparison&gt;]
+type RandomInt = RandomInt of int with
+  static member Effect = Eff.marker&lt;int&gt;
+
+[&lt;Struct; NoEquality; NoComparison&gt;]
+type Logging = Logging of string with
+  static member Effect = Eff.marker&lt;unit&gt;
+let inline foo() = eff {
+  let! a = RandomInt 100
+  do! Logging (sprintf &quot;%d&quot; a)
+  let b = a + a
+  return (a, b)
+}
+
+
+type Handler = { rand: System.Random } with
+  static member inline Handle(x) = x
+
+
+  static member inline Handle(RandomInt a, k) =
+    Eff.capture(fun h -&gt; h.rand.Next(a) |&gt; k)
+
+
+  static member inline Handle(Logging s, k) =
+    printfn &quot;[Log] %s&quot; s; k()
+
+
+let handler = { rand = System.Random() }
+foo()
+|&gt; Eff.handle handler
+|&gt; printfn &quot;%A&quot;
+
+
+// example output
+(*
+[Log] 66
+(66, 132)
+*)
+</code></pre>
 
               </div>
               <div class="content article-footer">

@@ -3,11 +3,12 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      Altseed2 (OSS, 複数人開発) - wraikny's
+      AwaitableCoroutine - wraikny's
     </title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap"/>
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css"/>
     <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/vs.min.css"/>
   </head>
   <body>
     <nav class="navbar">
@@ -32,6 +33,9 @@
           <a class="navbar-item" href="/contents/works/index.html">
             Works
           </a>
+          <a class="navbar-item" href="/contents/libraries/index.html">
+            Libraries
+          </a>
         </div>
       </div>
     </nav>
@@ -39,42 +43,65 @@
       <div class="hero-body">
         <div class="container has-image-centered">
           <h1 class="title">
-            wraikny's
+            AwaitableCoroutine
           </h1>
         </div>
       </div>
     </section>
     <div class="container">
       <section class="articles">
-        <div class="column is-8 is-offset-2">
+        <div class="column is-10 is-offset-1">
           <div class="card article">
             <div class="card-content">
               <div class="media-content has-image-centered">
                 <p class="title article-title">
-                  <a href="/contents/works/altseed2.html">
-                    Altseed2 (OSS, 複数人開発)
+                  <a href="/contents/libraries/awaitablecoroutine.html">
+                    AwaitableCoroutine
                   </a>
                 </p>
                 <p class="subtitle is-6 article-subtitle">
-                  on 2021-04-30
+                  on 2021-05-08
                 </p>
               </div>
               <div class="content article-body">
-                <p>Altseed2 は画面描画・音・入力・衝突判定などの機能をまとめたゲームエンジンです。</p>
+                <p>AwaitableCoroutine は、async/await 構文を使用可能にしたコルーチンを提供する C# 向けライブラリです。 内部的にはTask-Like、Awaitable パターン、AsyncMethodBuilder が使われています。</p>
 <ul>
-<li><a href="http://altseed.github.io">Altseed2</a></li>
-<li><a href="https://www.nuget.org/packages/Altseed2/">Altseed2 - NuGet Gallery</a></li>
+<li><a href="https://github.com/wraikny/AwaitableCoroutine">AwaitableCoroutine - GitHub</a></li>
+<li><a href="https://www.nuget.org/packages/AwaitableCoroutine/">AwaitableCoroutine - NuGet Gallery</a></li>
 </ul>
-<p>Core(C++), Engine(C#) 共にメインコミッターの一人として、主に以下の機能の開発に関わりました。</p>
-<ul>
-<li>フォント・文字描画</li>
-<li>ジョイスティック</li>
-<li>ポストエフェクト</li>
-<li>ロガー</li>
-<li>.NETツールの作成</li>
-<li>一部のCI設定</li>
-<li>全体的なバグ修正・リファクタリング</li>
-</ul>
+<!--more-->
+<h3>Example</h3>
+<pre><code class="language-csharp">public static class Program
+{
+    private static int s_count;
+
+    private static async AwaitableCoroutine CreateCoroutine()
+    {
+        for (var i = 0; i &lt; 10; i++)
+        {
+            s_count++;
+            await AwaitableCoroutine.Yield();
+        }
+    }
+
+    public static void Main(string[] args)
+    {
+        var runner = new CoroutineRunner();
+
+        var coroutine = runner.AddCoroutine(CreateCoroutine);
+
+        Console.WriteLine(&quot;Started!&quot;);
+
+        while (!coroutine.IsCompleted)
+        {
+            Console.WriteLine($&quot;{s_count}&quot;);
+            runner.Update();
+        }
+
+        Console.WriteLine(&quot;Finished!&quot;);
+    }
+}
+</code></pre>
 
               </div>
               <div class="content article-footer">
@@ -91,6 +118,13 @@
       </section>
     </div>
   </body>
-  <script type="text/javascript" src="/js/navbar_burger.js"></script>
-  <script type="text/javascript" src="/js/external_a.js"></script>
+  <footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/fsharp.min.js"></script>
+    <script>
+      hljs.highlightAll()
+    </script>
+    <script type="text/javascript" src="/js/navbar_burger.js"></script>
+    <script type="text/javascript" src="/js/external_a.js"></script>
+  </footer>
 </html>

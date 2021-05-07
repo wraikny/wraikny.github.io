@@ -1,0 +1,177 @@
+<html>
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      Altseed2.TypeBasedCollision - wraikny's
+    </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/vs.min.css"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/about.html">
+            About
+          </a>
+          <a class="navbar-item" href="/contents/games/index.html">
+            Games
+          </a>
+          <a class="navbar-item" href="/contents/works/index.html">
+            Works
+          </a>
+          <a class="navbar-item" href="/contents/libraries/index.html">
+            Libraries
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info is-small is-bold">
+      <div class="hero-body">
+        <div class="container has-image-centered">
+          <h1 class="title">
+            Altseed2.TypeBasedCollision
+          </h1>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="articles">
+        <div class="column is-10 is-offset-1">
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-image-centered">
+                <p class="title article-title">
+                  <a href="/contents/libraries/altseed2-typebasedcollision.html">
+                    Altseed2.TypeBasedCollision
+                  </a>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  on 2021-05-05
+                </p>
+              </div>
+              <div class="content article-body">
+                <p>Altsees2.TypeBasedCollision は、型をキーとして衝突対象の管理を平易かつ高速に行うための Altseed2 拡張ライブラリです。</p>
+<ul>
+<li><a href="https://github.com/wraikny/Altseed2.TypeBasedCollision">wraikny/Altseed2.TypeBasedCollision - GitHub</a></li>
+<li><a href="https://www.nuget.org/packages/Altseed2.TypeBasedCollision/2.0.0">Altseed2.TypeBasedCollision - NuGet Gallery</a></li>
+</ul>
+<!--more-->
+<h3>Example</h3>
+<pre><code class="language-csharp">using System;
+using Altseed2;
+using Altseed2.TypeBasedCollision;
+
+private abstract record Key(string Label) : ICollisionMarker;
+private sealed record KeyPlayer(string Label) : Key(Label);
+private sealed record KeyObstacle(string Label) : Key(Label);
+private sealed record KeyEnemy(string Label) : Key(Label);
+
+public static void Main(string[] _)
+{
+    Engine.Initialize(&quot;Example&quot;, 800, 600);
+
+    var playerKey = new KeyPlayer(&quot;Player&quot;);
+    var player = new CollCircleNode&lt;KeyPlayer&gt;(playerKey, 20.0f);
+
+    var enemyKey = new KeyEnemy(&quot;Enemy1&quot;);
+    var enemy = new CollCircleNode&lt;KeyEnemy&gt;(enemyKey, 30.0f)
+        {
+            Position = new Vector2F(80f, 80f),
+        };
+    
+    var obstacleKey = new KeyObstacle(&quot;Obstacle1&quot;);
+    var obstacle = new CollCircleNode&lt;KeyObstacle&gt;(obstacleKey, 50.0f)
+        {
+            Position = new Vector2F(200f, 200f)
+        };
+
+    Engine.AddNode(player);
+    Engine.AddNode(enemy);
+    Engine.AddNode(obstacle);
+
+    while (Engine.DoEvents())
+    {
+        player.Position = Engine.Mouse.Position;
+
+        player.CheckCollision&lt;KeyEnemy&gt;(target =&gt;
+            Console.WriteLine($&quot;Player collided Enemy({target.Label})&quot;);
+        );
+
+        player.CheckCollision&lt;KeyObstacle&gt;(target =&gt;
+            Console.WriteLine($&quot;Player collided Obstacle({target.Label})&quot;);
+        );
+
+        Engine.Update();
+    }
+
+    Engine.Terminate();
+}
+
+private class CollCircleNode&lt;T&gt; : TransformNode
+    where T : Key
+{
+    private readonly CollisionNode&lt;T&gt; _collisionNode;
+
+    public T Key { get; private set; }
+
+    public CollCircleNode(T key, float radius)
+    {
+        Key = key;
+
+        // 描画用のノードを追加
+        AddChildNode(new CircleNode { Radius = radius });
+
+        // 当たり判定用のノードを追加
+        var collider = new CircleCollider { Radius = radius };
+        // ジェネリックで指定した型がキーとなる
+        _collisionNode = new CollisionNode&lt;T&gt;(key, collider);
+        AddChildNode(_collisionNode);
+    }
+
+    public void CheckCollision&lt;TargetKey&gt;(Action&lt;TargetKey&gt; onCollided)
+    {
+        // 特定のキーを持つCollisionNodeとのみ衝突判定の処理を行う。
+        _collisionNode.CheckCollision&lt;TargetKey&gt;(onCollided);
+    }
+}
+</code></pre>
+
+              </div>
+              <div class="content article-footer">
+                <div>
+                  <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">
+                    Tweet
+                  </a>
+                  <script async="true" src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/fsharp.min.js"></script>
+    <script>
+      hljs.highlightAll()
+    </script>
+    <script type="text/javascript" src="/js/navbar_burger.js"></script>
+    <script type="text/javascript" src="/js/external_a.js"></script>
+  </footer>
+</html>
