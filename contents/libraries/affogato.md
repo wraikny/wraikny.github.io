@@ -10,7 +10,7 @@ Affogato は F# でのゲームプログラミングを目的とした、SRTP �
 - [Affogato - GitHub](https://github.com/wraikny/Affogato)
 - [Affogato - NuGet Gallery](https://www.nuget.org/packages/Affogato/)
 
-Example
+### Example
 
 ```fsharp
 open Affogato

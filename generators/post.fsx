@@ -21,7 +21,7 @@ let generate' (ctx : SiteContents) (page: string) =
         section [Class "hero is-info is-small is-bold"] [
             div [Class "hero-body"] [
                 div [Class "container has-image-centered"] [
-                    h1 [Class "title"] [!!desc]
+                    h1 [Class "title"] [!!post.title]
                 ]
             ]
         ]

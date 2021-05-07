@@ -12,6 +12,8 @@ Altsees2.TypeBasedCollision は、型をキーとして衝突対象の管理を�
 
 <!--more-->
 
+### Example
+
 ```csharp
 using System;
 using Altseed2;

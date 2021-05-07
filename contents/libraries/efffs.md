@@ -14,7 +14,7 @@ SideEffect や Dependency を静的に解決することができます。
 
 <!--more-->
 
-Example
+### Example
 
 ```fsharp
 open EffFs
