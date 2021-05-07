@@ -1,5 +1,6 @@
 #r "../_lib/Fornax.Core.dll"
 #load "layout.fsx"
+#load "const.fsx"
 
 open Html
 
@@ -26,7 +27,7 @@ let generate' (ctx : SiteContents) (page: string) =
         ]
         div [Class "container"] [
             section [Class "articles"] [
-                div [Class "column is-8 is-offset-2"] [
+                div [Class <| sprintf "column is-%d is-offset-%d" Const.CardWidth Const.cardOffset] [
                     Layout.postLayout false post
                 ]
             ]

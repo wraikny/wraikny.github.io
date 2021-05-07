@@ -30,7 +30,7 @@ let staticPredicate (projectRoot: string, page: string) =
         ".ionide"
         ".config"
         ".vscode"
-        "README.md"
+        ".md"
     |]
 
     if ext = ".fsx" || excludes |> Seq.exists page.Contains

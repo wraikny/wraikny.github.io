@@ -6,30 +6,32 @@
 #load "../loaders/globalloader.fsx"
 #endif
 
+#load "const.fsx"
+
 open Html
 
 let injectWebsocketCode (webpage:string) =
     let websocketScript =
         """
-        <script type="text/javascript">
-            var wsUri = "ws://localhost:8080/websocket";
-            function init()
-            {
-              websocket = new WebSocket(wsUri);
-              websocket.onclose = function(evt) { onClose(evt) };
-            }
-            function onClose(evt)
-            {
-              console.log('closing');
-              websocket.close();
-              document.location.reload();
-            }
-            window.addEventListener("load", init, false);
-        </script>
+    <script type="text/javascript">
+        var wsUri = "ws://localhost:8080/websocket";
+        function init()
+        {
+          websocket = new WebSocket(wsUri);
+          websocket.onclose = function(evt) { onClose(evt) };
+        }
+        function onClose(evt)
+        {
+          console.log('closing');
+          websocket.close();
+          document.location.reload();
+        }
+        window.addEventListener("load", init, false);
+    </script>
         """
     let head = "<head>"
     let index = webpage.IndexOf head
-    webpage.Insert ( (index + head.Length + 1),websocketScript)
+    webpage.Insert ( (index + head.Length + 1), websocketScript)
 
 let tweetButton =
     div [] [
@@ -60,6 +62,8 @@ let layout (ctx : SiteContents) active bodyCnt =
         |> Seq.toList
 
     html [] [
+        let highlightjs = "10.7.2"
+
         head [] [
             meta [CharSet "utf-8"]
             meta [Name "viewport"; Content "width=device-width, initial-scale=1"]
@@ -69,6 +73,8 @@ let layout (ctx : SiteContents) active bodyCnt =
             link [Rel "stylesheet"; Href "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap"]
             link [Rel "stylesheet"; Href "https://unpkg.com/bulma@0.9.1/css/bulma.min.css"]
             link [Rel "stylesheet"; Type "text/css"; Href "/style/style.css"]
+
+            link [Rel "stylesheet"; Href <| sprintf "//cdnjs.cloudflare.com/ajax/libs/highlight.js/%s/styles/vs.min.css" highlightjs]
         ]
         body [] [
           nav [Class "navbar"] [
@@ -88,19 +94,32 @@ let layout (ctx : SiteContents) active bodyCnt =
           ]
           yield! bodyCnt
         ]
-        script [ Type "text/javascript"; Src "/js/navbar_burger.js" ] []
-        script [ Type "text/javascript"; Src "/js/external_a.js" ] []
+
+        footer [] [
+            script [ Src  <| sprintf "//cdnjs.cloudflare.com/ajax/libs/highlight.js/%s/highlight.min.js" highlightjs] []
+            for lang in
+              [
+                "fsharp"
+              ] do
+              script [Src <| sprintf "//cdnjs.cloudflare.com/ajax/libs/highlight.js/%s/languages/%s.min.js" highlightjs lang] []
+
+            script [] [
+              !! "hljs.highlightAll()"
+            ]
+
+            script [ Type "text/javascript"; Src "/js/navbar_burger.js" ] []
+            script [ Type "text/javascript"; Src "/js/external_a.js" ] []
+        ]
     ]
 
 let render (ctx : SiteContents) cnt =
-    let disableLiveRefresh =
-        ctx.TryGetValue<Postloader.PostConfig> ()
-        |> Option.map (fun n -> n.disableLiveRefresh)
-        |> Option.defaultValue false
+    let disableLiveRefresh = false
 
     cnt
     |> HtmlElement.ToString
-    |> fun n -> if disableLiveRefresh then n else injectWebsocketCode n
+#if WATCH
+    |> injectWebsocketCode
+#endif
 
 
 let published (post: Postloader.Post) =
@@ -149,7 +168,9 @@ let postcardsLayout (posts: #seq<Postloader.Post>) =
     
     div [Class "container"] [
         section [Class "articles"] [
-            div [Class "column is-8 is-offset-2"] [
+            let width = 10 // 1 ~ 12
+            let offset = (12 - width) / 2
+            div [Class <| sprintf "column is-%d is-offset-%d" Const.CardWidth Const.cardOffset] [
                 div [Class "tile is-parent is-vertical"] (
                     psts
                     |> List.map(fun e -> div [Class "tile is-child"] [e])

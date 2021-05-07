@@ -5,10 +5,6 @@ open System
 open System.IO
 open Markdig
 
-type PostConfig = {
-    disableLiveRefresh: bool
-}
-
 type Post = {
     file: string
     link : string
@@ -120,7 +116,7 @@ let private loadFile directories n =
     else
         None
 
-
+ 
 let loader (projectRoot: string) (siteContent: SiteContents) =
     let rec getFilesRecursively (path: string) directories = seq {
         for file in Directory.GetFiles path do
@@ -140,6 +136,5 @@ let loader (projectRoot: string) (siteContent: SiteContents) =
     getFilesRecursively postsPath contentDir
     |> Seq.iter siteContent.Add
 
-    siteContent.Add({disableLiveRefresh = true})
     siteContent
 

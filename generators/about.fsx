@@ -1,5 +1,6 @@
 #r "../_lib/Fornax.Core.dll"
 #load "layout.fsx"
+#load "const.fsx"
 
 open Markdig
 open Html
@@ -20,7 +21,7 @@ let generate' (ctx : SiteContents) (_: string) =
     ]
     div [Class "container"] [
       section [Class "articles"] [
-        div [Class "column is-8 is-offset-2"] [
+        div [Class <| sprintf "column is-%d is-offset-%d" Const.CardWidth Const.cardOffset] [
             div [Class "card article"] [
                 div [Class "card-content"] [
                     div [Class "content article-body"] [

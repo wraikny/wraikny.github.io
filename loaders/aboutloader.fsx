@@ -17,4 +17,5 @@ let private markdownPipeline =
 let loader (projectRoot: string) (siteContent: SiteContents) =
     let content = File.ReadAllText filename
     siteContent.Add( { content = Markdown.ToHtml(content, markdownPipeline)})
+    
     siteContent
