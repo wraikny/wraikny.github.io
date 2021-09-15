@@ -21,7 +21,7 @@ AmusementCreators中心に開発中のゲームエンジン[Altseed2](https://gi
 
 ゲーム開発関連の技術記事はAmusementCreatorsのHPに掲載していることが多いです。（Links欄を参考）
 
-[株式会社HERP](https://herp.co.jp/)のアルバイトではTypeScript,fp-ts,Cycle.jsなどの技術を使ったWebサービスのフロントエンド開発に関わっています。
+[株式会社HERP](https://herp.co.jp/)のアルバイト(2020/2~2021/9)ではTypeScript,fp-ts,Cycle.jsなどの技術を使ったWebサービスのフロントエンド開発に関わっていました。
 
 ## Contact
 
@@ -33,11 +33,11 @@ AmusementCreators中心に開発中のゲームエンジン[Altseed2](https://gi
 
 ## Group
 
-現在所属している団体です。
+現在所属している・していた団体です。
 
 - [筑波大学 AmusementCreators](https://www.amusement-creators.info) 2017年5月~
 - [筑波大学 情報学群 情報メディア創成学類](https://www.mast.tsukuba.ac.jp) 2017年4月~
-- [HERP, Inc.](https://herp.co.jp/) エンジニア(アルバイト) 2020年2月~
+- [HERP, Inc.](https://herp.co.jp/) エンジニア(アルバイト) 2020年2月~2021年9月
 
 ## Interests
 
