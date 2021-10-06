@@ -3,10 +3,8 @@
 wraikny ([reini/れいにー]）
 
 <img src="/images/wraikny/wraikny_illustration.jpg" width="256px">
-<img src="/images/wraikny/wraikny_vrcphoto_trim.jpg" width="256px">
 
-- イラスト:[黒色熊猫](https://twitter.com/higumasyake)さん（左）
-- アバター:[シリウス](https://booth.pm/ja/items/1723127) by [ひゅうがなつ](https://twitter.com/hyuuuuganatu)さん（右）
+- イラスト:[黒色熊猫](https://twitter.com/higumasyake)さん
 
 プログラマー・インディーゲームクリエイターとして活動してます。
 たまにVRChat向けにシェーダでアクセサリーを作ってBOOTHにて販売を行っています。
