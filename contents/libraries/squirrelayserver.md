@@ -18,4 +18,4 @@ xunitとMoqを利用した単体テストを記述していて、GitHub Actions�
 
 リポジトリはこちら
 
-[wraikny/squireelayserver - GitHub](https://github.com/wraikny/SquirrelayServer)
+[wraikny/SquirrelayServer - GitHub](https://github.com/wraikny/SquirrelayServer)
