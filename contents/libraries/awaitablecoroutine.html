@@ -65,41 +65,38 @@
               </div>
               <div class="content article-body">
                 <p>AwaitableCoroutine は、async/await 構文を使用可能にしたコルーチンを提供する C# 向けライブラリです。 内部的にはTask-Like、Awaitable パターン、AsyncMethodBuilder が使われています。</p>
+<!--more-->
 <ul>
 <li><a href="https://github.com/wraikny/AwaitableCoroutine">AwaitableCoroutine - GitHub</a></li>
 <li><a href="https://www.nuget.org/packages/AwaitableCoroutine/">AwaitableCoroutine - NuGet Gallery</a></li>
+<li><a href="https://www.nuget.org/packages/AwaitableCoroutine.FSharp/">AwaitableCoroutine.FSharp - NuGet Gallery</a></li>
+<li><a href="https://www.nuget.org/packages/AwaitableCoroutine.Altseed2/">AwaitableCoroutine.Altseed2 - NuGet Gallery</a></li>
 </ul>
-<!--more-->
 <h3>Example</h3>
-<pre><code class="language-csharp">public static class Program
+<pre><code class="language-csharp">using System;
+
+using AwaitableCoroutine;
+
+var runner = new CoroutineRunner();
+
+int count = 0;
+
+var coroutine = runner.Create(async () =&gt; {
+    Console.WriteLine(&quot;Started!&quot;);
+
+    for (var i = 0; i &lt; 10; i++)
+    {
+        count++;
+        await AwaitableCoroutine.Yield();
+    }
+}).OnCompleted(() =&gt; Console.WriteLine(&quot;Finished!&quot;));
+
+while (true)
 {
-    private static int s_count;
+    runner.Update();
+    if (coroutine.IsCompleted) break;
 
-    private static async AwaitableCoroutine CreateCoroutine()
-    {
-        for (var i = 0; i &lt; 10; i++)
-        {
-            s_count++;
-            await AwaitableCoroutine.Yield();
-        }
-    }
-
-    public static void Main(string[] args)
-    {
-        var runner = new CoroutineRunner();
-
-        var coroutine = runner.AddCoroutine(CreateCoroutine);
-
-        Console.WriteLine(&quot;Started!&quot;);
-
-        while (!coroutine.IsCompleted)
-        {
-            Console.WriteLine($&quot;{s_count}&quot;);
-            runner.Update();
-        }
-
-        Console.WriteLine(&quot;Finished!&quot;);
-    }
+    Console.WriteLine($&quot;{count}&quot;);
 }
 </code></pre>
 
