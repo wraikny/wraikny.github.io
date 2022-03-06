@@ -6,20 +6,22 @@ wraikny ([reini/れいにー]）
 
 - イラスト:[黒色熊猫](https://twitter.com/higumasyake)さん
 
-プログラマー・インディーゲームクリエイターとして活動してます。
-たまにVRChat向けにシェーダでアクセサリーを作ってBOOTHにて販売を行っています。
+プログラマー・ゲームクリエイターとして活動してます。
 
 好きな言語はF#とRustです。
 言語機能が良く統一されているとか、型クラスによる抽象化とか、代数的データ型とか良いと思っています。
 保守性が高く人間に優しいプログラムを書くのが好きです。
 
 ゲームやサーバー等、趣味のプログラミングでは基本的にF#を使っています。
+ゲーム向けのライブラリやサーバーの開発でC#を使っています。
 
 AmusementCreators中心に開発中のゲームエンジン[Altseed2](https://github.com/altseed/altseed2)の開発メンバーとして、C++, C#, Rustのコードを書いています。
 
-ゲーム開発関連の技術記事はAmusementCreatorsのHPに掲載していることが多いです。（Links欄を参考）
+ゲーム開発関連の技術記事は、AmusementCreatorsのHPに掲載していることが多いです。（Links欄を参考）
 
-[株式会社HERP](https://herp.co.jp/)のアルバイト(2020/2~2021/9)ではTypeScript,fp-ts,Cycle.jsなどの技術を使ったWebサービスのフロントエンド開発に関わっていました。
+[株式会社HERP](https://herp.co.jp/)のアルバイト(2020/2~2021/9)では、TypeScript, fp-ts, Cycle.js などの技術を使ったWebサービスのフロントエンドやバックエンドの開発に関わっていました。
+
+好きなゲームはApexLegends、ポケモンシリーズ、ぷよぷよ、テトリス、スマブラ、Slay the Spireなど。
 
 ## Contact
 
@@ -31,22 +33,20 @@ AmusementCreators中心に開発中のゲームエンジン[Altseed2](https://gi
 
 ## Group
 
-現在所属している・していた団体です。
+所属している・していた団体です。
 
 - [筑波大学 AmusementCreators](https://www.amusement-creators.info) 2017年5月~
-- [筑波大学 情報学群 情報メディア創成学類](https://www.mast.tsukuba.ac.jp) 2017年4月~
+- [筑波大学 情報学群 情報メディア創成学類](https://www.mast.tsukuba.ac.jp) 2017年4月~(2023年3月卒業予定)
 - [HERP, Inc.](https://herp.co.jp/) エンジニア(アルバイト) 2020年2月~2021年9月
 
 ## Interests
 
 興味があることのキーワードとかです。
 
-- F#, C#, Rust, Shader
+- F#, C#, Rust
 - Computer Graphics
-- GameDev, Game AI, Procedural Generation
-- Game Engine
+- Game AI, Procedural Generation
 - Functional Programming
-- Functional Reactive Programming
 - Computational Effect
 
 ## Links
