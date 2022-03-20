@@ -16,6 +16,10 @@ RUDP通信のライブラリとしてLiteNetLibを使用しています。
 
 xunitとMoqを利用した単体テストを記述していて、GitHub Actionsで自動実行しています。
 
-リポジトリはこちら
+解説記事書きました
+
+[リアルタイムリレーサーバーSquirrelayServerの紹介 - AmusementCreators](https://www.amusement-creators.info/articles/squirrelayserver/)
+
+リポジトリ
 
 [wraikny/SquirrelayServer - GitHub](https://github.com/wraikny/SquirrelayServer)
