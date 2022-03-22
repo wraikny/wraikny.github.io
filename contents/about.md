@@ -21,7 +21,7 @@ AmusementCreators中心に開発中のゲームエンジン[Altseed2](https://gi
 
 [株式会社HERP](https://herp.co.jp/)のアルバイト(2020/2~2021/9)では、TypeScript, fp-ts, Cycle.js などの技術を使ったWebサービスのフロントエンドやバックエンドの開発に関わっていました。
 
-好きなゲームはApexLegends、ポケモンシリーズ、ぷよぷよ、テトリス、スマブラ、Slay the Spireなど。
+好きなゲームはApexLegends、VALORANT、ポケモンシリーズ、ぷよぷよ、テトリス、スマブラ、Slay the Spireなど。
 
 ## Contact
 
