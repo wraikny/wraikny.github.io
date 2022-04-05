@@ -74,13 +74,12 @@
 <h3>Example</h3>
 <pre><code class="language-fsharp">open EffFs
 
-[&lt;Struct; NoEquality; NoComparison&gt;]
 type RandomInt = RandomInt of int with
-  static member Effect = Eff.marker&lt;int&gt;
+  static member Effect(_) = Eff.marker&lt;int&gt;
 
-[&lt;Struct; NoEquality; NoComparison&gt;]
 type Logging = Logging of string with
-  static member Effect = Eff.marker&lt;unit&gt;
+  static member Effect(_) = Eff.marker&lt;unit&gt;
+
 let inline foo() = eff {
   let! a = RandomInt 100
   do! Logging (sprintf &quot;%d&quot; a)
@@ -88,22 +87,19 @@ let inline foo() = eff {
   return (a, b)
 }
 
+let rand = System.Random()
 
-type Handler = { rand: System.Random } with
-  static member inline Handle(x) = x
-
+type Handler = Handler with
+  static member inline Value(_, x) = x
 
   static member inline Handle(RandomInt a, k) =
-    Eff.capture(fun h -&gt; h.rand.Next(a) |&gt; k)
-
+    rand.Next(a) |&gt; k
 
   static member inline Handle(Logging s, k) =
     printfn &quot;[Log] %s&quot; s; k()
 
-
-let handler = { rand = System.Random() }
 foo()
-|&gt; Eff.handle handler
+|&gt; Eff.handle Handler
 |&gt; printfn &quot;%A&quot;
 
 
