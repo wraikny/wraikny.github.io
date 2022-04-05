@@ -25,13 +25,12 @@ SideEffect や Dependency を静的に解決することができます。
 ```fsharp
 open EffFs
 
-[<Struct; NoEquality; NoComparison>]
 type RandomInt = RandomInt of int with
-  static member Effect = Eff.marker<int>
+  static member Effect(_) = Eff.marker<int>
 
-[<Struct; NoEquality; NoComparison>]
 type Logging = Logging of string with
-  static member Effect = Eff.marker<unit>
+  static member Effect(_) = Eff.marker<unit>
+
 let inline foo() = eff {
   let! a = RandomInt 100
   do! Logging (sprintf "%d" a)
@@ -39,22 +38,19 @@ let inline foo() = eff {
   return (a, b)
 }
 
+let rand = System.Random()
 
-type Handler = { rand: System.Random } with
-  static member inline Handle(x) = x
-
+type Handler = Handler with
+  static member inline Value(_, x) = x
 
   static member inline Handle(RandomInt a, k) =
-    Eff.capture(fun h -> h.rand.Next(a) |> k)
-
+    rand.Next(a) |> k
 
   static member inline Handle(Logging s, k) =
     printfn "[Log] %s" s; k()
 
-
-let handler = { rand = System.Random() }
 foo()
-|> Eff.handle handler
+|> Eff.handle Handler
 |> printfn "%A"
 
 
