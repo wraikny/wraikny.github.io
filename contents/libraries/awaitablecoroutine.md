@@ -21,7 +21,6 @@ AwaitableCoroutine は、async/await 構文を使用可能にしたコルーチ�
 
 ```csharp
 using System;
-
 using AwaitableCoroutine;
 
 var runner = new CoroutineRunner();
@@ -34,7 +33,7 @@ var coroutine = runner.Create(async () => {
     for (var i = 0; i < 10; i++)
     {
         count++;
-        await AwaitableCoroutine.Yield();
+        await Coroutine.Yield();
     }
 }).OnCompleted(() => Console.WriteLine("Finished!"));
 
