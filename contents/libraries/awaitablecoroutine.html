@@ -77,7 +77,6 @@
 </ul>
 <h3>Example</h3>
 <pre><code class="language-csharp">using System;
-
 using AwaitableCoroutine;
 
 var runner = new CoroutineRunner();
@@ -90,7 +89,7 @@ var coroutine = runner.Create(async () =&gt; {
     for (var i = 0; i &lt; 10; i++)
     {
         count++;
-        await AwaitableCoroutine.Yield();
+        await Coroutine.Yield();
     }
 }).OnCompleted(() =&gt; Console.WriteLine(&quot;Finished!&quot;));
 
