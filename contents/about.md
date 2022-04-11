@@ -17,10 +17,6 @@ wraikny ([reini/れいにー]）
 
 AmusementCreators中心に開発中のゲームエンジン[Altseed2](https://github.com/altseed/altseed2)の開発メンバーとして、C++, C#, Rustのコードを書いています。
 
-ゲーム開発関連の技術記事は、AmusementCreatorsのHPに掲載していることが多いです。（Links欄を参考）
-
-[株式会社HERP](https://herp.co.jp/)のアルバイト(2020/2~2021/9)では、TypeScript, fp-ts, Cycle.js などの技術を使ったWebサービスのフロントエンドやバックエンドの開発に関わっていました。
-
 好きなゲームはApexLegends、VALORANT、ポケモンシリーズ、ぷよぷよ、テトリス、スマブラ、Slay the Spireなど。
 
 ## Contact
@@ -58,3 +54,4 @@ AmusementCreators中心に開発中のゲームエンジン[Altseed2](https://gi
 - [wraikny - YouTube](https://www.youtube.com/channel/UCZ9gPqMn0Vtd0NTIAQtrt2Q)
 - [wraikny - AmusementCreators](https://www.amusement-creators.info/authors/wraikny/)
 - [wraikny - Scrapbox](https://scrapbox.io/wraikny/)
+- [wraikny - Zenn](https://zenn.dev/wraikny)
