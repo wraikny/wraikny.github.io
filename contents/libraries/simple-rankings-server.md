@@ -7,7 +7,7 @@ tags: library,server
 
 Simple Rankings Serverは、複数のゲームのオンラインランキングを単一のアプリケーションで手軽に管理することを目的としたREST-APIサーバーです。
 
-主にF# + Suavo + Dapper + SQLiteという技術構成です。
+主にF# + Suave + Dapper + SQLiteという技術構成です。
 
 解説記事を書きました
 
