@@ -1,6 +1,22 @@
 <html>
   <head>
-    <meta charSet="utf-8"/>
+
+    <script type="text/javascript">
+        var wsUri = "ws://localhost:8080/websocket";
+        function init()
+        {
+          websocket = new WebSocket(wsUri);
+          websocket.onclose = function(evt) { onClose(evt) };
+        }
+        function onClose(evt)
+        {
+          console.log('closing');
+          websocket.close();
+          document.location.reload();
+        }
+        window.addEventListener("load", init, false);
+    </script>
+            <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
       Ghost Shader - wraikny's
@@ -68,7 +84,6 @@
               </div>
               <div class="content article-body">
                 <p>重なった物の奥行きで見え方が変わるシェーダーです。</p>
-<!--more-->
 <p>Photo by ray45422<br />
 Avatar &quot;Hologroid&quot; by Nyarbera<br />
 World &quot;Deep Blue&quot; by Fins</p>

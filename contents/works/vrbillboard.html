@@ -1,6 +1,22 @@
 <html>
   <head>
-    <meta charSet="utf-8"/>
+
+    <script type="text/javascript">
+        var wsUri = "ws://localhost:8080/websocket";
+        function init()
+        {
+          websocket = new WebSocket(wsUri);
+          websocket.onclose = function(evt) { onClose(evt) };
+        }
+        function onClose(evt)
+        {
+          console.log('closing');
+          websocket.close();
+          document.location.reload();
+        }
+        window.addEventListener("load", init, false);
+    </script>
+            <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
       VR Billboard Shader - wraikny's
@@ -64,13 +80,11 @@
                 </p>
               </div>
               <div class="content article-body">
-                <p>VR向けのBillboardライクなシェーダ(Unity)です。</p>
-<p>通常のパーティクル等に利用されるビルボードシェーダの実装としては、座標変換の際にCameraのView座標系を基準にして頂点位置を指定することでカメラに水平方向にメッシュを貼ります。しかしVR内においては、その実装だと首を回した際にカメラの動きに追従してメッシュが回転する様子が露骨にわかってしまい、ゲーム内での体験を損なってしまいます。そこで本Shaderではオブジェクトから両眼の中点の方向に垂直な面にメッシュを貼ることで常にカメラの方向に向くようにしました。</p>
+                <p>VR向けのBillboardライクなシェーダ(Unity)です。
+VR状態で頭を振ってもくるくると回転しません。</p>
+<p>BOOTHにて販売していました。</p>
 <!--more-->
-<p>VR状態で頭を振ってもくるくると回転しません。
-VRChatのネームタグと近い挙動をします。</p>
-<p>BOOTHにて販売しています。</p>
-<p><a href="https://wraikny.booth.pm/items/1091055">VR Billboard Shader - wraikny's shop</a></p>
+<p>通常のパーティクル等に利用されるビルボードシェーダの実装としては、座標変換の際にCameraのView座標系を基準にして頂点位置を指定することでカメラに水平方向にメッシュを貼ります。しかしVR内においては、その実装だと首を回した際にカメラの動きに追従してメッシュが回転する様子が露骨にわかってしまい、ゲーム内での体験を損なってしまいます。そこで本Shaderではオブジェクトから両眼の中点の方向に垂直な面にメッシュを貼ることで常にカメラの方向に向くようにしました。</p>
 
               </div>
               <div class="content article-footer">

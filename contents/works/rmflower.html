@@ -1,6 +1,22 @@
 <html>
   <head>
-    <meta charSet="utf-8"/>
+
+    <script type="text/javascript">
+        var wsUri = "ws://localhost:8080/websocket";
+        function init()
+        {
+          websocket = new WebSocket(wsUri);
+          websocket.onclose = function(evt) { onClose(evt) };
+        }
+        function onClose(evt)
+        {
+          console.log('closing');
+          websocket.close();
+          document.location.reload();
+        }
+        window.addEventListener("load", init, false);
+    </script>
+            <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
       Raymarching Flower Shader - wraikny's
@@ -67,7 +83,9 @@
                 </p>
               </div>
               <div class="content article-body">
-                <p>レイマーチングを用いて花をレンダリングするシェーダです。</p>
+                <p>レイマーチングを用いて花をレンダリングするシェーダです。
+パラメータで形状を変えられます。</p>
+<p><a href="https://wraikny.booth.pm/items/1289241">Raymarching Flower Shader - wraikny's shop</a></p>
 <!--more-->
 <p>
     <img src="/images/works/rmflower/rmflower-2.jpg" width="560" class="has-image-centered">
@@ -75,9 +93,6 @@
 <p>
     <img src="/images/works/rmflower/rmflower-3.jpg" width="560" class="has-image-centered">
 </p>
-<p>パラメータで形状を変えられます。</p>
-<p>BOOTHにて販売しています。</p>
-<p><a href="https://wraikny.booth.pm/items/1289241">Raymarching Flower Shader - wraikny's shop</a></p>
 
               </div>
               <div class="content article-footer">

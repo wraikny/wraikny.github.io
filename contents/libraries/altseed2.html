@@ -1,6 +1,22 @@
 <html>
   <head>
-    <meta charSet="utf-8"/>
+
+    <script type="text/javascript">
+        var wsUri = "ws://localhost:8080/websocket";
+        function init()
+        {
+          websocket = new WebSocket(wsUri);
+          websocket.onclose = function(evt) { onClose(evt) };
+        }
+        function onClose(evt)
+        {
+          console.log('closing');
+          websocket.close();
+          document.location.reload();
+        }
+        window.addEventListener("load", init, false);
+    </script>
+            <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
       Altseed2 (OSS, 複数人開発) - wraikny's
@@ -69,15 +85,16 @@
 <li><a href="http://altseed.github.io">Altseed2</a></li>
 <li><a href="https://www.nuget.org/packages/Altseed2/">Altseed2 - NuGet Gallery</a></li>
 </ul>
-<p>Core(C++), Engine(C#) 共にメインコミッターの一人として、主に以下の機能の開発に関わりました。</p>
+<p>メインコミッターの一人として、主に以下の機能の開発に関わりました。</p>
 <ul>
-<li>フォント・文字描画</li>
-<li>ジョイスティック</li>
-<li>ポストエフェクト</li>
-<li>ロガー</li>
-<li>.NETツールの作成</li>
+<li>フォント・文字描画 (C++, medfgen)</li>
+<li>ジョイスティック (C++, glfw)</li>
+<li>ポストエフェクト (C++, C#, HLSL)</li>
+<li>ロガー (C++)</li>
+<li>.NETツールの作成 (C#)</li>
+<li>全体的なバグ修正・リファクタリング (C++, C#)</li>
+<li>C++ to Rust FFIコード自動生成 (Python, Rust)</li>
 <li>一部のCI設定</li>
-<li>全体的なバグ修正・リファクタリング</li>
 </ul>
 
               </div>

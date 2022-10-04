@@ -1,6 +1,22 @@
 <html>
   <head>
-    <meta charSet="utf-8"/>
+
+    <script type="text/javascript">
+        var wsUri = "ws://localhost:8080/websocket";
+        function init()
+        {
+          websocket = new WebSocket(wsUri);
+          websocket.onclose = function(evt) { onClose(evt) };
+        }
+        function onClose(evt)
+        {
+          console.log('closing');
+          websocket.close();
+          document.location.reload();
+        }
+        window.addEventListener("load", init, false);
+    </script>
+            <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
       Wraindrop Bot - wraikny's
@@ -69,6 +85,7 @@
               <div class="content article-body">
                 <p>よくあるDiscordの読み上げbotです。
 WindowsとRaspberry Pi (Raspbian)で動作します。</p>
+<p><a href="https://github.com/wraikny/WraindropBot">wraikny/WraindropBot - GitHub</a></p>
 <!--more-->
 <p>機能</p>
 <ul>
@@ -84,8 +101,6 @@ WindowsとRaspberry Pi (Raspbian)で動作します。</p>
 <li>データベース: SQLite3, Dapper</li>
 </ul>
 <p>スタンドアロンバイナリを自宅のラズパイに置いて動かしています。</p>
-<p>リポジトリはこちら</p>
-<p><a href="https://github.com/wraikny/WraindropBot">wraikny/WraindropBot - GitHub</a></p>
 
               </div>
               <div class="content article-footer">

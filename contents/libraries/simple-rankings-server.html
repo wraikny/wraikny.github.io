@@ -1,6 +1,22 @@
 <html>
   <head>
-    <meta charSet="utf-8"/>
+
+    <script type="text/javascript">
+        var wsUri = "ws://localhost:8080/websocket";
+        function init()
+        {
+          websocket = new WebSocket(wsUri);
+          websocket.onclose = function(evt) { onClose(evt) };
+        }
+        function onClose(evt)
+        {
+          console.log('closing');
+          websocket.close();
+          document.location.reload();
+        }
+        window.addEventListener("load", init, false);
+    </script>
+            <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
       Simple Rankings Server - wraikny's
@@ -66,10 +82,10 @@
               <div class="content article-body">
                 <p>Simple Rankings Serverは、複数のゲームのオンラインランキングを単一のアプリケーションで手軽に管理することを目的としたREST-APIサーバーです。</p>
 <p>主にF# + Suave + Dapper + SQLiteという技術構成です。</p>
-<p>解説記事を書きました</p>
-<p><a href="https://www.amusement-creators.info/articles/simple-rankings-server/">自作ゲームに手軽にオンラインランキングを導入しよう！ </a></p>
-<p>リポジトリ</p>
-<p><a href="https://github.com/wraikny/simple-rankings-server">wraikny/simple-rankings-server - GitHub</a></p>
+<ul>
+<li><a href="https://www.amusement-creators.info/articles/simple-rankings-server/">自作ゲームに手軽にオンラインランキングを導入しよう！ </a></li>
+<li><a href="https://github.com/wraikny/simple-rankings-server">wraikny/simple-rankings-server - GitHub</a></li>
+</ul>
 
               </div>
               <div class="content article-footer">

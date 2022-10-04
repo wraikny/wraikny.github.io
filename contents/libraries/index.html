@@ -1,6 +1,22 @@
 <html>
   <head>
-    <meta charSet="utf-8"/>
+
+    <script type="text/javascript">
+        var wsUri = "ws://localhost:8080/websocket";
+        function init()
+        {
+          websocket = new WebSocket(wsUri);
+          websocket.onclose = function(evt) { onClose(evt) };
+        }
+        function onClose(evt)
+        {
+          console.log('closing');
+          websocket.close();
+          document.location.reload();
+        }
+        window.addEventListener("load", init, false);
+    </script>
+            <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
       Libraries - wraikny's
@@ -66,17 +82,13 @@
                     </p>
                   </div>
                   <div class="content article-body">
-                    <p>SquirrelayServer は、リアルタイム通信のためのリレーサーバーです。 設定ファイルを記述するだけで色々な種類のゲームで利用できることを目指しています。
-特に理由はないですが、名前は動物のリス（Squirrel）と掛けています。</p>
-<p>現在開発中です。</p>
-<p>C#で記述していて、.NET環境で利用できます。<br />
-SerializationのライブラリとしてMessagePack-CSharpを使用しています。<br />
-RUDP通信のライブラリとしてLiteNetLibを使用しています。</p>
-<p>xunitとMoqを利用した単体テストを記述していて、GitHub Actionsで自動実行しています。</p>
-<p>解説記事書きました</p>
-<p><a href="https://www.amusement-creators.info/articles/squirrelayserver/">リアルタイムリレーサーバーSquirrelayServerの紹介 - AmusementCreators</a></p>
-<p>リポジトリ</p>
-<p><a href="https://github.com/wraikny/SquirrelayServer">wraikny/SquirrelayServer - GitHub</a></p>
+                    <p>SquirrelayServer は、リアルタイム通信のためのリレーサーバーです。 ルーム機能もあります。設定ファイルを記述するだけで色々な種類のゲームで利用できることを目指しています。
+名前は動物のリス（Squirrel）と掛けています。</p>
+<ul>
+<li><a href="https://www.amusement-creators.info/articles/squirrelayserver/">リアルタイムリレーサーバーSquirrelayServerの紹介 - AmusementCreators</a></li>
+<li><a href="https://github.com/wraikny/SquirrelayServer">wraikny/SquirrelayServer - GitHub</a></li>
+</ul>
+<p><a href="/contents/libraries/squirrelayserver.html" class="button">More</a></p>
 
                   </div>
                 </div>
@@ -97,7 +109,6 @@ RUDP通信のライブラリとしてLiteNetLibを使用しています。</p>
                   </div>
                   <div class="content article-body">
                     <p>AwaitableCoroutine は、async/await 構文を使用可能にしたコルーチンを提供する C# 向けライブラリです。 内部的にはTask-Like、Awaitable パターン、AsyncMethodBuilder が使われています。</p>
-<p>リポジトリ</p>
 <ul>
 <li><a href="https://github.com/wraikny/AwaitableCoroutine">AwaitableCoroutine - GitHub</a></li>
 </ul>
@@ -151,15 +162,16 @@ RUDP通信のライブラリとしてLiteNetLibを使用しています。</p>
 <li><a href="http://altseed.github.io">Altseed2</a></li>
 <li><a href="https://www.nuget.org/packages/Altseed2/">Altseed2 - NuGet Gallery</a></li>
 </ul>
-<p>Core(C++), Engine(C#) 共にメインコミッターの一人として、主に以下の機能の開発に関わりました。</p>
+<p>メインコミッターの一人として、主に以下の機能の開発に関わりました。</p>
 <ul>
-<li>フォント・文字描画</li>
-<li>ジョイスティック</li>
-<li>ポストエフェクト</li>
-<li>ロガー</li>
-<li>.NETツールの作成</li>
+<li>フォント・文字描画 (C++, medfgen)</li>
+<li>ジョイスティック (C++, glfw)</li>
+<li>ポストエフェクト (C++, C#, HLSL)</li>
+<li>ロガー (C++)</li>
+<li>.NETツールの作成 (C#)</li>
+<li>全体的なバグ修正・リファクタリング (C++, C#)</li>
+<li>C++ to Rust FFIコード自動生成 (Python, Rust)</li>
 <li>一部のCI設定</li>
-<li>全体的なバグ修正・リファクタリング</li>
 </ul>
 
                   </div>
@@ -182,8 +194,10 @@ RUDP通信のライブラリとしてLiteNetLibを使用しています。</p>
                   <div class="content article-body">
                     <p>EffFsは、SRTP を用いた F# の Effect System ライブラリです。</p>
 <p>SideEffect や Dependency を静的に解決することができます。</p>
-<p>リポジトリ</p>
-<p><a href="https://github.com/wraikny/EffFs">wraikny/EffFs - GitHub</a></p>
+<ul>
+<li><a href="https://github.com/wraikny/EffFs">wraikny/EffFs - GitHub</a></li>
+<li><a href="https://www.nuget.org/packages/EffFs/">EffFs - NuGet Gallery</a></li>
+</ul>
 <p><a href="/contents/libraries/efffs.html" class="button">More</a></p>
 
                   </div>
@@ -233,10 +247,10 @@ RUDP通信のライブラリとしてLiteNetLibを使用しています。</p>
                   <div class="content article-body">
                     <p>Simple Rankings Serverは、複数のゲームのオンラインランキングを単一のアプリケーションで手軽に管理することを目的としたREST-APIサーバーです。</p>
 <p>主にF# + Suave + Dapper + SQLiteという技術構成です。</p>
-<p>解説記事を書きました</p>
-<p><a href="https://www.amusement-creators.info/articles/simple-rankings-server/">自作ゲームに手軽にオンラインランキングを導入しよう！ </a></p>
-<p>リポジトリ</p>
-<p><a href="https://github.com/wraikny/simple-rankings-server">wraikny/simple-rankings-server - GitHub</a></p>
+<ul>
+<li><a href="https://www.amusement-creators.info/articles/simple-rankings-server/">自作ゲームに手軽にオンラインランキングを導入しよう！ </a></li>
+<li><a href="https://github.com/wraikny/simple-rankings-server">wraikny/simple-rankings-server - GitHub</a></li>
+</ul>
 
                   </div>
                 </div>

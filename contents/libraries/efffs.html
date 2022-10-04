@@ -1,6 +1,22 @@
 <html>
   <head>
-    <meta charSet="utf-8"/>
+
+    <script type="text/javascript">
+        var wsUri = "ws://localhost:8080/websocket";
+        function init()
+        {
+          websocket = new WebSocket(wsUri);
+          websocket.onclose = function(evt) { onClose(evt) };
+        }
+        function onClose(evt)
+        {
+          console.log('closing');
+          websocket.close();
+          document.location.reload();
+        }
+        window.addEventListener("load", init, false);
+    </script>
+            <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
       EffFs - wraikny's
@@ -66,11 +82,11 @@
               <div class="content article-body">
                 <p>EffFsは、SRTP を用いた F# の Effect System ライブラリです。</p>
 <p>SideEffect や Dependency を静的に解決することができます。</p>
-<p>リポジトリ</p>
-<p><a href="https://github.com/wraikny/EffFs">wraikny/EffFs - GitHub</a></p>
+<ul>
+<li><a href="https://github.com/wraikny/EffFs">wraikny/EffFs - GitHub</a></li>
+<li><a href="https://www.nuget.org/packages/EffFs/">EffFs - NuGet Gallery</a></li>
+</ul>
 <!--more-->
-<p>インストール</p>
-<p><a href="https://www.nuget.org/packages/EffFs/">EffFs - NuGet Gallery</a></p>
 <h3>Example</h3>
 <pre><code class="language-fsharp">open EffFs
 

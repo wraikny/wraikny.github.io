@@ -1,6 +1,22 @@
 <html>
   <head>
-    <meta charSet="utf-8"/>
+
+    <script type="text/javascript">
+        var wsUri = "ws://localhost:8080/websocket";
+        function init()
+        {
+          websocket = new WebSocket(wsUri);
+          websocket.onclose = function(evt) { onClose(evt) };
+        }
+        function onClose(evt)
+        {
+          console.log('closing');
+          websocket.close();
+          document.location.reload();
+        }
+        window.addEventListener("load", init, false);
+    </script>
+            <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
       SquirrelayServer - wraikny's
@@ -64,17 +80,17 @@
                 </p>
               </div>
               <div class="content article-body">
-                <p>SquirrelayServer は、リアルタイム通信のためのリレーサーバーです。 設定ファイルを記述するだけで色々な種類のゲームで利用できることを目指しています。
-特に理由はないですが、名前は動物のリス（Squirrel）と掛けています。</p>
-<p>現在開発中です。</p>
+                <p>SquirrelayServer は、リアルタイム通信のためのリレーサーバーです。 ルーム機能もあります。設定ファイルを記述するだけで色々な種類のゲームで利用できることを目指しています。
+名前は動物のリス（Squirrel）と掛けています。</p>
+<ul>
+<li><a href="https://www.amusement-creators.info/articles/squirrelayserver/">リアルタイムリレーサーバーSquirrelayServerの紹介 - AmusementCreators</a></li>
+<li><a href="https://github.com/wraikny/SquirrelayServer">wraikny/SquirrelayServer - GitHub</a></li>
+</ul>
+<!--more-->
 <p>C#で記述していて、.NET環境で利用できます。<br />
 SerializationのライブラリとしてMessagePack-CSharpを使用しています。<br />
 RUDP通信のライブラリとしてLiteNetLibを使用しています。</p>
 <p>xunitとMoqを利用した単体テストを記述していて、GitHub Actionsで自動実行しています。</p>
-<p>解説記事書きました</p>
-<p><a href="https://www.amusement-creators.info/articles/squirrelayserver/">リアルタイムリレーサーバーSquirrelayServerの紹介 - AmusementCreators</a></p>
-<p>リポジトリ</p>
-<p><a href="https://github.com/wraikny/SquirrelayServer">wraikny/SquirrelayServer - GitHub</a></p>
 
               </div>
               <div class="content article-footer">

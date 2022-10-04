@@ -1,6 +1,22 @@
 <html>
   <head>
-    <meta charSet="utf-8"/>
+
+    <script type="text/javascript">
+        var wsUri = "ws://localhost:8080/websocket";
+        function init()
+        {
+          websocket = new WebSocket(wsUri);
+          websocket.onclose = function(evt) { onClose(evt) };
+        }
+        function onClose(evt)
+        {
+          console.log('closing');
+          websocket.close();
+          document.location.reload();
+        }
+        window.addEventListener("load", init, false);
+    </script>
+            <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
       YubiCamera Shader - wraikny's
@@ -68,6 +84,9 @@
               </div>
               <div class="content article-body">
                 <p>指で囲った四角の中で姿が見えるシェーダーです。</p>
+<p>Avatar &quot;オリジナル3Dモデル『キッシュ・ライト』&quot; by むた</p>
+<p><a href="https://github.com/wraikny/GhostShader/blob/master/Assets/Ghost/src/YubiCamera.shader">wraikny/GhostShader - GitHub</a>
+(GhostShaderと同一リポジトリです)</p>
 <!--more-->
 <p>
     <img src="/images/works/ghost/yubicamerashader-2.jpg" width="560" class="has-image-centered">
@@ -75,9 +94,6 @@
 <p>
     <img src="/images/works/ghost/yubicamerashader-3.jpg" width="560" class="has-image-centered">
 </p>
-<p>Avatar &quot;オリジナル3Dモデル『キッシュ・ライト』&quot; by むた</p>
-<p><a href="https://github.com/wraikny/GhostShader/blob/master/Assets/Ghost/src/YubiCamera.shader">wraikny/GhostShader - GitHub</a>
-(GhostShaderと同一リポジトリです)</p>
 
               </div>
               <div class="content article-footer">
