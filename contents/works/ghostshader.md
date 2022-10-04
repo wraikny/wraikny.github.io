@@ -8,8 +8,6 @@ thumbnail: /images/works/ghost/ghostshader-1.jpg
 
 重なった物の奥行きで見え方が変わるシェーダーです。
 
-<!--more-->
-
 Photo by ray45422  
 Avatar "Hologroid" by Nyarbera  
 World "Deep Blue" by Fins  

@@ -7,6 +7,10 @@ thumbnail: /images/works/rmflower/rmflower-1.jpg
 ---
 
 レイマーチングを用いて花をレンダリングするシェーダです。
+パラメータで形状を変えられます。
+
+[Raymarching Flower Shader - wraikny's shop](https://wraikny.booth.pm/items/1289241)
+
 
 <!--more-->
 <p>
@@ -16,9 +20,3 @@ thumbnail: /images/works/rmflower/rmflower-1.jpg
 <p>
     <img src="/images/works/rmflower/rmflower-3.jpg" width="560" class="has-image-centered">
 </p>
-
-パラメータで形状を変えられます。
-
-BOOTHにて販売しています。
-
-[Raymarching Flower Shader - wraikny's shop](https://wraikny.booth.pm/items/1289241)

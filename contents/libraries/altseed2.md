@@ -10,12 +10,13 @@ Altseed2 は画面描画・音・入力・衝突判定などの機能をまと�
 - [Altseed2](http://altseed.github.io)
 - [Altseed2 - NuGet Gallery](https://www.nuget.org/packages/Altseed2/)
 
-Core(C++), Engine(C#) 共にメインコミッターの一人として、主に以下の機能の開発に関わりました。
+メインコミッターの一人として、主に以下の機能の開発に関わりました。
 
-* フォント・文字描画
-* ジョイスティック
-* ポストエフェクト
-* ロガー
-* .NETツールの作成
+* フォント・文字描画 (C++, medfgen)
+* ジョイスティック (C++, glfw)
+* ポストエフェクト (C++, C#, HLSL)
+* ロガー (C++)
+* .NETツールの作成 (C#)
+* 全体的なバグ修正・リファクタリング (C++, C#)
+* C++ to Rust FFIコード自動生成 (Python, Rust)
 * 一部のCI設定
-* 全体的なバグ修正・リファクタリング

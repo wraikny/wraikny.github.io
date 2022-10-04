@@ -7,8 +7,6 @@ tags: library,csharp,awaitable,coroutine
 
 AwaitableCoroutine は、async/await 構文を使用可能にしたコルーチンを提供する C# 向けライブラリです。 内部的にはTask-Like、Awaitable パターン、AsyncMethodBuilder が使われています。
 
-リポジトリ
-
 - [AwaitableCoroutine - GitHub](https://github.com/wraikny/AwaitableCoroutine)
 
 <!--more-->

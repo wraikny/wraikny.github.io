@@ -10,13 +10,13 @@ let postPredicate (projectRoot: string, page: string) =
     let ext = Path.GetExtension page
     if ext = ".md" then
         let ctn = File.ReadAllText fileName
-        ctn.Contains("layout: post")
+        let result = ctn.Contains("layout: post")
+        if result then stdout.WriteLine(fileName)
+        result
     else
         false
 
 let staticPredicate (projectRoot: string, page: string) =
-    let ext = Path.GetExtension page
-
     let excludes = [|
         "_public"
         "_bin"
@@ -31,9 +31,10 @@ let staticPredicate (projectRoot: string, page: string) =
         ".config"
         ".vscode"
         ".md"
+        ".fsx"
     |]
 
-    if ext = ".fsx" || excludes |> Seq.exists page.Contains
+    if excludes |> Seq.exists page.Contains
     then
         false
     else
@@ -43,10 +44,10 @@ let config = {
     Generators = [
         {Script = "less.fsx"; Trigger = OnFileExt ".less"; OutputFile = ChangeExtension "css" }
         {Script = "sass.fsx"; Trigger = OnFileExt ".scss"; OutputFile = ChangeExtension "css" }
-        {Script = "post.fsx"; Trigger = OnFilePredicate postPredicate; OutputFile = ChangeExtension "html" }
         {Script = "staticfile.fsx"; Trigger = OnFilePredicate staticPredicate; OutputFile = SameFileName }
+        {Script = "about.fsx"; Trigger = OnFilePredicate aboutPredicate; OutputFile = NewFileName "about.html" }
+        {Script = "post.fsx"; Trigger = OnFilePredicate postPredicate; OutputFile = ChangeExtension "html" }
         {Script = "index.fsx"; Trigger = Once; OutputFile = NewFileName "index.html" }
-        {Script = "about.fsx"; Trigger = Once; OutputFile = NewFileName "about.html" }
         {Script = "indexgames.fsx"; Trigger = Once; OutputFile = NewFileName "contents/games/index.html" }
         {Script = "indexworks.fsx"; Trigger = Once; OutputFile = NewFileName "contents/works/index.html" }
         {Script = "indexlibraries.fsx"; Trigger = Once; OutputFile = NewFileName "contents/libraries/index.html" }

@@ -9,16 +9,10 @@ EffFsは、SRTP を用いた F# の Effect System ライブラリです。
 
 SideEffect や Dependency を静的に解決することができます。
 
-リポジトリ
-
-[wraikny/EffFs - GitHub](https://github.com/wraikny/EffFs)
+- [wraikny/EffFs - GitHub](https://github.com/wraikny/EffFs)
+- [EffFs - NuGet Gallery](https://www.nuget.org/packages/EffFs/)
 
 <!--more-->
-
-インストール
-
-[EffFs - NuGet Gallery](https://www.nuget.org/packages/EffFs/)
-
 
 ### Example
 

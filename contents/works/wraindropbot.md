@@ -9,6 +9,8 @@ thumbnail: /images/works/wraindrop-banner.png
 よくあるDiscordの読み上げbotです。
 WindowsとRaspberry Pi (Raspbian)で動作します。
 
+[wraikny/WraindropBot - GitHub](https://github.com/wraikny/WraindropBot)
+
 <!--more-->
 
 機能
@@ -27,6 +29,3 @@ WindowsとRaspberry Pi (Raspbian)で動作します。
 
 スタンドアロンバイナリを自宅のラズパイに置いて動かしています。
 
-リポジトリはこちら
-
-[wraikny/WraindropBot - GitHub](https://github.com/wraikny/WraindropBot)

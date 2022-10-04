@@ -15,11 +15,11 @@ wraikny ([reini/れいにー]）
 ゲームやサーバー等、趣味のプログラミングでは基本的にF#を使っています。
 ゲーム向けのライブラリやサーバーの開発でC#を使っています。
 
-AmusementCreators中心に開発中のゲームエンジン[Altseed2](https://github.com/altseed/altseed2)の開発メンバーとして、C++, C#, Rustのコードを書いています。
+AmusementCreators中心に開発中のゲームエンジン[Altseed2](https://github.com/altseed/altseed2)の開発メンバーとして、C++, C#, Rustのコードを書いていました。
 
-好きなゲームはApexLegends、VALORANT、ポケモンシリーズ、ぷよぷよ、テトリス、スマブラ、Slay the Spireなど。
+好きなゲームは ApexLegends、VALORANT、ポケモン、ぷよぷよ、テトリス、スマブラ、マイクラ、Slay the Spireなど。
 
-## Contact
+## Contacts
 
 連絡先です。
 
@@ -27,12 +27,15 @@ AmusementCreators中心に開発中のゲームエンジン[Altseed2](https://gi
 - [wraikny - GitHub](https://github.com/wraikny)
 - writtenknown(at)gmail.com
 
-## Group
+## Groups
 
-所属している・していた団体です。
+現在所属しているところです。
 
 - [筑波大学 AmusementCreators](https://www.amusement-creators.info) 2017年5月~
-- [筑波大学 情報学群 情報メディア創成学類](https://www.mast.tsukuba.ac.jp) 2017年4月~(2023年3月卒業予定)
+- [筑波大学 情報学群 情報メディア創成学類](https://www.mast.tsukuba.ac.jp) 2017年4月~
+
+過去所属していたところです。
+
 - [HERP, Inc.](https://herp.co.jp/) エンジニア(アルバイト) 2020年2月~2021年9月
 
 ## Interests
@@ -40,18 +43,25 @@ AmusementCreators中心に開発中のゲームエンジン[Altseed2](https://gi
 興味があることのキーワードとかです。
 
 - F#, C#, Rust
-- Computer Graphics
-- Game AI, Procedural Generation
 - Functional Programming
 - Computational Effect
+- Computer Graphics
+- Game AI, Procedural Generation
 
 ## Links
 
 外部のリンクです。
 
 - [wraikny - フリーゲーム夢現](https://freegame-mugen.jp/cms/mt-cp.fcgi?__mode=view&blog_id=1&id=4393)
+  - ゲームのダウンロードできます。
 - [wraikny's - BOOTH](https://wraikny.booth.pm)
+  - ゲームやVRChat向けシェーダーの販売をしてます。
 - [wraikny - YouTube](https://www.youtube.com/channel/UCZ9gPqMn0Vtd0NTIAQtrt2Q)
+  - ゲームの動画を投稿してます。
 - [wraikny - AmusementCreators](https://www.amusement-creators.info/authors/wraikny/)
-- [wraikny - Scrapbox](https://scrapbox.io/wraikny/)
+  - 技術記事等。
 - [wraikny - Zenn](https://zenn.dev/wraikny)
+  - 技術記事。
+- [wraikny - Scrapbox](https://scrapbox.io/wraikny/)
+  - 乱雑なメモとかアイディアです。
+- [カレーの作り方](https://scrapbox.io/wraikny/カレーの作り方)

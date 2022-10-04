@@ -6,7 +6,7 @@
 #load "../loaders/globalloader.fsx"
 #endif
 
-#load "const.fsx"
+#load "./const.fsx"
 
 open Html
 
@@ -113,13 +113,9 @@ let layout (ctx : SiteContents) active bodyCnt =
     ]
 
 let render (ctx : SiteContents) cnt =
-    let disableLiveRefresh = false
-
     cnt
     |> HtmlElement.ToString
-#if WATCH
     |> injectWebsocketCode
-#endif
 
 
 let published (post: Postloader.Post) =

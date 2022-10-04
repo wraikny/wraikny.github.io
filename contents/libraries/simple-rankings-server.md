@@ -9,10 +9,5 @@ Simple Rankings Serverは、複数のゲームのオンラインランキング�
 
 主にF# + Suave + Dapper + SQLiteという技術構成です。
 
-解説記事を書きました
-
-[自作ゲームに手軽にオンラインランキングを導入しよう！ ](https://www.amusement-creators.info/articles/simple-rankings-server/)
-
-リポジトリ
-
-[wraikny/simple-rankings-server - GitHub](https://github.com/wraikny/simple-rankings-server)
+- [自作ゲームに手軽にオンラインランキングを導入しよう！ ](https://www.amusement-creators.info/articles/simple-rankings-server/)
+- [wraikny/simple-rankings-server - GitHub](https://github.com/wraikny/simple-rankings-server)
