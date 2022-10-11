@@ -2,7 +2,7 @@
 layout: post
 title: 九十九のラビリンス 2019夏開発版
 published: 2019-10-1
-tags: game,archived,altseed
+tags: game,archived,altseed,fsharp,csharp
 thumbnail: /images/games/99labyrinth/99labyrinth_2019summer_game.jpg
 ---
 

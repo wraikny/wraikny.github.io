@@ -2,7 +2,7 @@
 layout: post
 title: Cannon
 published: 2018-3-1
-tags: game,archived,altseed
+tags: game,archived,altseed,fsharp
 thumbnail: /images/games/cannon/cannon_game.jpg
 ---
 

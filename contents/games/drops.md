@@ -2,7 +2,7 @@
 layout: post
 title: Drops
 published: 2017-11-4
-tags: game,archived,altseed
+tags: game,archived,altseed,csharp
 thumbnail: /images/games/drops/drops_title.jpg
 ---
 

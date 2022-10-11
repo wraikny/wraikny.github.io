@@ -2,7 +2,7 @@
 layout: post
 title: Quadrate
 published: 2018-8-7
-tags: game,altseed
+tags: game,altseed,fsharp
 thumbnail: /images/games/quadrate/quadrate_game2.jpg
 ---
 

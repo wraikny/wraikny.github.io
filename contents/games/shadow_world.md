@@ -2,7 +2,7 @@
 layout: post
 title: Shadow World
 published: 2017-12-31
-tags: game,archived,altseed
+tags: game,archived,altseed,csharp
 thumbnail: /images/games/shadow_world/shadow_world_game.jpg
 ---
 

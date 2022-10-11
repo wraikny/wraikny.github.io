@@ -2,7 +2,7 @@
 layout: post
 title: Cat Bacuum Cat Flying
 published: 2019-11-4
-tags: game,altseed
+tags: game,altseed,fsharp,csharp
 thumbnail: /images/games/cbcf.jpg
 ---
 

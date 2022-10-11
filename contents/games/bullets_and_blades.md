@@ -2,7 +2,7 @@
 layout: post
 title: Bullets&Blades
 published: 2017-5-11
-tags: game,archived,altseed
+tags: game,archived,altseed,csharp
 thumbnail: /images/games/bullets_and_blades.jpg
 ---
 

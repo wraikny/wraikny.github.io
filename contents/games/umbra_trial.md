@@ -2,7 +2,7 @@
 layout: post
 title: Umbra Trial
 published: 2018-12-31
-tags: game,archived,altseed
+tags: game,archived,altseed,fsharp
 thumbnail: /images/games/umbra/umbra_trial_title.jpg
 ---
 

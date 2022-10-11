@@ -2,7 +2,7 @@
 layout: post
 title: EffFs
 published: 2021-4-9
-tags: library,fsharp
+tags: library,fsharp,effect-system
 ---
 
 EffFsは、SRTP を用いた F# の Effect System ライブラリです。

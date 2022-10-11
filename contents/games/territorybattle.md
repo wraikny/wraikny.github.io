@@ -2,7 +2,7 @@
 layout: post
 title: TerritoryBattle(1 week game jam)
 published: 2021-3-31
-tags: game,archived,altseed2
+tags: game,altseed2,fsharp,csharp
 thumbnail: /images/games/territorybattle/territorybattle.jpg
 ---
 

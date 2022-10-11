@@ -2,7 +2,7 @@
 layout: post
 title: SquirrelayServer
 published: 2021-10-12
-tags: library,server
+tags: library,server,csharp
 ---
 
 SquirrelayServer は、リアルタイム通信のためのリレーサーバーです。 ルーム機能もあります。設定ファイルを記述するだけで色々な種類のゲームで利用できることを目指しています。 

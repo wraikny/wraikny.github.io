@@ -2,7 +2,7 @@
 layout: post
 title: RouteTiles
 published: 2020-10-1
-tags: game,altseed2
+tags: game,altseed2,fsharp
 thumbnail: /images/games/routetiles/RouteTiles-ss-play0.jpg
 ---
 
