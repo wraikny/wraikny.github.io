@@ -92,8 +92,9 @@ MITライセンスで単一ファイルで実装しています。
 <li><code>Result&lt;'t, 'e&gt;</code></li>
 <li><code>Lazy&lt;'t&gt;</code></li>
 </ul>
-<p><a href="https://github.com/wraikny/Do.fs">Do.fs - GitHub/wraikny</a></p>
+<p><a href="https://github.com/wraikny/Do.fs">wraikny/Do.fs - GitHub</a></p>
 <!--more-->
+<h3>Examples</h3>
 <pre><code class="language-fsharp">Do.voption {
   let! x = Some 40
   let! y = ValueSome 2
@@ -103,8 +104,9 @@ MITライセンスで単一ファイルで実装しています。
 | ValueNone -&gt; printfn &quot;result is none.&quot;
 | ValueSome a -&gt; printfn &quot;result = %d.&quot; a
 </code></pre>
+<h3>Reference</h3>
 <p>Gnicoさんのこちらの記事が参考になりました、ありがとうございます。</p>
-<p><a href="https://zenn.dev/gnico/articles/5f133dac0585f5">InlineIfLambdaを用いて効率の良いコンピュテーション式ビルダを作成する - Zenn/Gnico</a></p>
+<p><a href="https://zenn.dev/gnico/articles/5f133dac0585f5">InlineIfLambdaを用いて効率の良いコンピュテーション式ビルダを作成する by Gnico - Zenn</a></p>
 
               </div>
               <div class="content article-footer">
