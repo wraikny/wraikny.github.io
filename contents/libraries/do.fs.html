@@ -19,7 +19,7 @@
             <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
-      Altseed2 (OSS, 複数人開発) - wraikny's
+      Do.fs - wraikny's
     </title>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin=""/>
@@ -62,7 +62,7 @@
       <div class="hero-body">
         <div class="container has-image-centered">
           <h1 class="title">
-            Altseed2 (OSS, 複数人開発)
+            Do.fs
           </h1>
         </div>
       </div>
@@ -74,31 +74,37 @@
             <div class="card-content">
               <div class="media-content has-image-centered">
                 <p class="title article-title">
-                  <a href="/contents/libraries/altseed2.html">
-                    Altseed2 (OSS, 複数人開発)
+                  <a href="/contents/libraries/do.fs.html">
+                    Do.fs
                   </a>
                 </p>
                 <p class="subtitle is-6 article-subtitle">
-                  on 2021-04-30
+                  on 2022-10-11
                 </p>
               </div>
               <div class="content article-body">
-                <p>Altseed2 は画面描画・音・入力・衝突判定などの機能をまとめたゲームエンジンです。</p>
+                <p><code>InlineIfLambda</code>属性を利用して最適化された、F#のコンピューテーション式のビルダーの実装です。<br />
+MITライセンスで単一ファイルで実装しています。
+以下の型のビルダーを提供しています。</p>
 <ul>
-<li><a href="http://altseed.github.io">Altseed2</a></li>
-<li><a href="https://www.nuget.org/packages/Altseed2/">Altseed2 - NuGet Gallery</a></li>
+<li><code>Option&lt;'t&gt;</code></li>
+<li><code>ValueOption&lt;'t&gt;</code></li>
+<li><code>Result&lt;'t, 'e&gt;</code></li>
+<li><code>Lazy&lt;'t&gt;</code></li>
 </ul>
-<p>メインコミッターの一人として、主に以下の機能の開発に関わりました。</p>
-<ul>
-<li>フォント・文字描画 (C++, medfgen)</li>
-<li>ジョイスティック (C++, glfw)</li>
-<li>ポストエフェクト (C++, C#, HLSL)</li>
-<li>ロガー (C++)</li>
-<li>.NETツールの作成 (C#)</li>
-<li>全体的なバグ修正・リファクタリング (C++, C#)</li>
-<li>C++ to Rust FFIコード自動生成 (Python, Rust)</li>
-<li>一部のCI設定</li>
-</ul>
+<p><a href="https://github.com/wraikny/Do.fs">Do.fs - GitHub/wraikny</a></p>
+<!--more-->
+<pre><code class="language-fsharp">Do.voption {
+  let! x = Some 40
+  let! y = ValueSome 2
+  return x + y
+}
+|&gt; function
+| ValueNone -&gt; printfn &quot;result is none.&quot;
+| ValueSome a -&gt; printfn &quot;result = %d.&quot; a
+</code></pre>
+<p>Gnicoさんのこちらの記事が参考になりました、ありがとうございます。</p>
+<p><a href="https://zenn.dev/gnico/articles/5f133dac0585f5">InlineIfLambdaを用いて効率の良いコンピュテーション式ビルダを作成する - Zenn/Gnico</a></p>
 
               </div>
               <div class="content article-footer">

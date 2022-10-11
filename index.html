@@ -21,7 +21,10 @@
     <title>
       wraikny's
     </title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin=""/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400&display=swap"/>
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css"/>
     <link rel="stylesheet" type="text/css" href="/style/style.css"/>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/vs.min.css"/>
@@ -68,6 +71,36 @@
       <section class="articles">
         <div class="column is-10 is-offset-1">
           <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <div class="card article">
+                <div class="card-content">
+                  <div class="media-content has-image-centered">
+                    <p class="title article-title">
+                      <a href="/contents/libraries/do.fs.html">
+                        Do.fs
+                      </a>
+                    </p>
+                    <p class="subtitle is-6 article-subtitle">
+                      on 2022-10-11
+                    </p>
+                  </div>
+                  <div class="content article-body">
+                    <p><code>InlineIfLambda</code>属性を利用して最適化された、F#のコンピューテーション式のビルダーの実装です。<br />
+MITライセンスで単一ファイルで実装しています。
+以下の型のビルダーを提供しています。</p>
+<ul>
+<li><code>Option&lt;'t&gt;</code></li>
+<li><code>ValueOption&lt;'t&gt;</code></li>
+<li><code>Result&lt;'t, 'e&gt;</code></li>
+<li><code>Lazy&lt;'t&gt;</code></li>
+</ul>
+<p><a href="https://github.com/wraikny/Do.fs">Do.fs - GitHub/wraikny</a></p>
+<p><a href="/contents/libraries/do.fs.html" class="button">More</a></p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="tile is-child">
               <div class="card article">
                 <div class="card-image">
@@ -884,6 +917,7 @@ VR状態で頭を振ってもくるくると回転しません。</p>
   <footer>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/fsharp.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/csharp.min.js"></script>
     <script>
       hljs.highlightAll()
     </script>
