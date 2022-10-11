@@ -134,7 +134,8 @@ let postLayout (useSummary: bool) (post: Postloader.Post) =
         match post.thumbnail with
         | Some path ->
             div [Class "card-image"] [
-                let thumbnail = image [Src path] []
+                let thumbnail =
+                    figure [ Class "image" ] [ image [Src path] [] ]
 
                 if useSummary then a [Href post.link] [thumbnail] else thumbnail
             ]
