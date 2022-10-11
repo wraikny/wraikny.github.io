@@ -70,7 +70,11 @@ let layout (ctx : SiteContents) active bodyCnt =
             title [] [!! ttl]
             // link [Rel "icon"; Type "image/png"; Sizes "32x32"; Href "/images/favicon.png"]
             // link [Rel "stylesheet"; Href "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"]
-            link [Rel "stylesheet"; Href "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap"]
+
+            link [ Rel "preconnect"; Href "https://fonts.googleapis.com" ]
+            link [ Rel "preconnect"; Href "https://fonts.gstatic.com"; CrossOrigin "" ]
+            link [Rel "stylesheet"; Href "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap"]
+            link [Rel "stylesheet"; Href "https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400&display=swap"]
             link [Rel "stylesheet"; Href "https://unpkg.com/bulma@0.9.1/css/bulma.min.css"]
             link [Rel "stylesheet"; Type "text/css"; Href "/style/style.css"]
 
@@ -96,10 +100,11 @@ let layout (ctx : SiteContents) active bodyCnt =
         ]
 
         footer [] [
-            script [ Src  <| sprintf "//cdnjs.cloudflare.com/ajax/libs/highlight.js/%s/highlight.min.js" highlightjs] []
+            script [ Src <| sprintf "//cdnjs.cloudflare.com/ajax/libs/highlight.js/%s/highlight.min.js" highlightjs] []
             for lang in
               [
                 "fsharp"
+                "csharp"
               ] do
               script [Src <| sprintf "//cdnjs.cloudflare.com/ajax/libs/highlight.js/%s/languages/%s.min.js" highlightjs lang] []
 
