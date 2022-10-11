@@ -142,13 +142,23 @@ let postLayout (useSummary: bool) (post: Postloader.Post) =
         | None -> ()
 
         div [Class "card-content"] [
-            div [Class "media-content has-image-centered"] [
-                p [Class "title article-title"; ] [ a [Href post.link] [!! post.title]]
-                p [Class "subtitle is-6 article-subtitle"] [
-                    // a [Href "#"] [!! (defaultArg post.author "")]
-                    !! (sprintf "on %s" (published post))
+            div [Class "media"] [
+                div [Class "media-content has-image-centered"] [
+                    p [Class "title article-title"; ] [ a [Href post.link] [!! post.title]]
+                    p [Class "subtitle is-6 article-subtitle"] [
+                        // a [Href "#"] [!! (defaultArg post.author "")]
+                        !! (sprintf "on %s" (published post))
+                    ]
+                    p [Class "tags"] (
+                        post.tags
+                        |> List.filter (fun s -> s <> null && s <> "")
+                        |> List.map (fun tag ->
+                            span [ Class "tag" ] [ !! tag ]
+                        )
+                    )
                 ]
             ]
+
             div [Class "content article-body"] [
                 !! (if useSummary then post.summary else post.content)
 
