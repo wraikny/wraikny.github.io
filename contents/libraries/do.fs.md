@@ -14,9 +14,11 @@ MITライセンスで単一ファイルで実装しています。
 * `Result<'t, 'e>` 
 * `Lazy<'t>` 
 
-[Do.fs - GitHub/wraikny](https://github.com/wraikny/Do.fs)
+[wraikny/Do.fs - GitHub](https://github.com/wraikny/Do.fs)
 
 <!--more-->
+
+### Examples
 
 ```fsharp
 Do.voption {
@@ -29,6 +31,8 @@ Do.voption {
 | ValueSome a -> printfn "result = %d." a
 ```
 
+### Reference
+
 Gnicoさんのこちらの記事が参考になりました、ありがとうございます。  
 
-[InlineIfLambdaを用いて効率の良いコンピュテーション式ビルダを作成する - Zenn/Gnico](https://zenn.dev/gnico/articles/5f133dac0585f5)
+[InlineIfLambdaを用いて効率の良いコンピュテーション式ビルダを作成する by Gnico - Zenn](https://zenn.dev/gnico/articles/5f133dac0585f5)
