@@ -51,6 +51,6 @@ let config = {
         {Script = "indexgames.fsx"; Trigger = Once; OutputFile = NewFileName "contents/games/index.html" }
         {Script = "indexworks.fsx"; Trigger = Once; OutputFile = NewFileName "contents/works/index.html" }
         {Script = "indexlibraries.fsx"; Trigger = Once; OutputFile = NewFileName "contents/libraries/index.html" }
-        // {Script = "indexarticles.fsx"; Trigger = Once; OutputFile = NewFileName "contents/articles/index.html" }
+        {Script = "indexarticles.fsx"; Trigger = Once; OutputFile = NewFileName "contents/articles/index.html" }
     ]
 }
