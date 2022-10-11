@@ -1,0 +1,127 @@
+<html>
+  <head>
+
+    <script type="text/javascript">
+        var wsUri = "ws://localhost:8080/websocket";
+        function init()
+        {
+          websocket = new WebSocket(wsUri);
+          websocket.onclose = function(evt) { onClose(evt) };
+        }
+        function onClose(evt)
+        {
+          console.log('closing');
+          websocket.close();
+          document.location.reload();
+        }
+        window.addEventListener("load", init, false);
+    </script>
+            <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+      .NETビルドスクリプトFAKEの紹介 - wraikny's
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin=""/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400&display=swap"/>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/vs.min.css"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/about.html">
+            About
+          </a>
+          <a class="navbar-item" href="/contents/articles/index.html">
+            Articles
+          </a>
+          <a class="navbar-item" href="/contents/games/index.html">
+            Games
+          </a>
+          <a class="navbar-item" href="/contents/works/index.html">
+            Works
+          </a>
+          <a class="navbar-item" href="/contents/libraries/index.html">
+            Libraries
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-info is-small is-bold">
+      <div class="hero-body">
+        <div class="container has-image-centered">
+          <h1 class="title">
+            .NETビルドスクリプトFAKEの紹介
+          </h1>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="articles">
+        <div class="column is-10 is-offset-1">
+          <div class="card article">
+            <div class="card-content">
+              <div class="media-content has-image-centered">
+                <p class="title article-title">
+                  <a href="/contents/articles/2019/12/05.html">
+                    .NETビルドスクリプトFAKEの紹介
+                  </a>
+                </p>
+                <p class="subtitle is-6 article-subtitle">
+                  on 2019-12-15
+                </p>
+              </div>
+              <div class="content article-body">
+                <p>これは AmusementCreators 2019 アドベントカレンダー その1 の5日目の記事です。</p>
+<h3>はじめに</h3>
+<h4>ビルドスクリプト？</h4>
+<p>GNU Makeに代表されるような、複雑なビルド作業を自動化する簡易的なプログラムを言います。
+Visual Studioであればビルド前後にコマンドを実行する機能があったり、<code>*.sh</code>や<code>*.cmd</code>ファイルを書いて実行することもありますが、基本的にOS等に依存してしまいます。</p>
+<p>PythonやRubyで書く場合もあると思いますが、実行環境を別途インストールする必要があったり、その性質上コード量が多くなればメンテナンスも大変になります。
+また、.NETの開発であればすべて.NETで済ませたいという気持ちもあります。</p>
+<p>今回は.NET上で動く.NET向けのビルドスクリプトFAKE(F#製Make)を紹介していきます。
+FAKEはF#の拡張なので、nugetのライブラリを読み込んで利用することもできます。</p>
+<hr />
+<p>続き<br />
+<a href="https://www.amusement-creators.info/articles/advent_calendar/2019/05_0/">.NETビルドスクリプトFAKEの紹介 - AmusementCreators</a></p>
+
+              </div>
+              <div class="content article-footer">
+                <div>
+                  <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">
+                    Tweet
+                  </a>
+                  <script async="true" src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/fsharp.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/csharp.min.js"></script>
+    <script>
+      hljs.highlightAll()
+    </script>
+    <script type="text/javascript" src="/js/navbar_burger.js"></script>
+    <script type="text/javascript" src="/js/external_a.js"></script>
+  </footer>
+</html>
