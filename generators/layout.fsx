@@ -153,7 +153,7 @@ let postLayout (useSummary: bool) (post: Postloader.Post) =
                         post.tags
                         |> List.filter (fun s -> s <> null && s <> "")
                         |> List.map (fun tag ->
-                            span [ Class "tag" ] [ !! tag ]
+                            span [ Class "tag is-primary" ] [ !! tag ]
                         )
                     )
                 ]
