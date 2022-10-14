@@ -1,22 +1,6 @@
 <html>
   <head>
-
-    <script type="text/javascript">
-        var wsUri = "ws://localhost:8080/websocket";
-        function init()
-        {
-          websocket = new WebSocket(wsUri);
-          websocket.onclose = function(evt) { onClose(evt) };
-        }
-        function onClose(evt)
-        {
-          console.log('closing');
-          websocket.close();
-          document.location.reload();
-        }
-        window.addEventListener("load", init, false);
-    </script>
-            <meta charSet="utf-8"/>
+    <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
       EffFs - wraikny's
@@ -86,13 +70,13 @@
                     on 2021-04-09
                   </p>
                   <p class="tags">
-                    <span class="tag">
+                    <span class="tag is-primary">
                       library
                     </span>
-                    <span class="tag">
+                    <span class="tag is-primary">
                       fsharp
                     </span>
-                    <span class="tag">
+                    <span class="tag is-primary">
                       effect-system
                     </span>
                   </p>

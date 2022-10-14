@@ -1,22 +1,6 @@
 <html>
   <head>
-
-    <script type="text/javascript">
-        var wsUri = "ws://localhost:8080/websocket";
-        function init()
-        {
-          websocket = new WebSocket(wsUri);
-          websocket.onclose = function(evt) { onClose(evt) };
-        }
-        function onClose(evt)
-        {
-          console.log('closing');
-          websocket.close();
-          document.location.reload();
-        }
-        window.addEventListener("load", init, false);
-    </script>
-            <meta charSet="utf-8"/>
+    <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
       Altseed2で軽量な宣言的UIを支援するライブラリAltseed2.BoxUIの紹介 - wraikny's
@@ -86,16 +70,16 @@
                     on 2020-12-25
                   </p>
                   <p class="tags">
-                    <span class="tag">
+                    <span class="tag is-primary">
                       article
                     </span>
-                    <span class="tag">
+                    <span class="tag is-primary">
                       altseed2
                     </span>
-                    <span class="tag">
+                    <span class="tag is-primary">
                       csharp
                     </span>
-                    <span class="tag">
+                    <span class="tag is-primary">
                       UI
                     </span>
                   </p>

@@ -1,22 +1,6 @@
 <html>
   <head>
-
-    <script type="text/javascript">
-        var wsUri = "ws://localhost:8080/websocket";
-        function init()
-        {
-          websocket = new WebSocket(wsUri);
-          websocket.onclose = function(evt) { onClose(evt) };
-        }
-        function onClose(evt)
-        {
-          console.log('closing');
-          websocket.close();
-          document.location.reload();
-        }
-        window.addEventListener("load", init, false);
-    </script>
-            <meta charSet="utf-8"/>
+    <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>
       Articles - wraikny's
@@ -88,10 +72,10 @@
                         on 2022-04-11
                       </p>
                       <p class="tags">
-                        <span class="tag">
+                        <span class="tag is-primary">
                           article
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           csharp
                         </span>
                       </p>
@@ -140,16 +124,16 @@
                         on 2022-02-22
                       </p>
                       <p class="tags">
-                        <span class="tag">
+                        <span class="tag is-primary">
                           article
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           altseed2
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           csharp
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           online
                         </span>
                       </p>
@@ -184,13 +168,13 @@ LiteNetLibとMessagePackで行うリアルタイム通信
                         on 2022-02-05
                       </p>
                       <p class="tags">
-                        <span class="tag">
+                        <span class="tag is-primary">
                           article
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           altseed2
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           csharp
                         </span>
                       </p>
@@ -239,16 +223,16 @@ Altseed2のチュートリアル第6章で教えてくれますが、正直こ�
                         on 2020-12-25
                       </p>
                       <p class="tags">
-                        <span class="tag">
+                        <span class="tag is-primary">
                           article
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           altseed2
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           csharp
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           UI
                         </span>
                       </p>
@@ -283,13 +267,13 @@ RouteTilesはF#製ですが、設計的な面でも構文的な面でも相性�
                         on 2020-12-15
                       </p>
                       <p class="tags">
-                        <span class="tag">
+                        <span class="tag is-primary">
                           article
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           csharp
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           online
                         </span>
                       </p>
@@ -326,10 +310,10 @@ RouteTilesはF#製ですが、設計的な面でも構文的な面でも相性�
                         on 2020-01-19
                       </p>
                       <p class="tags">
-                        <span class="tag">
+                        <span class="tag is-primary">
                           article
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           git
                         </span>
                       </p>
@@ -367,16 +351,16 @@ RouteTilesはF#製ですが、設計的な面でも構文的な面でも相性�
                         on 2020-01-19
                       </p>
                       <p class="tags">
-                        <span class="tag">
+                        <span class="tag is-primary">
                           article
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           fsharp
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           fsharp.data
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           xplot
                         </span>
                       </p>
@@ -405,19 +389,19 @@ RouteTilesはF#製ですが、設計的な面でも構文的な面でも相性�
                         on 2020-01-19
                       </p>
                       <p class="tags">
-                        <span class="tag">
+                        <span class="tag is-primary">
                           article
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           csharp
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           fsharp
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           online
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           ranking
                         </span>
                       </p>
@@ -451,13 +435,13 @@ RouteTilesはF#製ですが、設計的な面でも構文的な面でも相性�
                         on 2019-12-15
                       </p>
                       <p class="tags">
-                        <span class="tag">
+                        <span class="tag is-primary">
                           article
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           fsharp
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           dotnet
                         </span>
                       </p>
@@ -502,10 +486,10 @@ FAKEはF#の拡張なので、nugetのライブラリを読み込んで利用す
                         on 2019-12-15
                       </p>
                       <p class="tags">
-                        <span class="tag">
+                        <span class="tag is-primary">
                           article
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           fsharp
                         </span>
                       </p>
@@ -538,10 +522,10 @@ FAKEはF#の拡張なので、nugetのライブラリを読み込んで利用す
                         on 2019-01-03
                       </p>
                       <p class="tags">
-                        <span class="tag">
+                        <span class="tag is-primary">
                           article
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           mono
                         </span>
                       </p>
@@ -583,10 +567,10 @@ cd ${TARGETFILE%/*}
                         on 2018-03-29
                       </p>
                       <p class="tags">
-                        <span class="tag">
+                        <span class="tag is-primary">
                           article
                         </span>
-                        <span class="tag">
+                        <span class="tag is-primary">
                           mono
                         </span>
                       </p>
