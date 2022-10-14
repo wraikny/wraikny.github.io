@@ -5,6 +5,7 @@
     <title>
       wraikny's
     </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin=""/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap"/>
@@ -101,7 +102,7 @@ MITライセンスで単一ファイルで実装しています。
             <div class="tile is-child">
               <div class="card article">
                 <div class="card-image">
-                  <a href="/contents/works/yubicamerashader.html">
+                  <a href="/contents/works/yubicamerashader.html" class="no-icon">
                     <figure class="image">
                       <image src="/images/works/ghost/yubicamerashader-1.jpg"></image>
                     </figure>
@@ -189,7 +190,7 @@ MITライセンスで単一ファイルで実装しています。
             <div class="tile is-child">
               <div class="card article">
                 <div class="card-image">
-                  <a href="/contents/works/ghostshader.html">
+                  <a href="/contents/works/ghostshader.html" class="no-icon">
                     <figure class="image">
                       <image src="/images/works/ghost/ghostshader-1.jpg"></image>
                     </figure>
@@ -236,8 +237,12 @@ World &quot;Deep Blue&quot; by Fins</p>
                   <div class="media">
                     <div class="media-content has-image-centered">
                       <p class="title article-title">
-                        <a href="/contents/articles/2022/04/11.html">
+                        <a href="https://zenn.dev/wraikny/articles/a775c37182d607" target="_blank" rel="noopener noreferrer">
                           C#向けに async/await 対応の待機可能なコルーチンライブラリ AwaitableCoroutine を作ったから紹介
+                          <span>
+                             
+                          </span>
+                          <i class="fas fa-external-link-alt"></i>
                         </a>
                       </p>
                       <p class="subtitle is-6 article-subtitle">
@@ -254,30 +259,7 @@ World &quot;Deep Blue&quot; by Fins</p>
                     </div>
                   </div>
                   <div class="content article-body">
-                    <h3>コルーチンについて</h3>
-<blockquote>
-<p>コルーチンはいったん処理を中断した後、続きから処理を再開できる。コルーチン - Wikipedia</p>
-</blockquote>
-<p>ゲーム開発してると欲しくなることが多いですね。</p>
-<p>C#では <code>IEnumerator</code> を利用して記述することが多いと思いますが、微妙な点として、次のような事が挙げられます。</p>
-<ul>
-<li><code>IEnumerator</code>は遅延シーケンスのための機能であり、コルーチンを管理する仕組みは別途必要。</li>
-<li>必ずメソッドとして定義する必要がある。</li>
-<li>子のコルーチンを実行する際に、一々 <code>foreach</code> で記述する必要がある。
-<ul>
-<li>あるいは、管理する仕組みの方で頑張る</li>
-</ul>
-</li>
-</ul>
-<p>一方で <code>Task</code> を使おうとすると、マルチスレッドのための余計なオーバーヘッドがあったり、一時停止やキャンセルは少し面倒だったりします。</p>
-<p>参考</p>
-<ul>
-<li>コルーチンを使おう！ - zamakaのブログ</li>
-</ul>
-<hr />
-<p>続き<br />
-<a href="https://zenn.dev/wraikny/articles/a775c37182d607">C#向けに async/await 対応の待機可能なコルーチンライブラリ AwaitableCoroutine を作ったから紹介 - Zenn</a></p>
-
+                    
                   </div>
                 </div>
               </div>
@@ -288,8 +270,12 @@ World &quot;Deep Blue&quot; by Fins</p>
                   <div class="media">
                     <div class="media-content has-image-centered">
                       <p class="title article-title">
-                        <a href="/contents/articles/2022/02/22.html">
+                        <a href="https://www.amusement-creators.info/articles/squirrelayserver/" target="_blank" rel="noopener noreferrer">
                           リアルタイムリレーサーバーSquirrelayServerの紹介
+                          <span>
+                             
+                          </span>
+                          <i class="fas fa-external-link-alt"></i>
                         </a>
                       </p>
                       <p class="subtitle is-6 article-subtitle">
@@ -317,10 +303,6 @@ World &quot;Deep Blue&quot; by Fins</p>
 LiteNetLibとMessagePackで行うリアルタイム通信
 という記事を書いたのですが、ゲームロジックをサーバーで実行するのは実行コストも実装コストも高いですし、ゲームのたびに実装する必要があって大変ですよね。</p>
 <p>今回はそれらを汎用的に扱いやすくした、メッセージリレーサーバーSquirrelayServerの紹介です。</p>
-<p>サーバーサイドはビルドしたバイナリを起動するだけで利用できて、クライアントサイドの開発に集中できます。</p>
-<hr />
-<p>続き<br />
-<a href="https://www.amusement-creators.info/articles/squirrelayserver/">リアルタイムリレーサーバーSquirrelayServerの紹介 - AmusementCreators</a></p>
 
                   </div>
                 </div>
@@ -332,8 +314,12 @@ LiteNetLibとMessagePackで行うリアルタイム通信
                   <div class="media">
                     <div class="media-content has-image-centered">
                       <p class="title article-title">
-                        <a href="/contents/articles/2022/02/05.html">
+                        <a href="https://www.amusement-creators.info/articles/altseed2-typebasedcollision/" target="_blank" rel="noopener noreferrer">
                           Altseed2で衝突判定を簡単に扱うパッケージの紹介
+                          <span>
+                             
+                          </span>
+                          <i class="fas fa-external-link-alt"></i>
                         </a>
                       </p>
                       <p class="subtitle is-6 article-subtitle">
@@ -353,12 +339,8 @@ LiteNetLibとMessagePackで行うリアルタイム通信
                     </div>
                   </div>
                   <div class="content article-body">
-                    <h3>はじめに</h3>
-<p>Altseed2.TypeBasedCollisionというAltseed2拡張パッケージを以前作成したので紹介します。</p>
-<p>当たり判定色々と使いますよね。
-Altseed2のチュートリアル第6章で教えてくれますが、正直このコードはあまり良くないです。
-（2022/02/05現在。今後そっちも修正しようとは思います）</p>
-<p>良くない点</p>
+                    <p>Altseed2.TypeBasedCollisionというAltseed2拡張パッケージを以前作成したので紹介します。</p>
+<p>Altseed2のチュートリアルの問題点</p>
 <ul>
 <li>継承ベースということ
 <ul>
@@ -372,10 +354,7 @@ Altseed2のチュートリアル第6章で教えてくれますが、正直こ�
 </ul>
 </li>
 </ul>
-<p>ということで、この辺を解決するパッケージの紹介記事となります。</p>
-<hr />
-<p>続き<br />
-<a href="https://www.amusement-creators.info/articles/altseed2-typebasedcollision/">Altseed2で衝突判定を簡単に扱うパッケージの紹介 - AmusementCreators</a></p>
+<p>を解決するパッケージの紹介記事となります。</p>
 
                   </div>
                 </div>
@@ -384,7 +363,7 @@ Altseed2のチュートリアル第6章で教えてくれますが、正直こ�
             <div class="tile is-child">
               <div class="card article">
                 <div class="card-image">
-                  <a href="/contents/works/wraindropbot.html">
+                  <a href="/contents/works/wraindropbot.html" class="no-icon">
                     <figure class="image">
                       <image src="/images/works/wraindrop-banner.png"></image>
                     </figure>
@@ -634,7 +613,7 @@ WindowsとRaspberry Pi (Raspbian)で動作します。</p>
             <div class="tile is-child">
               <div class="card article">
                 <div class="card-image">
-                  <a href="/contents/games/territorybattle.html">
+                  <a href="/contents/games/territorybattle.html" class="no-icon">
                     <figure class="image">
                       <image src="/images/games/territorybattle/territorybattle.jpg"></image>
                     </figure>
@@ -682,8 +661,12 @@ WindowsとRaspberry Pi (Raspbian)で動作します。</p>
                   <div class="media">
                     <div class="media-content has-image-centered">
                       <p class="title article-title">
-                        <a href="/contents/articles/2020/12/25.html">
+                        <a href="https://www.amusement-creators.info/articles/advent_calendar/2020/25/" target="_blank" rel="noopener noreferrer">
                           Altseed2で軽量な宣言的UIを支援するライブラリAltseed2.BoxUIの紹介
+                          <span>
+                             
+                          </span>
+                          <i class="fas fa-external-link-alt"></i>
                         </a>
                       </p>
                       <p class="subtitle is-6 article-subtitle">
@@ -707,14 +690,8 @@ WindowsとRaspberry Pi (Raspbian)で動作します。</p>
                   </div>
                   <div class="content article-body">
                     <p>これはAmusementCreators 2020 アドベントカレンダー の 25日目の記事です。</p>
-<h3>Altseed2.BoxUIの概要</h3>
 <p>オブジェクトプーリングを利用して宣言的なUIを楽に書けるライブラリAltseed2.BoxUIを以前作ったので、使い方を紹介します。
 （オブジェクトプーリングとは、オブジェクトを使い回す仕組み）</p>
-<p>Altseed2.BoxUIは私が制作したパズルゲームRouteTilesのUIでも利用しています！
-RouteTilesはF#製ですが、設計的な面でも構文的な面でも相性が良いのでかなり快適に利用できました。</p>
-<hr />
-<p>続き<br />
-<a href="https://www.amusement-creators.info/articles/advent_calendar/2020/25/">Altseed2で軽量な宣言的UIを支援するライブラリAltseed2.BoxUIの紹介 - AmusementCreators</a></p>
 
                   </div>
                 </div>
@@ -766,8 +743,12 @@ RouteTilesはF#製ですが、設計的な面でも構文的な面でも相性�
                   <div class="media">
                     <div class="media-content has-image-centered">
                       <p class="title article-title">
-                        <a href="/contents/articles/2020/12/15.html">
+                        <a href="https://www.amusement-creators.info/articles/advent_calendar/2020/15/" target="_blank" rel="noopener noreferrer">
                           LiteNetLibとMessagePackで行うリアルタイム通信
+                          <span>
+                             
+                          </span>
+                          <i class="fas fa-external-link-alt"></i>
                         </a>
                       </p>
                       <p class="subtitle is-6 article-subtitle">
@@ -787,17 +768,8 @@ RouteTilesはF#製ですが、設計的な面でも構文的な面でも相性�
                     </div>
                   </div>
                   <div class="content article-body">
-                    <h3>こんにちは</h3>
-<p>これは AmusementCreators 2020 アドベントカレンダー の 15日目の記事です。</p>
+                    <p>これは AmusementCreators 2020 アドベントカレンダー の 15日目の記事です。</p>
 <p>オンラインでリアルタイムに協力とか対戦するゲームをつくりたいというモチベーションから、この記事を書きます。</p>
-<h3>動いている様子</h3>
-<p>
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wG9L-CPIUmY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
-<p>これは実際にサーバーのプログラムをAmusementCreatorsのVPSに設置し、手元のクライアントから接続して同期している様子です。 pingは18ms前後で、ほとんどラグを感じずに操作できています。</p>
-<hr />
-<p>続き<br />
-<a href="https://www.amusement-creators.info/articles/advent_calendar/2020/15/">LiteNetLibとMessagePackで行うリアルタイム通信 - AmusementCreators</a></p>
 
                   </div>
                 </div>
@@ -806,7 +778,7 @@ RouteTilesはF#製ですが、設計的な面でも構文的な面でも相性�
             <div class="tile is-child">
               <div class="card article">
                 <div class="card-image">
-                  <a href="/contents/works/moonlitcitynight.html">
+                  <a href="/contents/works/moonlitcitynight.html" class="no-icon">
                     <figure class="image">
                       <image src="/images/works/moonlitcitynight/moonlitcitynight-1.jpg"></image>
                     </figure>
@@ -847,7 +819,7 @@ RouteTilesはF#製ですが、設計的な面でも構文的な面でも相性�
             <div class="tile is-child">
               <div class="card article">
                 <div class="card-image">
-                  <a href="/contents/games/routetiles.html">
+                  <a href="/contents/games/routetiles.html" class="no-icon">
                     <figure class="image">
                       <image src="/images/games/routetiles/RouteTiles-ss-play0.jpg"></image>
                     </figure>
@@ -930,87 +902,12 @@ AmusementCreators 2020年夏休み企画として作成しました。</p>
                   <div class="media">
                     <div class="media-content has-image-centered">
                       <p class="title article-title">
-                        <a href="/contents/articles/2020/01/19.html">
-                          Pull Requestの送り方
-                        </a>
-                      </p>
-                      <p class="subtitle is-6 article-subtitle">
-                        on 2020-01-19
-                      </p>
-                      <p class="tags">
-                        <span class="tag is-primary">
-                          article
-                        </span>
-                        <span class="tag is-primary">
-                          git
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="content article-body">
-                    <h3>はじめに</h3>
-<p>ある程度gitを使っている初心者向け。Pull Requestを殆ど使ったことない人のための記事。</p>
-<hr />
-<p>続き<br />
-<a href="https://www.amusement-creators.info/articles/git/pull_request/">Pull Requestの送り方 - AmusementCreators</a></p>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tile is-child">
-              <div class="card article">
-                <div class="card-image">
-                  <a href="/contents/articles/2020/06/26.html">
-                    <figure class="image">
-                      <image src="/images/articles/2020_06_26.png"></image>
-                    </figure>
-                  </a>
-                </div>
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-content has-image-centered">
-                      <p class="title article-title">
-                        <a href="/contents/articles/2020/06/26.html">
-                          つくば市の1年間の気温の推移をプロット with F#スクリプト
-                        </a>
-                      </p>
-                      <p class="subtitle is-6 article-subtitle">
-                        on 2020-01-19
-                      </p>
-                      <p class="tags">
-                        <span class="tag is-primary">
-                          article
-                        </span>
-                        <span class="tag is-primary">
-                          fsharp
-                        </span>
-                        <span class="tag is-primary">
-                          fsharp.data
-                        </span>
-                        <span class="tag is-primary">
-                          xplot
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="content article-body">
-                    <hr />
-<p>続き<br />
-<a href="https://www.amusement-creators.info/articles/simple-rankings-server/">自作ゲームに手軽にオンラインランキングを導入しよう！ - AmusementCreators</a></p>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tile is-child">
-              <div class="card article">
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-content has-image-centered">
-                      <p class="title article-title">
-                        <a href="/contents/articles/2020/04/26.html">
+                        <a href="https://www.amusement-creators.info/articles/simple-rankings-server/" target="_blank" rel="noopener noreferrer">
                           自作ゲームに手軽にオンラインランキングを導入しよう！
+                          <span>
+                             
+                          </span>
+                          <i class="fas fa-external-link-alt"></i>
                         </a>
                       </p>
                       <p class="subtitle is-6 article-subtitle">
@@ -1036,14 +933,89 @@ AmusementCreators 2020年夏休み企画として作成しました。</p>
                     </div>
                   </div>
                   <div class="content article-body">
-                    <p>世界中の人とゲームスコアを競い合おう！</p>
-<h3>概要</h3>
-<p>拙作の Simple Rankings Server をつかって、ゲームに手軽にオンラインスコアランキング機能を実装する記事です。</p>
+                    <p>拙作の Simple Rankings Server をつかって、ゲームに手軽にオンラインスコアランキング機能を実装する記事です。</p>
 <p>Amusement CreatorsのVPSサーバーで稼働しているので、内部の人は設定ファイルを追記してプログラム再起動するだけで使えます！！</p>
 <p>また、C#とF#でのクライアント側の サンプルコード を用意してあり、ライブラリ相当の1ファイルをコピペするだけで簡単に使えます。</p>
-<hr />
-<p>続き<br />
-<a href="https://www.amusement-creators.info/articles/simple-rankings-server/">自作ゲームに手軽にオンラインランキングを導入しよう！ - AmusementCreators</a></p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tile is-child">
+              <div class="card article">
+                <div class="card-image">
+                  <a href="https://qiita.com/wraikny/items/11651a82b4224ad92ea7" class="no-icon">
+                    <figure class="image">
+                      <image src="/images/articles/2020_06_26.png"></image>
+                    </figure>
+                  </a>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content has-image-centered">
+                      <p class="title article-title">
+                        <a href="https://qiita.com/wraikny/items/11651a82b4224ad92ea7" target="_blank" rel="noopener noreferrer">
+                          つくば市の1年間の気温の推移をプロット with F#スクリプト
+                          <span>
+                             
+                          </span>
+                          <i class="fas fa-external-link-alt"></i>
+                        </a>
+                      </p>
+                      <p class="subtitle is-6 article-subtitle">
+                        on 2020-01-19
+                      </p>
+                      <p class="tags">
+                        <span class="tag is-primary">
+                          article
+                        </span>
+                        <span class="tag is-primary">
+                          fsharp
+                        </span>
+                        <span class="tag is-primary">
+                          fsharp.data
+                        </span>
+                        <span class="tag is-primary">
+                          xplot
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="content article-body">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tile is-child">
+              <div class="card article">
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content has-image-centered">
+                      <p class="title article-title">
+                        <a href="https://www.amusement-creators.info/articles/git/pull_request/" target="_blank" rel="noopener noreferrer">
+                          Pull Requestの送り方
+                          <span>
+                             
+                          </span>
+                          <i class="fas fa-external-link-alt"></i>
+                        </a>
+                      </p>
+                      <p class="subtitle is-6 article-subtitle">
+                        on 2020-01-19
+                      </p>
+                      <p class="tags">
+                        <span class="tag is-primary">
+                          article
+                        </span>
+                        <span class="tag is-primary">
+                          git
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="content article-body">
+                    <p>ある程度gitを使っている初心者向け。Pull Requestを殆ど使ったことない人のための記事。</p>
 
                   </div>
                 </div>
@@ -1055,8 +1027,12 @@ AmusementCreators 2020年夏休み企画として作成しました。</p>
                   <div class="media">
                     <div class="media-content has-image-centered">
                       <p class="title article-title">
-                        <a href="/contents/articles/2019/12/05.html">
-                          .NETビルドスクリプトFAKEの紹介
+                        <a href="https://www.amusement-creators.info/articles/advent_calendar/2019/05_0/" target="_blank" rel="noopener noreferrer">
+                          .NETビルドスクリプトFAKEの紹介 (AmusementCreators 2019 アドベントカレンダー)
+                          <span>
+                             
+                          </span>
+                          <i class="fas fa-external-link-alt"></i>
                         </a>
                       </p>
                       <p class="subtitle is-6 article-subtitle">
@@ -1077,17 +1053,8 @@ AmusementCreators 2020年夏休み企画として作成しました。</p>
                   </div>
                   <div class="content article-body">
                     <p>これは AmusementCreators 2019 アドベントカレンダー その1 の5日目の記事です。</p>
-<h3>はじめに</h3>
-<h4>ビルドスクリプト？</h4>
-<p>GNU Makeに代表されるような、複雑なビルド作業を自動化する簡易的なプログラムを言います。
-Visual Studioであればビルド前後にコマンドを実行する機能があったり、<code>*.sh</code>や<code>*.cmd</code>ファイルを書いて実行することもありますが、基本的にOS等に依存してしまいます。</p>
-<p>PythonやRubyで書く場合もあると思いますが、実行環境を別途インストールする必要があったり、その性質上コード量が多くなればメンテナンスも大変になります。
-また、.NETの開発であればすべて.NETで済ませたいという気持ちもあります。</p>
 <p>今回は.NET上で動く.NET向けのビルドスクリプトFAKE(F#製Make)を紹介していきます。
 FAKEはF#の拡張なので、nugetのライブラリを読み込んで利用することもできます。</p>
-<hr />
-<p>続き<br />
-<a href="https://www.amusement-creators.info/articles/advent_calendar/2019/05_0/">.NETビルドスクリプトFAKEの紹介 - AmusementCreators</a></p>
 
                   </div>
                 </div>
@@ -1096,7 +1063,7 @@ FAKEはF#の拡張なので、nugetのライブラリを読み込んで利用す
             <div class="tile is-child">
               <div class="card article">
                 <div class="card-image">
-                  <a href="/contents/articles/2019/12/15.html">
+                  <a href="https://www.amusement-creators.info/articles/advent_calendar/2019/15_0/" class="no-icon">
                     <figure class="image">
                       <image src="/images/articles/2019_12_15.png"></image>
                     </figure>
@@ -1106,8 +1073,12 @@ FAKEはF#の拡張なので、nugetのライブラリを読み込んで利用す
                   <div class="media">
                     <div class="media-content has-image-centered">
                       <p class="title article-title">
-                        <a href="/contents/articles/2019/12/15.html">
+                        <a href="https://www.amusement-creators.info/articles/advent_calendar/2019/15_0/" target="_blank" rel="noopener noreferrer">
                           ほんの10行でJsonとかXmlとか楽々読み込み with F#
+                          <span>
+                             
+                          </span>
+                          <i class="fas fa-external-link-alt"></i>
                         </a>
                       </p>
                       <p class="subtitle is-6 article-subtitle">
@@ -1124,13 +1095,9 @@ FAKEはF#の拡張なので、nugetのライブラリを読み込んで利用す
                     </div>
                   </div>
                   <div class="content article-body">
-                    <p><code>Json</code>や<code>Xml</code>や<code>Html</code>や<code>CSV</code>を読み込みたいことってありますよね。
-でも文字列でアクセスするのはバグの要因になるし、かといってすべてクラスなどにバインディングするコードを書くのは大変です。</p>
+                    <p><code>Json</code>や<code>Xml</code>や<code>Html</code>や<code>CSV</code>を読み込みたいことってありますよね。</p>
 <p>urlやファイルパスを指定しただけで型が自動生成されて、すぐさまコード補完が効き始めたら、嬉しくありませんか？</p>
 <p>今日はF#公式ライブラリ<code>FSharp.Data</code>の紹介をします。</p>
-<hr />
-<p>続き<br />
-<a href="https://www.amusement-creators.info/articles/advent_calendar/2019/15_0/">ほんの10行でJsonとかXmlとか楽々読み込み with F# - AmusementCreators</a></p>
 
                   </div>
                 </div>
@@ -1139,7 +1106,7 @@ FAKEはF#の拡張なので、nugetのライブラリを読み込んで利用す
             <div class="tile is-child">
               <div class="card article">
                 <div class="card-image">
-                  <a href="/contents/games/catbacuumcatflying.html">
+                  <a href="/contents/games/catbacuumcatflying.html" class="no-icon">
                     <figure class="image">
                       <image src="/images/games/cbcf.jpg"></image>
                     </figure>
@@ -1229,7 +1196,7 @@ let k = Vector.dot v2 v3 // float32
             <div class="tile is-child">
               <div class="card article">
                 <div class="card-image">
-                  <a href="/contents/games/99labyrinth.html">
+                  <a href="/contents/games/99labyrinth.html" class="no-icon">
                     <figure class="image">
                       <image src="/images/games/99labyrinth/99labyrinth_2019summer_game.jpg"></image>
                     </figure>
@@ -1276,7 +1243,7 @@ let k = Vector.dot v2 v3 // float32
             <div class="tile is-child">
               <div class="card article">
                 <div class="card-image">
-                  <a href="/contents/works/rmflower.html">
+                  <a href="/contents/works/rmflower.html" class="no-icon">
                     <figure class="image">
                       <image src="/images/works/rmflower/rmflower-1.jpg"></image>
                     </figure>
@@ -1319,7 +1286,7 @@ let k = Vector.dot v2 v3 // float32
             <div class="tile is-child">
               <div class="card article">
                 <div class="card-image">
-                  <a href="/contents/works/rm3dmap.html">
+                  <a href="/contents/works/rm3dmap.html" class="no-icon">
                     <figure class="image">
                       <image src="/images/works/rm3dmap/rm3dmap_cnvillageyae.jpg"></image>
                     </figure>
@@ -1360,7 +1327,7 @@ let k = Vector.dot v2 v3 // float32
             <div class="tile is-child">
               <div class="card article">
                 <div class="card-image">
-                  <a href="/contents/works/gpuprosecircle.html">
+                  <a href="/contents/works/gpuprosecircle.html" class="no-icon">
                     <figure class="image">
                       <image src="/images/works/gpuprosecircle.jpg"></image>
                     </figure>
@@ -1477,8 +1444,12 @@ VR状態で頭を振ってもくるくると回転しません。</p>
                   <div class="media">
                     <div class="media-content has-image-centered">
                       <p class="title article-title">
-                        <a href="/contents/articles/2019/01/03.html">
+                        <a href="https://wraikny.hatenablog.com/entry/2019/01/03/204301" target="_blank" rel="noopener noreferrer">
                           Macでmonoのexeをダブルクリック起動。
+                          <span>
+                             
+                          </span>
+                          <i class="fas fa-external-link-alt"></i>
                         </a>
                       </p>
                       <p class="subtitle is-6 article-subtitle">
@@ -1495,23 +1466,7 @@ VR状態で頭を振ってもくるくると回転しません。</p>
                     </div>
                   </div>
                   <div class="content article-body">
-                    <p>Automatorという、様々な操作をapp化出来るソフトがMacには入っている。</p>
-<p>これの新規作成 -&gt; アプリケーション/シェルスクリプトから、</p>
-<ul>
-<li>/bin/bash</li>
-<li>入力を引数として渡す</li>
-</ul>
-<p>を指定した上で、</p>
-<pre><code class="language-sh">TARGETFILE=$1
-cd ${TARGETFILE%/*}
-/Library/Frameworks/Mono.framework/Versions/Current/Commands/mono $1
-</code></pre>
-<p>という内容で保存(ここではMono.appとする)しておく。
-適当なmonoで起動できるexeファイルを用意した上で、⌘ + iから、「このアプリケーションで開く」を先ほどの「Mono.app」を指定して、「全てを変更」すると、完了。</p>
-<hr />
-<p>終わり<br />
-<a href="https://wraikny.hatenablog.com/entry/2019/01/03/204301">Macでmonoのexeをダブルクリック起動。 - hatenablog</a></p>
-
+                    
                   </div>
                 </div>
               </div>
@@ -1519,7 +1474,7 @@ cd ${TARGETFILE%/*}
             <div class="tile is-child">
               <div class="card article">
                 <div class="card-image">
-                  <a href="/contents/games/umbra_trial.html">
+                  <a href="/contents/games/umbra_trial.html" class="no-icon">
                     <figure class="image">
                       <image src="/images/games/umbra/umbra_trial_title.jpg"></image>
                     </figure>
@@ -1563,7 +1518,7 @@ cd ${TARGETFILE%/*}
             <div class="tile is-child">
               <div class="card article">
                 <div class="card-image">
-                  <a href="/contents/works/rmcubes.html">
+                  <a href="/contents/works/rmcubes.html" class="no-icon">
                     <figure class="image">
                       <image src="/images/works/rmcubes/rmcubes-1.jpg"></image>
                     </figure>
@@ -1605,7 +1560,7 @@ cd ${TARGETFILE%/*}
             <div class="tile is-child">
               <div class="card article">
                 <div class="card-image">
-                  <a href="/contents/works/rm3dscanner.html">
+                  <a href="/contents/works/rm3dscanner.html" class="no-icon">
                     <figure class="image">
                       <image src="/images/works/rm3dscanner/rm3dscanner_1.jpg"></image>
                     </figure>
@@ -1646,7 +1601,7 @@ cd ${TARGETFILE%/*}
             <div class="tile is-child">
               <div class="card article">
                 <div class="card-image">
-                  <a href="/contents/games/quadrate.html">
+                  <a href="/contents/games/quadrate.html" class="no-icon">
                     <figure class="image">
                       <image src="/images/games/quadrate/quadrate_game2.jpg"></image>
                     </figure>
@@ -1688,7 +1643,7 @@ cd ${TARGETFILE%/*}
             <div class="tile is-child">
               <div class="card article">
                 <div class="card-image">
-                  <a href="/contents/works/rust-raytracer.html">
+                  <a href="/contents/works/rust-raytracer.html" class="no-icon">
                     <figure class="image">
                       <image src="/images/works/rust-ray-tracer/result1-3000-20.png"></image>
                     </figure>
@@ -1727,8 +1682,12 @@ cd ${TARGETFILE%/*}
                   <div class="media">
                     <div class="media-content has-image-centered">
                       <p class="title article-title">
-                        <a href="/contents/articles/2018/03/29.html">
+                        <a href="https://wraikny.hatenablog.com/entry/2018/03/29/225021" target="_blank" rel="noopener noreferrer">
                           .NET(Mono)上のexeをMac向けにする備忘録
+                          <span>
+                             
+                          </span>
+                          <i class="fas fa-external-link-alt"></i>
                         </a>
                       </p>
                       <p class="subtitle is-6 article-subtitle">
@@ -1745,14 +1704,7 @@ cd ${TARGETFILE%/*}
                     </div>
                   </div>
                   <div class="content article-body">
-                    <p>この記事</p>
-<p>コンソールプログラムをMonoインストールなしで実行する - Qiita</p>
-<p>を教えてもらったので，やってみました．
-少しハマった部分があったのでその辺を参考にしてもらえると。</p>
-<hr />
-<p>続き<br />
-<a href="https://wraikny.hatenablog.com/entry/2018/03/29/225021">.NET(Mono)上のexeをMac向けにする備忘録 - hatenablog</a></p>
-
+                    
                   </div>
                 </div>
               </div>
@@ -1760,7 +1712,7 @@ cd ${TARGETFILE%/*}
             <div class="tile is-child">
               <div class="card article">
                 <div class="card-image">
-                  <a href="/contents/games/cannon.html">
+                  <a href="/contents/games/cannon.html" class="no-icon">
                     <figure class="image">
                       <image src="/images/games/cannon/cannon_game.jpg"></image>
                     </figure>
@@ -1804,7 +1756,7 @@ cd ${TARGETFILE%/*}
             <div class="tile is-child">
               <div class="card article">
                 <div class="card-image">
-                  <a href="/contents/games/shadow_world.html">
+                  <a href="/contents/games/shadow_world.html" class="no-icon">
                     <figure class="image">
                       <image src="/images/games/shadow_world/shadow_world_game.jpg"></image>
                     </figure>
@@ -1849,7 +1801,7 @@ cd ${TARGETFILE%/*}
             <div class="tile is-child">
               <div class="card article">
                 <div class="card-image">
-                  <a href="/contents/games/drops.html">
+                  <a href="/contents/games/drops.html" class="no-icon">
                     <figure class="image">
                       <image src="/images/games/drops/drops_title.jpg"></image>
                     </figure>
@@ -1894,7 +1846,7 @@ cd ${TARGETFILE%/*}
             <div class="tile is-child">
               <div class="card article">
                 <div class="card-image">
-                  <a href="/contents/games/bullets_and_blades.html">
+                  <a href="/contents/games/bullets_and_blades.html" class="no-icon">
                     <figure class="image">
                       <image src="/images/games/bullets_and_blades.jpg"></image>
                     </figure>
