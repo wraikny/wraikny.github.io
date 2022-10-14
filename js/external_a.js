@@ -16,15 +16,32 @@ ready(function() {
     var internalLinkRegex = new RegExp('^((((http:\\/\\/|https:\\/\\/)(www\\.)?)?'
         + website
         + ')|(localhost:\\d{4})|(\\/.*))(\\/.*)?$', '');
-    var anchorEls = document.querySelectorAll('a');
-    var anchorElsLength = anchorEls.length;
 
-    for (var i = 0; i < anchorElsLength; i++) {
-        var anchorEl = anchorEls[i];
-        var href = anchorEl.getAttribute('href');
-        if (!internalLinkRegex.test(href)) {
-            anchorEl.setAttribute('target', '_blank');
-            anchorEl.setAttribute('rel', 'noopener nofollow');
-        }
+    var articles = document.getElementsByClassName('article-body');
+    for (var articleIndex = 0; articleIndex < articles.length; articleIndex++)
+    {
+      var anchorEls = articles[articleIndex].querySelectorAll('a');
+
+      for (var i = 0; i < anchorEls.length; i++) {
+          var anchorEl = anchorEls[i];
+          var href = anchorEl.getAttribute('href');
+          if (!internalLinkRegex.test(href)) {
+              anchorEl.setAttribute('target', '_blank');
+              anchorEl.setAttribute('rel', 'noopener nofollow');
+
+              if (!anchorEl.className.includes('no-icon'))
+              {
+                  const space = document.createElement('span');
+                  space.innerHTML = ' ';
+                  anchorEl.appendChild(space);
+                  const icon = document.createElement('i');
+                  icon.className = 'fas fa-external-link-alt';
+                  anchorEl.appendChild(icon);
+              }
+          }
+      }
     }
+    
 });
+
+// card-content

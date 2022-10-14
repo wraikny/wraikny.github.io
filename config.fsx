@@ -1,20 +1,23 @@
 #r "_lib/Fornax.Core.dll"
 
+#load "loaders/FileContent.fsx"
+
 open Config
 open System.IO
 
 let aboutPredicate (_, page) = page = "contents/about.md"
 
 let postPredicate (projectRoot: string, page: string) =
-    let fileName = Path.Combine(projectRoot,page)
-    let ext = Path.GetExtension page
-    if ext = ".md" then
-        let ctn = File.ReadAllText fileName
-        let result = ctn.Contains("layout: post")
-        if result then stdout.WriteLine(fileName)
-        result
-    else
-        false
+    let fileName = Path.Combine(projectRoot, page)
+    Path.GetExtension page = ".md"
+    && (
+        let content = File.ReadAllText fileName
+        content.Contains("layout: post")
+        && (
+            let config = FileContent.getConfig content
+            config |> Map.containsKey "externallink" |> not
+        )
+    )
 
 let staticPredicate (projectRoot: string, page: string) =
     let excludes = [|

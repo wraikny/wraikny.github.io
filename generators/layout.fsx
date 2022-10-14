@@ -69,7 +69,7 @@ let layout (ctx : SiteContents) active bodyCnt =
             meta [Name "viewport"; Content "width=device-width, initial-scale=1"]
             title [] [!! ttl]
             // link [Rel "icon"; Type "image/png"; Sizes "32x32"; Href "/images/favicon.png"]
-            // link [Rel "stylesheet"; Href "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"]
+            link [Rel "stylesheet"; Href "https://use.fontawesome.com/releases/v5.5.0/css/all.css"]
 
             link [ Rel "preconnect"; Href "https://fonts.googleapis.com" ]
             link [ Rel "preconnect"; Href "https://fonts.gstatic.com"; CrossOrigin "" ]
@@ -128,8 +128,23 @@ let published (post: Postloader.Post) =
     |> Option.defaultValue System.DateTime.Now
     |> fun n -> n.ToString("yyyy-MM-dd")
 
+let postLink (post: Postloader.Post) children =
+    post.externalLink
+    |> function
+    | None ->
+        a [ Href post.link ] children
+    | Some el ->
+        a [ Href el; Target "_blank"; Rel "noopener noreferrer" ] [
+            yield! children
+            span [] [ !! " " ]
+            i [ Class "fas fa-external-link-alt" ] []
+        ]
+
 
 let postLayout (useSummary: bool) (post: Postloader.Post) =
+    let pageLink =
+        post.externalLink |> Option.defaultValue post.link
+
     div [Class "card article"] [
         match post.thumbnail with
         | Some path ->
@@ -137,14 +152,14 @@ let postLayout (useSummary: bool) (post: Postloader.Post) =
                 let thumbnail =
                     figure [ Class "image" ] [ image [Src path] [] ]
 
-                if useSummary then a [Href post.link] [thumbnail] else thumbnail
+                if useSummary then a [Href pageLink; Class "no-icon"] [thumbnail] else thumbnail
             ]
         | None -> ()
 
         div [Class "card-content"] [
             div [Class "media"] [
                 div [Class "media-content has-image-centered"] [
-                    p [Class "title article-title"; ] [ a [Href post.link] [!! post.title]]
+                    p [Class "title article-title"; ] [ postLink post [!! post.title]]
                     p [Class "subtitle is-6 article-subtitle"] [
                         // a [Href "#"] [!! (defaultArg post.author "")]
                         !! (sprintf "on %s" (published post))
