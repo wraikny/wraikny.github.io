@@ -20,7 +20,7 @@ type Post = {
     externalLink: string option
 }
 
-let contentDir = "contents"
+let contentDir = ""
 
 let private markdownPipeline =
     MarkdownPipelineBuilder()
@@ -46,7 +46,14 @@ let private loadFile directories n =
 
     if text.Contains("layout: post") then
         let file = Path.Combine(directories, (n |> Path.GetFileNameWithoutExtension) + ".md").Replace("\\", "/")
-        let link = "/" + Path.Combine(directories, (n |> Path.GetFileNameWithoutExtension) + ".html").Replace("\\", "/")
+        let link =
+            [|  "/"
+                yield!
+                    directories.Split(Path.DirectorySeparatorChar) |> Seq.skip 1
+                Path.GetFileNameWithoutExtension(n) + ".html"
+            |]
+            |> Path.Combine
+            |> fun s -> s.Replace("\\", "/")
         
         let config = FileContent.getConfig text
 

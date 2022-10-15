@@ -3,6 +3,7 @@
 #load "loaders/FileContent.fsx"
 
 open Config
+open System
 open System.IO
 
 let aboutPredicate (_, page) = page = "contents/about.md"
@@ -43,17 +44,27 @@ let staticPredicate (projectRoot: string, page: string) =
     else
         true
 
+let postOutputFile (s: string) =
+    [|
+
+        for dir in
+            Path.GetDirectoryName(s).Split(Path.DirectorySeparatorChar)
+            |> Seq.skip 1
+        -> dir
+        yield Path.ChangeExtension(Path.GetFileName(s), ".html")
+    |] |> Path.Combine
+
 let config = {
     Generators = [
         {Script = "less.fsx"; Trigger = OnFileExt ".less"; OutputFile = ChangeExtension "css" }
         {Script = "sass.fsx"; Trigger = OnFileExt ".scss"; OutputFile = ChangeExtension "css" }
         {Script = "staticfile.fsx"; Trigger = OnFilePredicate staticPredicate; OutputFile = SameFileName }
         {Script = "about.fsx"; Trigger = OnFilePredicate aboutPredicate; OutputFile = NewFileName "about.html" }
-        {Script = "post.fsx"; Trigger = OnFilePredicate postPredicate; OutputFile = ChangeExtension "html" }
+        {Script = "post.fsx"; Trigger = OnFilePredicate postPredicate; OutputFile = Custom postOutputFile }
         {Script = "index.fsx"; Trigger = Once; OutputFile = NewFileName "index.html" }
-        {Script = "indexgames.fsx"; Trigger = Once; OutputFile = NewFileName "contents/games/index.html" }
-        {Script = "indexworks.fsx"; Trigger = Once; OutputFile = NewFileName "contents/works/index.html" }
-        {Script = "indexlibraries.fsx"; Trigger = Once; OutputFile = NewFileName "contents/libraries/index.html" }
-        {Script = "indexarticles.fsx"; Trigger = Once; OutputFile = NewFileName "contents/articles/index.html" }
+        {Script = "indexgames.fsx"; Trigger = Once; OutputFile = NewFileName "games.html" }
+        {Script = "indexworks.fsx"; Trigger = Once; OutputFile = NewFileName "works.html" }
+        {Script = "indexlibraries.fsx"; Trigger = Once; OutputFile = NewFileName "libraries.html" }
+        {Script = "indexarticles.fsx"; Trigger = Once; OutputFile = NewFileName "articles.html" }
     ]
 }

@@ -29,24 +29,33 @@ AmusementCreators中心に開発中のゲームエンジン[Altseed2](https://gi
 
 ## Groups
 
-現在所属しているところです。
+現在
 
-- [筑波大学 AmusementCreators](https://www.amusement-creators.info) 2017年5月~
 - [筑波大学 情報学群 情報メディア創成学類](https://www.mast.tsukuba.ac.jp) 2017年4月~
+- [筑波大学 AmusementCreators](https://www.amusement-creators.info) 2017年5月~
 
-過去所属していたところです。
+過去
 
-- [HERP, Inc.](https://herp.co.jp/) エンジニア(アルバイト) 2020年2月~2021年9月
+- Pixiv SPRING Internship 2019 短期インターン
+  - Unity
+  - 2019年春（1週間）
+- 株式会社ぺあのしすてむ アルバイト
+  - .NET Core, F#, Xamarin
+  - 2019年9月 ~ 2019年12月
+- [HERP, Inc.](https://herp.co.jp/) アルバイト
+  - TypeScript, fp-ts, cycle.js
+  - 2020年2月 ~ 2021年9月
 
 ## Interests
 
 興味があることのキーワードとかです。
 
-- F#, C#, Rust
+- F#, C#, Rust, OCaml
 - Functional Programming
 - Computational Effect
 - Computer Graphics
 - Game AI, Procedural Generation
+- Game Server
 
 ## Links
 
@@ -65,3 +74,4 @@ AmusementCreators中心に開発中のゲームエンジン[Altseed2](https://gi
 - [wraikny - Scrapbox](https://scrapbox.io/wraikny/)
   - 乱雑なメモとかアイディアです。
 - [カレーの作り方](https://scrapbox.io/wraikny/カレーの作り方)
+  - 自家製カレー
