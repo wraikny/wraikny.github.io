@@ -6,56 +6,60 @@ wraikny ([reini/れいにー]）
 
 - イラスト:[黒色熊猫](https://twitter.com/higumasyake)さん
 
-プログラマー・ゲームクリエイターとして活動してます。
+プログラマー・個人ゲームクリエイターとして活動してます。
 
-好きな言語はF#とRustです。
-言語機能が良く統一されているとか、型クラスによる抽象化とか、代数的データ型とか良いと思っています。
+好きな言語は F#, OCaml, Rust です。
+言語機能の統一性とか、型クラスやモジュールによる抽象化とか、代数的データ型とか良いと思っています。
 保守性が高く人間に優しいプログラムを書くのが好きです。
 
-ゲームやサーバー等、趣味のプログラミングでは基本的にF#を使っています。
-ゲーム向けのライブラリやサーバーの開発でC#を使っています。
-
-AmusementCreators中心に開発中のゲームエンジン[Altseed2](https://github.com/altseed/altseed2)の開発メンバーとして、C++, C#, Rustのコードを書いていました。
-
-好きなゲームは ApexLegends、VALORANT、ポケモン、ぷよぷよ、テトリス、スマブラ、マイクラ、Slay the Spireなど。
-
 ## Contacts
-
-連絡先です。
 
 - [wraikny - Twitter](https://twitter.com/wraikny)
 - [wraikny - GitHub](https://github.com/wraikny)
 - writtenknown(at)gmail.com
 
-## Groups
+## Member of
 
-現在
+- [筑波大学 情報学群 情報メディア創成学類](https://www.mast.tsukuba.ac.jp)
+  - 2017/4~
+- [筑波大学 ゲーム制作サークル AmusementCreators](https://www.amusement-creators.info)
+  - 2017/5~
 
-- [筑波大学 情報学群 情報メディア創成学類](https://www.mast.tsukuba.ac.jp) 2017年4月~
-- [筑波大学 AmusementCreators](https://www.amusement-creators.info) 2017年5月~
 
-過去
+# History
 
-- Pixiv SPRING Internship 2019 短期インターン
+- [Pixiv SPRING BOOT CAMP 2019](https://internship.pixiv.co.jp/) 短期インターン
   - Unity
   - 2019年春（1週間）
-- 株式会社ぺあのしすてむ アルバイト
-  - .NET Core, F#, Xamarin
-  - 2019年9月 ~ 2019年12月
+- [株式会社ぺあのしすてむ](https://irbank.net/mynumber/8180301021653) アルバイト
+  - .NET Core, Xamarin, F#
+  - 2019/9 ~ 2019/12
 - [HERP, Inc.](https://herp.co.jp/) アルバイト
-  - TypeScript, fp-ts, cycle.js
-  - 2020年2月 ~ 2021年9月
+  - TypeScript, fp-ts, Cycle.js
+  - 2020/2 ~ 2021/9
 
 ## Interests
 
 興味があることのキーワードとかです。
 
-- F#, C#, Rust, OCaml
+- .NET (F#, C#), Rust, OCaml
 - Functional Programming
 - Computational Effect
 - Computer Graphics
 - Game AI, Procedural Generation
 - Game Server
+
+## Favorites
+
+- VRChat
+- Apex Legends
+- VALORANT
+- OverWatch2
+- Slay the Spire
+- ポケモンシリーズ
+- 大乱闘スマッシュブラザーズ
+- ぷよぷよテトリス
+- Minecraft
 
 ## Links
 
