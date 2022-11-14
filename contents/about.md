@@ -12,11 +12,13 @@ wraikny ([reini/れいにー]）
 言語機能の統一性とか、型クラスやモジュールによる抽象化とか、代数的データ型とか良いと思っています。
 保守性が高く人間に優しいプログラムを書くのが好きです。
 
+
 ## Contacts
 
 - [wraikny - Twitter](https://twitter.com/wraikny)
 - [wraikny - GitHub](https://github.com/wraikny)
 - writtenknown(at)gmail.com
+
 
 ## Member of
 
@@ -24,6 +26,9 @@ wraikny ([reini/れいにー]）
   - 2017/4~
 - [筑波大学 ゲーム制作サークル AmusementCreators](https://www.amusement-creators.info)
   - 2017/5~
+- [Kotoi-Xie Consultancy, Inc.](https://kxc.inc) アルバイト
+  - React Native, Node.js, TypeScript, ReScript, OCaml
+  - 2022/10~
 
 
 # History
@@ -38,16 +43,15 @@ wraikny ([reini/れいにー]）
   - TypeScript, fp-ts, Cycle.js
   - 2020/2 ~ 2021/9
 
+
 ## Interests
 
-興味があることのキーワードとかです。
-
 - .NET (F#, C#), Rust, OCaml
-- Functional Programming
 - Computational Effect
 - Computer Graphics
 - Game AI, Procedural Generation
 - Game Server
+
 
 ## Favorites
 
@@ -61,9 +65,8 @@ wraikny ([reini/れいにー]）
 - ぷよぷよテトリス
 - Minecraft
 
-## Links
 
-外部のリンクです。
+## Links
 
 - [wraikny - フリーゲーム夢現](https://freegame-mugen.jp/cms/mt-cp.fcgi?__mode=view&blog_id=1&id=4393)
   - ゲームのダウンロードできます。
@@ -72,9 +75,9 @@ wraikny ([reini/れいにー]）
 - [wraikny - YouTube](https://www.youtube.com/channel/UCZ9gPqMn0Vtd0NTIAQtrt2Q)
   - ゲームの動画を投稿してます。
 - [wraikny - AmusementCreators](https://www.amusement-creators.info/authors/wraikny/)
-  - 技術記事等。
+  - 技術記事等
 - [wraikny - Zenn](https://zenn.dev/wraikny)
-  - 技術記事。
+  - 技術記事
 - [wraikny - Scrapbox](https://scrapbox.io/wraikny/)
   - 乱雑なメモとかアイディアです。
 - [カレーの作り方](https://scrapbox.io/wraikny/カレーの作り方)
