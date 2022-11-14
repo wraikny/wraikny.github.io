@@ -15,7 +15,9 @@ thumbnail: /images/games/drops/drops_title.jpg
     <img src="/images/games/drops/drops_game.jpg" width="560" class="has-image-centered">
 </p>
 
+<p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KIcBf2JBIdY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
 C# + Altseed製です。習作も兼ねていました。
 

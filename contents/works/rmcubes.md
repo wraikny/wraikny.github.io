@@ -14,8 +14,5 @@ thumbnail: /images/works/rmcubes/rmcubes-1.jpg
 
 <p>
     <img src="/images/works/rmcubes/rmcubes-2.jpg" width="560" class="has-image-centered">
-</p>
-
-<p>
     <img src="/images/works/rmcubes/rmcubes-3.jpg" width="560" class="has-image-centered">
 </p>

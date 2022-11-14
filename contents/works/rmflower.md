@@ -15,8 +15,5 @@ thumbnail: /images/works/rmflower/rmflower-1.jpg
 <!--more-->
 <p>
     <img src="/images/works/rmflower/rmflower-2.jpg" width="560" class="has-image-centered">
-</p>
-
-<p>
     <img src="/images/works/rmflower/rmflower-3.jpg" width="560" class="has-image-centered">
 </p>

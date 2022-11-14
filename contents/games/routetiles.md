@@ -13,9 +13,6 @@ AmusementCreators 2020年夏休み企画として作成しました。
 
 <p>
     <img src="/images/games/routetiles/RouteTiles-ss-play1.jpg" width="560" class="has-image-centered">
-</p>
-
-<p>
     <img src="/images/games/routetiles/RouteTiles-ss-title.jpg" width="560" class="has-image-centered">
 </p>
 
