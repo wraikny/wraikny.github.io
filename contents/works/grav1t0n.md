@@ -9,15 +9,14 @@ thumbnail: /images/works/grav1t0n/grav1t0n-4.png
 GPUパーティクルとレイマーチングで作ったシェーダー製アクセサリー。
 制御点の引力に引き寄せられます。
 
-ブレスレットや天使の輪っかなどに使えます。
-
 バリエーション
 
 * Grav1t0N Cubes: キューブが集まった見た目
 * Grav1t0N Water: 水をイメージした見た目
 
-<!--more-->
+[Grav1t0N Shader - wraikny's shop](https://wraikny.booth.pm/items/4298484)
 
+<!--more-->
 
 [動作確認用ワールド](https://vrchat.com/home/content/worlds/wrld_a5ac5348-b5de-4c9b-9bf3-748d6a790e91)
 もあります。

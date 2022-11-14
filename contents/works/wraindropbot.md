@@ -28,4 +28,3 @@ WindowsとRaspberry Pi (Raspbian)で動作します。
 * データベース: SQLite3, Dapper
 
 スタンドアロンバイナリを自宅のラズパイに置いて動かしています。
-

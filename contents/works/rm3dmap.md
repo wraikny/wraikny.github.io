@@ -8,6 +8,8 @@ thumbnail: /images/works/rm3dmap/rm3dmap_cnvillageyae.jpg
 
 カメラコンポーネントからの深度値とレイマーチングを組み合わせて、ワールドのリアルタイム3Dマップを描画するためのシェーダとその機構です。
 
+[Raymarching 3DMap - wraikny's shop](https://wraikny.booth.pm/items/1285300)
+
 <!--more-->
 
 <p>
@@ -19,6 +21,3 @@ thumbnail: /images/works/rm3dmap/rm3dmap_cnvillageyae.jpg
 - CN Village Yae 2.3
 - Fantasy Shukaijo
 
-BOOTHにて販売しています。
-
-[Raymarching 3DMap - wraikny's shop](https://wraikny.booth.pm/items/1285300)
