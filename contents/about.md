@@ -6,11 +6,6 @@ wraikny ([reini/れいにー]）
 
 - イラスト:[黒色熊猫](https://twitter.com/higumasyake)さん
 
-### 好き
-
-### 悪くない
-
-### 好きじゃない
 
 面白くて役に立たないものが好きです。
 
