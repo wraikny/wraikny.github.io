@@ -33,6 +33,22 @@ let injectWebsocketCode (webpage:string) =
     let index = webpage.IndexOf head
     webpage.Insert ( (index + head.Length + 1), websocketScript)
 
+let injectGoogleAnalytics (webpage: string) =
+    let googleAnalyticsScript = """
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5BDCQ8TPS1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5BDCQ8TPS1');
+</script>"""
+
+    let head = "<head>"
+    let index = webpage.IndexOf head
+    webpage.Insert ( (index + head.Length + 1), googleAnalyticsScript)
+
 let tweetButton =
     div [] [
         a [ Href @"https://twitter.com/share?ref_src=twsrc%5Etfw"
@@ -120,8 +136,11 @@ let layout (ctx : SiteContents) active bodyCnt =
 let render (ctx : SiteContents) cnt =
     cnt
     |> HtmlElement.ToString
-    // |> injectWebsocketCode
-
+#if WATCH
+    |> injectWebsocketCode
+#else
+    |> injectGoogleAnalytics
+#endif
 
 let published (post: Postloader.Post) =
     post.published

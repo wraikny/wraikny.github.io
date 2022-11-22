@@ -27,7 +27,7 @@ ready(function() {
           var href = anchorEl.getAttribute('href');
           if (!internalLinkRegex.test(href)) {
               anchorEl.setAttribute('target', '_blank');
-              anchorEl.setAttribute('rel', 'noopener nofollow');
+              anchorEl.setAttribute('rel', 'noopener noreferrer');
 
               if (!anchorEl.className.includes('no-icon'))
               {
