@@ -6,62 +6,35 @@ wraikny ([reini/れいにー]）
 
 - イラスト:[黒色熊猫](https://twitter.com/higumasyake)さん
 
-
 面白くて役に立たないものが好きです。
-
-関数型言語と代数的データ型とトレイトが好きです。
-
-F#が好きです。OCamlとRustに興味あります。
-
-C#は悪くはないです。JavaScriptは好きじゃないです。
-
 
 ## Member of
 
-- [筑波大学 情報学群 情報メディア創成学類](https://www.mast.tsukuba.ac.jp)
-  - 2017/4~
-- [筑波大学 ゲーム制作サークル AmusementCreators](https://www.amusement-creators.info)
-  - 2017/5~
-- [Kotoi-Xie Consultancy, Inc.](https://kxc.inc)
-  - アルバイト
-  - React Native, Node.js, TypeScript, ReScript, OCaml
-  - 2022/10~
+- [筑波大学 情報学群 情報メディア創成学類](https://www.mast.tsukuba.ac.jp) 2017/4~
+- [ゲーム制作サークル AmusementCreators](https://www.amusement-creators.info) 2017/5~
+- [Kotoi-Xie Consultancy, Inc.](https://kxc.inc) アルバイト 2022/10~
+  - TypeScript, OCaml, Node.js, Next.js, React Native
 
 
 ## History
 
-- [Pixiv SPRING BOOT CAMP 2019](https://internship.pixiv.co.jp/)
-  - 短期インターン
+- [Pixiv SPRING BOOT CAMP 2019](https://internship.pixiv.co.jp/) 短期インターン 2019年春（1週間）
   - Unity
-  - 2019年春（1週間）
-- [株式会社ぺあのしすてむ](https://irbank.net/mynumber/8180301021653)
-  - アルバイト
+- [株式会社ぺあのしすてむ](https://irbank.net/mynumber/8180301021653) アルバイト 2019/9 ~ 2019/12
   - .NET Core, Xamarin, F#
-  - 2019/9 ~ 2019/12
-- [HERP, Inc.](https://herp.co.jp/)
-  - アルバイト
+- [HERP, Inc.](https://herp.co.jp/) アルバイト 2020/2 ~ 2021/9
   - TypeScript, fp-ts, Cycle.js
-  - 2020/2 ~ 2021/9
-
 
 ## Links
 
 - [Twitter](https://twitter.com/wraikny)
 - [GitHub](https://github.com/wraikny)
-- [wraikny - フリーゲーム夢現](https://freegame-mugen.jp/cms/mt-cp.fcgi?__mode=view&blog_id=1&id=4393)
-  - ゲームのダウンロードできます。
-- [wraikny's - BOOTH](https://wraikny.booth.pm)
-  - ゲームやVRChat向けシェーダーの販売をしてます。
-- [wraikny - YouTube](https://www.youtube.com/channel/UCZ9gPqMn0Vtd0NTIAQtrt2Q)
-  - ゲームの動画を投稿してます。
-- [wraikny - AmusementCreators](https://www.amusement-creators.info/authors/wraikny/)
-  - 技術記事等
-- [wraikny - Zenn](https://zenn.dev/wraikny)
-  - 技術記事
-- [wraikny - Scrapbox](https://scrapbox.io/wraikny/)
-  - 乱雑なメモとかアイディアです。
-- [カレーの作り方](https://scrapbox.io/wraikny/カレーの作り方)
-  - 自家製カレー
+- [BOOTH](https://wraikny.booth.pm)
+- [Zenn](https://zenn.dev/wraikny)
+- [YouTube](https://www.youtube.com/channel/UCZ9gPqMn0Vtd0NTIAQtrt2Q)
+- [AmusementCreators](https://www.amusement-creators.info/authors/wraikny/)
+- [フリーゲーム夢現](https://freegame-mugen.jp/cms/mt-cp.fcgi?__mode=view&blog_id=1&id=4393)
+- [Scrapbox](https://scrapbox.io/wraikny/)
 
 ## プライバシーポリシー
 

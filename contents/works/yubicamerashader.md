@@ -9,7 +9,10 @@ thumbnail: /images/works/ghost/yubicamerashader-1.jpg
 指で囲った四角の中で姿が見えるシェーダーです。
 
 [wraikny/GhostShader - GitHub](https://github.com/wraikny/GhostShader/blob/master/Assets/Ghost/src/YubiCamera.shader)
-(GhostShaderと同一リポジトリです)
+
+[Ghost Shader & YubiCamera Shader - BOOTH](https://wraikny.booth.pm/items/4418650)
+
+(GhostShaderと同じ)
 
 <!--more-->
 
