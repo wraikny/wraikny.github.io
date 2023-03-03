@@ -1,12 +1,14 @@
 #r "_lib/Fornax.Core.dll"
 
-#load "loaders/FileContent.fsx"
+#load "utils/FileContent.fsx"
+#load "utils/SinglePageTarget.fsx"
 
 open Config
 open System
 open System.IO
 
-let aboutPredicate (_, page) = page = "contents/about.md"
+let singlePagePredicate (_, page) =
+    SinglePageTarget.targets |> List.exists (fun x -> x.filename = page)
 
 let postPredicate (projectRoot: string, page: string) =
     let fileName = Path.Combine(projectRoot, page)
@@ -38,11 +40,7 @@ let staticPredicate (projectRoot: string, page: string) =
         ".fsx"
     |]
 
-    if excludes |> Seq.exists page.Contains
-    then
-        false
-    else
-        true
+    excludes |> Seq.exists page.Contains |> not
 
 let postOutputFile (s: string) =
     [|
@@ -59,7 +57,7 @@ let config = {
         {Script = "less.fsx"; Trigger = OnFileExt ".less"; OutputFile = ChangeExtension "css" }
         {Script = "sass.fsx"; Trigger = OnFileExt ".scss"; OutputFile = ChangeExtension "css" }
         {Script = "staticfile.fsx"; Trigger = OnFilePredicate staticPredicate; OutputFile = SameFileName }
-        {Script = "about.fsx"; Trigger = OnFilePredicate aboutPredicate; OutputFile = NewFileName "about.html" }
+        {Script = "singlepage.fsx"; Trigger = OnFilePredicate singlePagePredicate; OutputFile = Custom postOutputFile }
         {Script = "post.fsx"; Trigger = OnFilePredicate postPredicate; OutputFile = Custom postOutputFile }
         {Script = "index.fsx"; Trigger = Once; OutputFile = NewFileName "index.html" }
         {Script = "indexgames.fsx"; Trigger = Once; OutputFile = NewFileName "games.html" }

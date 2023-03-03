@@ -1,6 +1,6 @@
 #r "../_lib/Fornax.Core.dll"
 #if !FORNAX
-#load "../loaders/aboutloader.fsx"
+#load "../loaders/singlepageloader.fsx"
 #load "../loaders/postloader.fsx"
 #load "../loaders/pageloader.fsx"
 #load "../loaders/globalloader.fsx"
@@ -58,7 +58,7 @@ let tweetButton =
         script [ Async true; Src "https://platform.twitter.com/widgets.js"; CharSet "utf-8" ] []
     ]
 
-let layout (ctx : SiteContents) active bodyCnt =
+let layoutWith (showNavBar: bool) (noIndex: bool) (ctx : SiteContents) active bodyCnt =
     let pages = ctx.TryGetValues<Pageloader.Page> () |> Option.defaultValue Seq.empty
     let siteInfo = ctx.TryGetValue<Globalloader.SiteInfo> ()
     let ttl =
@@ -83,6 +83,10 @@ let layout (ctx : SiteContents) active bodyCnt =
         head [] [
             meta [CharSet "utf-8"]
             meta [Name "viewport"; Content "width=device-width, initial-scale=1"]
+
+            if not noIndex then
+                meta [Name "robots"; Content "noindex"]
+
             title [] [!! ttl]
             // link [Rel "icon"; Type "image/png"; Sizes "32x32"; Href "/images/favicon.png"]
             link [Rel "stylesheet"; Href "https://use.fontawesome.com/releases/v5.5.0/css/all.css"]
@@ -97,41 +101,40 @@ let layout (ctx : SiteContents) active bodyCnt =
             link [Rel "stylesheet"; Href <| sprintf "//cdnjs.cloudflare.com/ajax/libs/highlight.js/%s/styles/vs.min.css" highlightjs]
         ]
         body [] [
-          nav [Class "navbar"] [
-            div [Class "container"] [
-              div [Class "navbar-brand"] [
-                // a [Class "navbar-item"; Href "/"] [
-                //   img [Src "/images/bulma.png"; Alt "Logo"]
-                // ]
-                span [Class "navbar-burger burger"; Custom ("data-target", "navbarMenu")] [
-                  span [] []
-                  span [] []
-                  span [] []
+            if showNavBar then
+                nav [Class "navbar"] [
+                    div [Class "container"] [
+                    div [Class "navbar-brand"] [
+                        // a [Class "navbar-item"; Href "/"] [
+                        //   img [Src "/images/bulma.png"; Alt "Logo"]
+                        // ]
+                        span [Class "navbar-burger burger"; Custom ("data-target", "navbarMenu")] [
+                        span [] []
+                        span [] []
+                        span [] []
+                        ]
+                    ]
+                    div [Id "navbarMenu"; Class "navbar-menu"] menuEntries
+                    ]
                 ]
-              ]
-              div [Id "navbarMenu"; Class "navbar-menu"] menuEntries
-            ]
-          ]
-          yield! bodyCnt
+            yield! bodyCnt
         ]
 
         footer [] [
             script [ Src <| sprintf "//cdnjs.cloudflare.com/ajax/libs/highlight.js/%s/highlight.min.js" highlightjs] []
-            for lang in
-              [
-                "fsharp"
-                "csharp"
-              ] do
-              script [Src <| sprintf "//cdnjs.cloudflare.com/ajax/libs/highlight.js/%s/languages/%s.min.js" highlightjs lang] []
+            for lang in [ "fsharp"; "csharp" ] do
+                script [Src <| sprintf "//cdnjs.cloudflare.com/ajax/libs/highlight.js/%s/languages/%s.min.js" highlightjs lang] []
 
             script [] [
-              !! "hljs.highlightAll()"
+                !! "hljs.highlightAll()"
             ]
 
             script [ Type "text/javascript"; Src "/js/navbar_burger.js" ] []
             script [ Type "text/javascript"; Src "/js/external_a.js" ] []
         ]
     ]
+
+let layout (ctx : SiteContents) active bodyCnt = layoutWith true false ctx active bodyCnt
 
 let render (ctx : SiteContents) cnt =
     cnt

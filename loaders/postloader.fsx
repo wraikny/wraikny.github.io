@@ -1,7 +1,7 @@
 #r "../_lib/Fornax.Core.dll"
 #r "../_lib/Markdig.dll"
 
-#load "./FileContent.fsx"
+#load "../utils/FileContent.fsx"
 
 open System
 open System.IO
