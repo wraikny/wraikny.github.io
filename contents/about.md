@@ -8,7 +8,7 @@ wraikny ([reini/れいにー]）
 
 面白くて役に立たないものが好きです。
 
-## Member of
+<!-- ## Member of
 
 - [筑波大学 情報学群 情報メディア創成学類](https://www.mast.tsukuba.ac.jp) 2017/4~
 - [ゲーム制作サークル AmusementCreators](https://www.amusement-creators.info) 2017/5~
@@ -23,7 +23,7 @@ wraikny ([reini/れいにー]）
 - [株式会社ぺあのしすてむ](https://irbank.net/mynumber/8180301021653) アルバイト 2019/9 ~ 2019/12
   - .NET Core, Xamarin, F#
 - [HERP, Inc.](https://herp.co.jp/) アルバイト 2020/2 ~ 2021/9
-  - TypeScript, fp-ts, Cycle.js
+  - TypeScript, fp-ts, Cycle.js -->
 
 ## Links
 
