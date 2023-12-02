@@ -1,29 +1,45 @@
 ## Profile
 
-wraikny ([reini/れいにー]）
+wraikny (pron./読み方: [reini/れいにー]）
 
 <img src="/images/wraikny/wraikny_illustration.jpg" width="256px">
 
 - イラスト:[黒色熊猫](https://twitter.com/higumasyake)さん
 
-面白くて役に立たないものが好きです。
+## Skills
+
+- 趣味
+  - .NETでの開発を主に行っています。F#が好きで、C#もある程度書いてます。
+  - 2Dゲームとそのためのツールやライブラリの開発を主に行っています。
+- 業務
+  - ライブラリ開発
+    - OCaml
+  - Webフロントエンド
+    - TypeScript, fp-ts, Cycle.js, React
+  - Webバックエンド
+    - TypeScript
+  - モバイルアプリ
+    - React Native, Java (Android), Swift (iOS)
+
+
+## Brief History
+
+| yyyy-MM | 所属 | ステータス |
+| --- | --- | --- |
+| 2017-03 | 某都立高校 | 卒業
+| 2017-04 | 筑波大学 情報学群 情報メディア創成学類 | 入学 |
+| 2017-05 | 同大学ゲーム制作サークル AmusementCreators | 入会 |
+| 2020-02 | 株式会社HERP | 入社（アルバイト） |
+| 2021-09 | 同 | 退職（アルバイト） |
+| 2022-10 | 筑波大学 同学類 | 休学 |
+| 2022-10 | 合同会社コトイコンサルタンシー | 入社（アルバイト）|
 
 <!-- ## Member of
-
-- [筑波大学 情報学群 情報メディア創成学類](https://www.mast.tsukuba.ac.jp) 2017/4~
-- [ゲーム制作サークル AmusementCreators](https://www.amusement-creators.info) 2017/5~
-- [Kotoi-Xie Consultancy, Inc.](https://kxc.inc) アルバイト 2022/10~
-  - TypeScript, OCaml, Node.js, Next.js, React Native
-
-
-## History
-
 - [Pixiv SPRING BOOT CAMP 2019](https://internship.pixiv.co.jp/) 短期インターン 2019年春（1週間）
   - Unity
 - [株式会社ぺあのしすてむ](https://irbank.net/mynumber/8180301021653) アルバイト 2019/9 ~ 2019/12
   - .NET Core, Xamarin, F#
-- [HERP, Inc.](https://herp.co.jp/) アルバイト 2020/2 ~ 2021/9
-  - TypeScript, fp-ts, Cycle.js -->
+ -->
 
 ## Links
 
