@@ -24,10 +24,24 @@ let contentDir = ""
 
 let private markdownPipeline =
     MarkdownPipelineBuilder()
-        .UsePipeTables()
-        .UseGridTables()
-        .UseMediaLinks()
+        .UseAbbreviations()
+        .UseAutoIdentifiers()
         .UseCitations()
+        .UseCustomContainers()
+        .UseDefinitionLists()
+        .UseEmphasisExtras()
+        .UseFigures()
+        .UseFooters()
+        .UseFootnotes()
+        .UseGridTables()
+        .UseMathematics()
+        .UseMediaLinks()
+        .UsePipeTables()
+        .UseListExtras()
+        .UseTaskLists()
+        .UseDiagrams()
+        .UseAutoLinks()
+        .UseGenericAttributes()
         .Build()
 
 ///`fileContent` - content of page to parse. Usually whole content of `.md` file

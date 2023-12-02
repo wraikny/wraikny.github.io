@@ -17,7 +17,24 @@ type SinglePage = {
 
 let private markdownPipeline =
     MarkdownPipelineBuilder()
+        .UseAbbreviations()
+        .UseAutoIdentifiers()
+        .UseCitations()
+        .UseCustomContainers()
+        .UseDefinitionLists()
+        .UseEmphasisExtras()
+        .UseFigures()
+        .UseFooters()
+        .UseFootnotes()
+        .UseGridTables()
+        .UseMathematics()
         .UseMediaLinks()
+        .UsePipeTables()
+        .UseListExtras()
+        .UseTaskLists()
+        .UseDiagrams()
+        .UseAutoLinks()
+        .UseGenericAttributes()
         .Build()
 
 let loader (projectRoot: string) (siteContent: SiteContents) =
