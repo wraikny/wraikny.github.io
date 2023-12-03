@@ -1,6 +1,6 @@
 ## Profile
 
-wraikny (pron./読み方: [reini/れいにー]）
+wraikny (pron./読み方: \[reini/れいにー\])
 
 <img src="/images/wraikny/wraikny_illustration.jpg" width="256px">
 
@@ -33,6 +33,8 @@ wraikny (pron./読み方: [reini/れいにー]）
 | 2021-09 | 株式会社HERP | 退職 |
 | 2022-10 | 筑波大学 | 休学 |
 | 2022-10 | 合同会社コトイコンサルタンシー | 入社（アルバイト）|
+<!-- | 2023-01 | 同 | 正社員登用 | -->
+<!-- | 2023-10 | 筑波大学 同学類 | 復学 | -->
 
 <!-- ## Member of
 - [Pixiv SPRING BOOT CAMP 2019](https://internship.pixiv.co.jp/) 短期インターン 2019年春（1週間）
