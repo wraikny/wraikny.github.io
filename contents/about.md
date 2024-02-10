@@ -2,15 +2,18 @@
 
 wraikny (pron./読み方: \[reini/れいにー\])
 
-<img src="/images/wraikny/wraikny_illustration.jpg" width="256px">
+<img src="../images/wraikny/wraikny_icon.jpg" height="256px">
+<img src="../images/wraikny/wraikny_icon_garden.jpg" height="256px">
 
-- イラスト:[黒色熊猫](https://twitter.com/higumasyake)さん
+- イラスト左: [黒色熊猫](https://twitter.com/higumasyake)さんより
+- イラスト右: [Urukun](https://twitter.com/Uru_oxo)さんより
 
 ## Skills
 
 - 趣味で使うもの
   - .NETでの開発を主に行っています。F#が好きで、C#もある程度書いてます。
   - 2Dゲームとそのためのツールやライブラリの開発を主に行っています。
+  - Rustも割りと好きですが少しだけ。
 - 業務で使ったことのあるもの
   - ライブラリ開発
     - OCaml
@@ -24,7 +27,7 @@ wraikny (pron./読み方: \[reini/れいにー\])
 
 ## Brief History
 
-| 'yy-MM | 所属・状態 |
+| yyyy-MM | 所属・状態 |
 | --- | :--- |
 | 2017-03 | 某都立高校 普通科 卒業 |
 | 2017-04 | 筑波大学 情報学群 情報メディア創成学類 入学 |
