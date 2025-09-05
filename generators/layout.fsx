@@ -53,7 +53,7 @@ let tweetButton =
     div [] [
         a [ Href @"https://twitter.com/share?ref_src=twsrc%5Etfw"
             Class "twitter-share-button"
-            Custom ("data-show-count", "false")
+            HtmlProperties.Custom ("data-show-count", "false")
         ] [ !! "Tweet" ]
         script [ Async true; Src "https://platform.twitter.com/widgets.js"; CharSet "utf-8" ] []
     ]
@@ -108,7 +108,7 @@ let layoutWith (showNavBar: bool) (noIndex: bool) (ctx : SiteContents) active bo
                         // a [Class "navbar-item"; Href "/"] [
                         //   img [Src "/images/bulma.png"; Alt "Logo"]
                         // ]
-                        span [Class "navbar-burger burger"; Custom ("data-target", "navbarMenu")] [
+                        span [Class "navbar-burger burger"; HtmlProperties.Custom ("data-target", "navbarMenu")] [
                         span [] []
                         span [] []
                         span [] []
