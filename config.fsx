@@ -23,24 +23,43 @@ let postPredicate (projectRoot: string, page: string) =
     )
 
 let staticPredicate (projectRoot: string, page: string) =
-    let excludes = [|
+    let includedTopDirectories = [|
+        "images"
+        "js"
+    |]
+
+    let excludedDirectories = [|
         "_public"
-        "_bin"
         "_lib"
+        "_bin"
+        "_obj"
         "_data"
         "_settings"
-        "_config.yml"
-        ".sass-cache"
-        ".sass-cache"
         ".git"
         ".ionide"
         ".config"
         ".vscode"
+    |]
+
+    let excludedFilenames = [|
+        "_config.yml"
+    |]
+
+    let excludedFileExtentions = [|
+        ".sass-cache"
+        ".sass-cache"
         ".md"
         ".fsx"
     |]
 
-    excludes |> Seq.exists page.Contains |> not
+    let pathItems = page.Split '/'
+
+    includedTopDirectories |> Seq.exists (fun d -> Some d = Array.tryHead pathItems)
+    && not (
+        pathItems |> Seq.exists (fun d -> Array.contains d excludedDirectories)
+        || excludedFilenames |> Seq.exists (Path.GetFileName page |> (=))
+        || excludedFileExtentions |> Seq.exists (Path.GetExtension page |> (=))
+    )
 
 let postOutputFile (s: string) =
     [|
