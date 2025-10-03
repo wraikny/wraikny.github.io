@@ -7,4 +7,8 @@ let targets = [
        filename = "contents/hidden/materials/avatar_neve.md"
        showNavBar = false
        noIndex = true |}
+    {| title = "アバター資料（ビナア）"
+       filename = "contents/hidden/materials/avatar_binah.md"
+       showNavBar = false
+       noIndex = true |}
 ]
