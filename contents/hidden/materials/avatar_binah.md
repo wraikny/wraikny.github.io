@@ -43,8 +43,9 @@ VRChatで使用しているアバターのビナアちゃんです。
 
 
 
-## refs
+## assets
 
 - [ビナア〈Binah〉 - エルフの森静岡支部エルフの森静岡支部](https://booth.pm/ja/items/5694887)
+- [【ビナア対応】しゅわしゅわアイ - #からあげ120円税込#からあげ120円税込](https://karaage120en.booth.pm/items/5734212)
 - [UNIXL - イルカネズミ](https://iruka-nezumi.booth.pm/items/7027904)
 - [Grav1t0N Shader - wraikny's shop](https://booth.pm/ja/items/4298484)
