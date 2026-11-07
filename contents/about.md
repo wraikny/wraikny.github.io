@@ -2,11 +2,7 @@
 
 wraikny (pron./読み方: \[reini/れいにー\])
 
-<img src="../images/wraikny/wraikny_icon.jpg" height="256px">
-<img src="../images/wraikny/wraikny_icon_garden.jpg" height="256px">
-
-- 画像左： [黒色熊猫](https://twitter.com/higumasyake)さんより
-- 画像右： [Urukun](https://twitter.com/Uru_oxo)さんより
+<img src="../images/wraikny/wraikny_logo_icon.jpg" height="256px">
 
 
 ## Skills
